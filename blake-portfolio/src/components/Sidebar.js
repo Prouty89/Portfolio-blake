@@ -1,17 +1,19 @@
 import React from "react";
 import Sidebar from "react-sidebar";
 import styled from "styled-components";
-import CustomScroll from 'react-custom-scroll';
+import Scrollbars from "react-scrollbar";
+import Home from './Home';
 
 function Side(){
     return(
         <>
             <StyledSB>
+     
                 <Sidebar className = "main-container"
                     sidebar=
                     {<b>
                         <StyledList>
-                        <div>image :(</div>
+                        <div className = "image">image :(</div>
                         <h3 className = "name-title">Blake Prouty</h3>        
                         <ul className= "sidebar-list">
                             <li>
@@ -32,15 +34,18 @@ function Side(){
                         </ul>
                         </StyledList>
                     </b>}
+                    styles={{content: {overflowY: "visible"}},
+                            {root: {overflow: "hidden"}}}
                     open={true}
                     docked={true}
                     onSetOpen={true}
                     contentClassName = {"content-container"}
                     sidebarClassName = {"sidebar-container"}
                     rootClassName = {"root-container"}
+                    overlayClassName = {"overlay-container"}
                     children = {
                     <StyledContent>
-                        
+                        <Scrollbars horizontal autoHide = {false}>
                             <section className="first-child" id="home" data-section="home">
                                 <div className="home-background">
                                 Home Welcome message  
@@ -51,12 +56,13 @@ function Side(){
                             <div className="third-child" id="skills" data-section="skills">Skills</div>
                             <div className="fourth-child" id="projects" data-section="projects">Projects</div>
                             <div className="fifth-child" id="contact" data-section="contract">Contact</div>
-                        
+                        </Scrollbars>
                     </StyledContent>
                     }
                     >
                   
                 </Sidebar>
+        
             </StyledSB>
         </>
     )
@@ -67,27 +73,37 @@ export default Side;
 const StyledSB = styled.div`
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
 
-
 .root-container{
     font-family: 'Open Sans', sans-serif;
-    max-width: 1350px;
+    width: 100%;
     margin: 0 auto;
+    overflow: visible;
     border-right: 1px solid grey;
+    
+}
+
+.image{
+    height: 200px;
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-container{
     background: #fffff;
     width: calc(100% - 300px);
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth; 
+    
 }
 
 .sidebar-container{
     font-family: 'Open Sans', sans-serif;
     color: white;
-    background: #A7B3A5;
+    background: #00000061;
     width: 300px;
  
-
     @media(max-width:750px){
         visibility: hidden;
     }
@@ -95,13 +111,16 @@ const StyledSB = styled.div`
 `
 
 const StyledList = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
 .name-title{
-font-family: 'Darker Grotesque', sans-serif;
-font-size: 28px;
+font-family: 'Bebas Neue', cursive;
+font-size: 36px;
 }
 
+
 .sidebar-list{
+    font-size: 22px;
     margin-top: 25px;
     padding-inline-start: 0px;
     height: 200px;

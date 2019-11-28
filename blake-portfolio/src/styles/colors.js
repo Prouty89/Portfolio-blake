@@ -1,4 +1,4 @@
-//Grain #D7CEC7
-//Blackboard #565656
-//Oxblood #76323F
-//Tan #C09F80
+//Rust #B56357
+//Mint #B4DBC0
+//Slate #EAE3EA
+//Sea Foam #A7B3A5
