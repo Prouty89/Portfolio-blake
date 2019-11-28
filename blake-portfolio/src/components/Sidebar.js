@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "react-sidebar";
 import styled from "styled-components";
-
+import CustomScroll from 'react-custom-scroll';
 
 function Side(){
     return(
@@ -11,13 +11,24 @@ function Side(){
                     sidebar=
                     {<b>
                         <StyledList>
-                        <div>image :(</div>        
+                        <div>image :(</div>
+                        <h3 className = "name-title">Blake Prouty</h3>        
                         <ul className= "sidebar-list">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Skills</li>
-                            <li>Work</li>
-                            <li>Contact</li>
+                            <li>
+                                <a href ="#home" data-nav-section="home">Home</a>
+                            </li>
+                            <li>
+                                <a href ="#about" data-nav-section="about">About</a>
+                            </li>
+                            <li>
+                                <a href ="#skills" data-nav-section="skills">Skills</a>
+                            </li>
+                            <li>
+                                <a href ="#projects" data-nav-section="projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href ="#contact" data-nav-section="contact">Contact</a>
+                            </li>
                         </ul>
                         </StyledList>
                     </b>}
@@ -29,11 +40,17 @@ function Side(){
                     rootClassName = {"root-container"}
                     children = {
                     <StyledContent>
-                        <div className="first-child">FIRST</div>
-                        <div className="second-child">second</div>
-                        <div className="third-child">third</div>
-                        <div className="fourth-child">fourth</div>
-                        <div className="fifth-child">fifth</div>
+                        
+                            <section className="first-child" id="home" data-section="home">
+                                <div className="home-background">
+                                Home Welcome message  
+                                </div>
+                                FAB's with Res and CV
+                            </section>
+                            <div className="second-child" id="about" data-section="about">About</div>
+                            <div className="third-child" id="skills" data-section="skills">Skills</div>
+                            <div className="fourth-child" id="projects" data-section="projects">Projects</div>
+                            <div className="fifth-child" id="contact" data-section="contract">Contact</div>
                         
                     </StyledContent>
                     }
@@ -50,6 +67,7 @@ export default Side;
 const StyledSB = styled.div`
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
 
+
 .root-container{
     font-family: 'Open Sans', sans-serif;
     max-width: 1350px;
@@ -59,7 +77,8 @@ const StyledSB = styled.div`
 
 .content-container{
     background: #fffff;
-    width: calc(100% - 300px);  
+    width: calc(100% - 300px);
+    scroll-behavior: smooth;  
 }
 
 .sidebar-container{
@@ -76,9 +95,14 @@ const StyledSB = styled.div`
 `
 
 const StyledList = styled.div`
-
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:700&display=swap');
+.name-title{
+font-family: 'Darker Grotesque', sans-serif;
+font-size: 28px;
+}
 
 .sidebar-list{
+    margin-top: 25px;
     padding-inline-start: 0px;
     height: 200px;
     list-style-type: disc;
@@ -89,14 +113,31 @@ const StyledList = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
 }
 `
 
 const StyledContent = styled.div`
-background: black;
-color: pink;
+background: #ffffff;
+color: black;
 
 .first-child{
+    height: 980px;
+}
+.second-child{
+    height: 880px;
+}
+.third-child{
+    height: 880px;
+}
+.fourth-child{
+    height: 880px;
+}
+.fifth-child{
     height: 980px;
 }
 
