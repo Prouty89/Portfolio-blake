@@ -6,8 +6,10 @@ import Tweet from '../assets/Tweet.svg';
 import Linkd from '../assets/Linkd.svg';
 import IG from '../assets/IG.svg';
 import SVG from 'react-inlinesvg';
-import Home from './Home'
+import Home from './Home';
 import Skill from './Skill';
+import Contact from './Contact';
+import Mountains from '../assets/Mountains.jpg';
 
 function Side(){
     return(
@@ -69,11 +71,13 @@ function Side(){
                             </section>
                             <div className="second-child" id="about" data-section="about">About</div>
                             <div className="third-child" id="skills" data-section="skills">
-                                <h1>My Skill Set</h1>
+                                <div className="skill-title">My Skill Set</div>
                                 <Skill />
                             </div>
                             <div className="fourth-child" id="projects" data-section="projects">Projects</div>
-                            <div className="fifth-child" id="contact" data-section="contract">Contact</div>
+                            <div className="fifth-child" id="contact" data-section="contract">Contact
+                            <Contact />
+                            </div>
                     </StyledContent>
                     }
                     >
@@ -88,7 +92,7 @@ function Side(){
 export default Side;
 
 const StyledSB = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Neuton&display=swap');
+font-family: 'Work Sans', sans-serif;
 
 .image{
     height: 200px;
@@ -100,15 +104,16 @@ const StyledSB = styled.div`
 }
 
 .content-container{
-    
+    background-image: url(${Mountains});
+    background-position: top;
+    background-size: cover;
     width: calc(100% - 300px);
     scroll-behavior: smooth;
 
     @media(max-width:750px){
         width: 100%;
         position: relative;
-        left: 0px;
-        
+        left: 0; 
     }
     
     .home-container{
@@ -116,6 +121,7 @@ const StyledSB = styled.div`
         margin: 30px;
         height: 90%;
         position: relative;
+        
 
         .trees{
             position: absolute;
@@ -135,10 +141,11 @@ const StyledSB = styled.div`
         }
 
         .trails-text{
+            color: #ffffff
             font-family: 'Work Sans', sans-serif;
             font-size: 20px;
             justify-content: center;
-            margin-left: 10%;
+            margin-left: 15%;
             display: flex;
         }
     }
@@ -176,14 +183,19 @@ const StyledSB = styled.div`
 
 const StyledList = styled.div`
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+font-family: 'Work Sans', sans-serif;
+
+@media(max-width:750px){
+    display: none;
+}
 
 .name-title{
 font-family: 'Work Sans', sans-serif;
-text-transform: uppercase;
 font-size: 30px;
 }
 
 .social-tray{
+    font-size: 22px;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -195,7 +207,7 @@ font-size: 30px;
 
     .social-icons{
         display: flex;
-        width: 60%;
+        width: 70%;
         justify-content: space-around;
         
         .svg{
@@ -226,22 +238,32 @@ font-size: 30px;
 `
 
 const StyledContent = styled.div`
-background: #ffffff;
+font-family: 'Work Sans', sans-serif;
 color: black;
 
 .first-child{
     height: 980px;
 }
 .second-child{
+    background: #ffffff;
     height: 980px;
 }
 .third-child{
-    height: 880px;
+    background: #ffffff;
+    height: 980px;
+
+    .skill-title{
+        padding: 20px;
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
 .fourth-child{
-    height: 880px;
+    background: #ffffff;
+    height: 980px;
 }
 .fifth-child{
+    background: #ffffff;
     height: 980px;
 }
 
