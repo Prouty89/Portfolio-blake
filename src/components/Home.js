@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useTrail, animated } from 'react-spring';
 
 
-const items = ["Hello! I'm Blake, a full stack developer", 'specialized in HTML, CSS, and Javascript.', 'Take a look at my work and lets connect!']
+const items = ["Hello! I'm Blake, a full stack web developer", 'specialized in HTML, CSS, and Javascript.', 'Take a look at my work and lets connect!']
 const config = { mass: 30, tension: 1500, friction: 200 }
 
 
