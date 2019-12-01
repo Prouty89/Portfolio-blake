@@ -10,6 +10,7 @@ import Home from './Home';
 import Skill from './Skill';
 import Contact from './Contact';
 import Mountains from '../assets/Mountains.jpg';
+import Blake from '../assets/Blake.jpg';
 
 function Side(){
     return(
@@ -20,7 +21,7 @@ function Side(){
                     sidebar=
                     {<b>
                         <StyledList>
-                        <div className = "image">image :(</div>
+                        <div className = "image"></div>
                         <h3 className = "name-title">Blake Prouty</h3>        
                         <ul className= "sidebar-list">
                             <li>
@@ -54,19 +55,34 @@ function Side(){
                     styles={{content: {overflowY: "visible", overflowX: "hidden"}},
                             {root: {overflow: "hidden"}}}
                     open={true}
-                    docked={true}
-                    onSetOpen={true}
+                    docked={false}
+                    onSetOpen={false}
+                    pullRight={false}
                     contentClassName = {"content-container"}
                     sidebarClassName = {"sidebar-container"}
                     rootClassName = {"root-container"}
                     overlayClassName = {"overlay-container"}
                     children = {
                     <StyledContent>
-                            <section className="first-child" id="home" data-section="home">
-                                <div className="home-background">
-                                    <p></p>
-                                </div>
+                        <ul className= "nav-list">
+                            <li>
+                                <a href ="#home" data-nav-section="home">Home</a>
                                 
+                            </li>
+                            <li>
+                                <a href ="#about" data-nav-section="about">About</a>
+                            </li>
+                            <li>
+                                <a href ="#skills" data-nav-section="skills">Skills</a>
+                            </li>
+                            <li>
+                                <a href ="#projects" data-nav-section="projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href ="#contact" data-nav-section="contact">Contact</a>
+                            </li>
+                        </ul>
+                            <section className="first-child" id="home" data-section="home">
                                 <Home />  
                             </section>
                             <div className="second-child" id="about" data-section="about">About</div>
@@ -81,7 +97,6 @@ function Side(){
                     </StyledContent>
                     }
                     >
-                  
                 </Sidebar>
         
             </StyledSB>
@@ -95,76 +110,113 @@ const StyledSB = styled.div`
 font-family: 'Work Sans', sans-serif;
 
 .image{
+    background-image: url(${Blake});
     height: 200px;
-    width: 75%;
+    width: 65%;
+    padding: 5%;
     display: flex;
     margin: 0 auto;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
+    background-position: top;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.overlay-container{
+    display: none;
 }
 
 .content-container{
+    position: absolute;
     background-image: url(${Mountains});
     background-position: top;
     background-size: cover;
     width: calc(100% - 300px);
     scroll-behavior: smooth;
+    left: initial !important;
+    overflow-x: hidden;
 
     @media(max-width:750px){
         width: 100%;
-        position: relative;
-        left: 0; 
     }
     
     .home-container{
-       
-        margin: 30px;
-        height: 90%;
-        position: relative;
         
+        height: 100%;
+        position: relative;
 
-        .trees{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin-right: 20px;
-            fill: #76836a;
+        @media(max-width:750px){
+            width: 100%;
+            height: 90vh;
         }
+        
 
         .trails-main{
             display: flex;
             flex-direction: column;
-            text-align: left;
             align-items: flex-start;
-            height: 90%;
-            justify-content: flex-end;
+            text-align: left;
+            height: 65%;
+            justify-content: center;
+
+            @media(max-width:750px){
+                margin-left: 20px;
+            }
         }
 
         .trails-text{
             color: #ffffff
             font-family: 'Work Sans', sans-serif;
-            font-size: 20px;
+            font-size: 22px;
             justify-content: center;
             margin-left: 15%;
             display: flex;
+
+            @media(max-width:750px){
+                margin-left: 0;
+                font-size: 15px;
+            }
         }
     }
 
     .cvres-btn{
+        display: flex;
         font-family: 'Work Sans', sans-serif;
         background: #76836a;
         border: none;
         color: white;
         font-weight: bold;
-        box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 6px;
+        box-shadow: 2px 2px 6px black;
         font-family: 'Work Sans', sans-serif;
-        
         height: 40px;
         font-size: 22px;
         border-radius: 2px;
         position: absolute;
-        top: 30%;
+        top: 50%;
+        width: 96px;
+        justify-content: center;
+        align-items: center;
+        left: 15%;
+        transition: width .6s;
+        cursor: pointer;
+
+        &:hover{
+            width:110px;
+        }
+
+        @media(max-width:750px){
+            left: 20px;
+            top: 53%;
+        }
+
+        @media(max-height:800px){
+            left: 20px;
+            top: 5%;
+        }
     }
+
     
 }
 
@@ -232,6 +284,13 @@ font-size: 30px;
     a{
         text-decoration: none;
         color: white;
+        transition: color .5s ease-in;
+        
+
+        &:hover{
+            color: black;
+            text-decoration: underline;
+        }
     }
 
 }
@@ -253,8 +312,8 @@ color: black;
     height: 980px;
 
     .skill-title{
-        padding: 20px;
-        font-size: 22px;
+        padding: 40px;
+        font-size: 30px;
         font-weight: bold;
     }
 }
@@ -265,6 +324,35 @@ color: black;
 .fifth-child{
     background: #ffffff;
     height: 980px;
+}
+
+.nav-list{
+    display: none;
+    
+    @media(max-width: 750px){
+        display: flex;
+        font-size: 15px;
+        width: 100%;
+        height: 30px;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: url(${Mountains});
+        margin: 0;
+        padding: 0;
+        position: sticky;
+        top: 0;
+        
+        li{
+            list-style: none;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
 }
 
 

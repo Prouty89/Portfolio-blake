@@ -1,10 +1,8 @@
 import React, {useState} from "react";
-import SVG from "react-inlinesvg/lib/index";
-import Trees from '../assets/Trees.svg';
 import { useTrail, animated } from 'react-spring';
 
 
-const items = ["Hello! I'm Blake,", 'a full stack developer', 'specialized in HTML, CSS, and Javascript,', 'take a look at my work and lets connect!']
+const items = ["Hello! I'm Blake, a full stack developer", 'specialized in HTML, CSS, and Javascript.', 'Take a look at my work and lets connect!']
 const config = { mass: 30, tension: 1500, friction: 200 }
 
 
@@ -13,8 +11,8 @@ function Home(){
     const trail = useTrail(items.length, {
       config,
       opacity: toggle ? 1 : 0,
-      y: toggle ? 0 : 100,
-      height: toggle ? 50 : 0,
+      y: toggle ? 0 : 80,
+      height: toggle ? 60 : 0,
       from: { opacity: 0, x: 80, height: 10 },
     })
     return(
@@ -32,7 +30,7 @@ function Home(){
         <div className="cv-res">
            <button className ="cvres-btn">Resume</button>
         </div>
-        <SVG className="trees" src= {Trees}/>
+        
     </div>
     )
 }
