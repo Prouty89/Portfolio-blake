@@ -50,7 +50,7 @@ function Accordion() {
     <StyledAccordion className="accordion">
 
       <Block className="block"
-        title="See More!"
+        title="More!"
         isOpen={state[0]}
         onToggle={() => dispatch({ type: "toggle", index: 0 })}
       >
@@ -85,9 +85,18 @@ export default Accordion;
 
 
 const StyledAccordion = styled.div`
+display: flex;
+align-items: flex-end;
+padding-bottom: 20px;
 
 @media(max-width: 1300px){
-    height: 50%
+    height: 75%;
+}
+
+.inds{
+  @media(max-width:1300px){
+    width: 50%;
+  }
 }
 
 .accordion-skills{
@@ -98,14 +107,15 @@ const StyledAccordion = styled.div`
     justify-content: space-evenly;
 
     @media(max-width:1300px){
+        padding: 0px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        
     }
 
     .rows{
         width: 90%;
-        height: 275px;
+        height: 150px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -113,7 +123,9 @@ const StyledAccordion = styled.div`
         @media(max-width:1300px){
             width: 33%;
             display: flex;
+            height: 90%;
             flex-direction: column;
+            justify-content: space-around;
     
         }
     }
@@ -122,7 +134,7 @@ const StyledAccordion = styled.div`
 }
 
 .toggle-bar{
-    height: 100%;
+    height: 64%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -143,20 +155,29 @@ const StyledAccordion = styled.div`
     align-items: center;
     justify-content: center;
     height: 90%;
-    border-radius: 3px;
-    width: 50px;
+    border-radius: 30px;
+    width: 40px;
     border: none;
     background: #76836a;
+    cursor: pointer;
+
+    &:focus{
+      outline: 0;
+    }
 
     @media(max-width:1300px){
         width: 350px;
-        height: 50px;
+        height: 30px;
         display: flex;
+        text-align:center;
     }
 }
    span{
        font-family: 'Work Sans', sans-serif;
-       font-size: 22px;
+       display: flex;
+       justify content: center; 
+       align-items: center;
+       font-size: 1.5rem;
        text-align: center;
        writing-mode: vertical-lr;
        transform: rotate(180deg);
@@ -164,7 +185,11 @@ const StyledAccordion = styled.div`
        color: #ffffff;
 
        @media(max-width:1300px){
+        display: flex;
+        justify-content: center;
         writing-mode: rl;
+        font-size: 1rem;
+        text-align: center;
         transform: rotate(0deg);
     }
    }
