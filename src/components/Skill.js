@@ -43,9 +43,15 @@ display: flex;
     flex-direction: column;
 
     @media(max-width:1250px){
-        width: 70%;
-        height: 200px;
+        width: 90%;
         flex-direction: row;
+    }
+
+    .inds-b{
+        
+        @media(max-width: 750px){
+            height: 60%;
+        }
     }
 }
 

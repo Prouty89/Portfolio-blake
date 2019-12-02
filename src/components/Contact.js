@@ -124,8 +124,11 @@ align-items: center;
 
         &:hover{
             width:110px;
-            
         }
+
+        &:focus{
+            outline: 0;
+          }
     }
 
     input {
