@@ -13,6 +13,7 @@ import Contact from './Contact';
 import Head from '../assets/Head.jpg';
 import Blake from '../assets/Blake.jpg';
 import Projects from './Projects';
+import About from './About';
 
 function Side(){
     return(
@@ -31,7 +32,9 @@ function Side(){
                                 
                             </li>
                             <li>
-                                <a href ="#about" data-nav-section="about">About</a>
+                                <a href ="#about" data-nav-section="about">About
+                                <div className="test"></div>
+                                </a>
                             </li>
                             <li>
                                 <a href ="#skills" data-nav-section="skills">Skills</a>
@@ -88,6 +91,7 @@ function Side(){
                                 <Home />  
                             </section>
                             <div className="second-child" id="about" data-section="about">
+                                <About />
                                 <SVG className="trees" src={Trees} />
                             </div>
                             <div className="third-child" id="skills" data-section="skills">
@@ -98,7 +102,7 @@ function Side(){
                             <div className="fourth-child" id="projects" data-section="projects">
                                 <Projects />
                             </div>
-                            <div className="fifth-child" id="contact" data-section="contract">Contact
+                            <div className="fifth-child" id="contact" data-section="contract">
                             <Contact />
                             </div>
                     </StyledContent>
@@ -132,7 +136,7 @@ font-family: 'Work Sans', sans-serif;
 .image{
     background-image: url(${Blake});
     height: 200px;
-    width: 45%;
+    width: 55%;
     padding: 5%;
     display: flex;
     margin: 0 auto;
@@ -152,9 +156,6 @@ font-family: 'Work Sans', sans-serif;
 
 .content-container{
     position: absolute;
-    background-image: url(${Head});
-    background-position: top;
-    background-size: cover;
     width: calc(100% - 300px);
     scroll-behavior: smooth;
     left: initial !important;
@@ -289,7 +290,7 @@ font-family: 'Work Sans', sans-serif;
 .sidebar-container{
     font-family: 'Work Sans', sans-serif;
     color: white;
-    background: #7f7553;
+    background: #373737;
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.65) 2px 2px 6px !important;
     
@@ -355,12 +356,12 @@ font-size: 30px;
     a{
         text-decoration: none;
         color: white;
-        transition: color .5s ease-in;
+        transition: color .4s ease-in, border-bottom .2s ease;
         
 
         &:hover{
-            color: black;
-            text-decoration: underline;
+            color: #4b67ff;
+            border-bottom: 2px solid #4b67ff;
         }
     }
 
@@ -373,9 +374,12 @@ color: black;
 
 .first-child{
     height: 100vh;
+    background-image: url(${Head});
+    background-position: top;
+    background-size: cover;
 }
 .second-child{
-    background: #ffffff;
+    background: #F8F8F1;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
@@ -391,7 +395,7 @@ color: black;
     }
 }
 .third-child{
-    background: #ffffff;
+    background: #F8F8F1;
     height: 100vh;
 
     .skill-title{
@@ -402,7 +406,7 @@ color: black;
     }
 }
 .fourth-child{
-    background: #ffffff;
+    background: #F8F8F1;
     height: 100vh;
     display: flex;
 
@@ -425,7 +429,7 @@ color: black;
     }
 }
 .fifth-child{
-    background: #ffffff;
+    background: #F8F8F1;
     height: 100vh;
 }
 
@@ -436,11 +440,11 @@ color: black;
         display: flex;
         font-size: 15px;
         width: 100%;
-        height: 30px;
+        height: 40px;
         z-index: 1;
         align-items: center;
         justify-content: space-evenly;
-        background: #7f7553;
+        background: #373737;
         margin: 0;
         padding: 0;
         position: sticky;

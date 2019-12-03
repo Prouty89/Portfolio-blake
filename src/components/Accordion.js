@@ -162,7 +162,7 @@ padding-bottom: 20px;
     border-radius: 30px;
     width: 40px;
     border: none;
-    background: #7f7553;
+    background: #373737;
     cursor: pointer;
     height: 55%;
     align-self: flex-end;
