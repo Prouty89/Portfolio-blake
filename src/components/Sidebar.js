@@ -10,7 +10,7 @@ import Trees from '../assets/Trees.svg';
 import Home from './Home';
 import Skill from './Skill';
 import Contact from './Contact';
-import Mountains from '../assets/Mountains.jpg';
+import Head from '../assets/Head.jpg';
 import Blake from '../assets/Blake.jpg';
 import Projects from './Projects';
 
@@ -152,7 +152,7 @@ font-family: 'Work Sans', sans-serif;
 
 .content-container{
     position: absolute;
-    background-image: url(${Mountains});
+    background-image: url(${Head});
     background-position: top;
     background-size: cover;
     width: calc(100% - 300px);
@@ -175,51 +175,91 @@ font-family: 'Work Sans', sans-serif;
 
         @media(max-width:750px){
             width: 100%;
-            height: 90vh;
+            height: 100vh;
+        }
+
+        .img-title{
+            color:white;
+            position: absolute;
+            bottom: 0;
+            left: 25px;
         }
         
 
         .trails-main{
-            
-            flex-direction: column;
-            text-align: left;
-            height: 65%;
-            height: 20rem;
-            width: 100vw;
             display: flex;
-            align-items: flex-start;
-            justify-content: center;
-
+            flex-direction: column;
+            height: 85%;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: inherit;
             @media(max-width:750px){
-                margin-left: 20px;
+                
             }
         }
 
         .trails-text{
             color: #ffffff
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
             font-family: 'Work Sans', sans-serif;
             font-size: 2rem;
             justify-content: center;
-            margin-left: 8%;
+            
+            width: 50%;
+            height: 100px;
             display: flex;
+            background: rgba(0, 0, 0, .4);
+
+            @media(max-width:1700px){
+                margin-left: 0;
+                margin-left: 2%;
+                font-size: 1.5rem;
+                width: 100%;
+                height: 50px;
+                background: none; 
+            }
 
             @media(max-width:1050px){
                 margin-left: 0;
                 margin-left: 8%;
-                font-size: 1.5rem;
+                font-size: 1rem;
+                width: 100%;
+                height: 50px;
+                background: none; 
             }
 
             @media(max-width:750px){
-                margin-left: 0;
+                margin-left: 0%;
                 font-size: 1rem;
             }
+        }
+    }
+
+    .cv-res{
+        height: 150px;
+        display: flex;
+        align-items: flex-end;
+        width: 200px;
+        justify-content: center;
+
+        @media(max-width:1700px){
+            justify-content: center;
+            padding-right: 10px;
+        }
+
+        @media(max-height:600px){
+           
         }
     }
 
     .cvres-btn{
         display: flex;
         font-family: 'Work Sans', sans-serif;
-        background: #76836a;
+        background: #7f7553;
         border: none;
         color: white;
         font-weight: bold;
@@ -228,12 +268,9 @@ font-family: 'Work Sans', sans-serif;
         height: 40px;
         font-size: 22px;
         border-radius: 2px;
-        position: absolute;
-        top: 40%;
         width: 96px;
         justify-content: center;
         align-items: center;
-        left: 13%;
         transition: width .6s;
         cursor: pointer;
 
@@ -244,16 +281,6 @@ font-family: 'Work Sans', sans-serif;
         &:hover{
             width:110px;
         }
-
-        @media(max-width:750px){
-            left: 20px;
-            top: 53%;
-        }
-
-        @media(max-height:600px){
-            left: 20px;
-            top: 5%;
-        }
     }
 
     
@@ -262,7 +289,7 @@ font-family: 'Work Sans', sans-serif;
 .sidebar-container{
     font-family: 'Work Sans', sans-serif;
     color: white;
-    background: #76836a;
+    background: #7f7553;
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.65) 2px 2px 6px !important;
     
@@ -413,7 +440,7 @@ color: black;
         z-index: 1;
         align-items: center;
         justify-content: space-evenly;
-        background: #76836a;
+        background: #7f7553;
         margin: 0;
         padding: 0;
         position: sticky;
