@@ -79,7 +79,7 @@ align-items: center;
     height: 70%;
     justify-content: center;
     display: flex;
-    background: #bccaa9;
+    background: #F8F8D8;
     width: 750px;
     flex-direction: column;
     align-items: center;
@@ -97,6 +97,7 @@ align-items: center;
 
     .field{
         margin-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0 0 8px;
     }
     
     

@@ -26,11 +26,11 @@ function Home(){
                 <animated.div style={{ height }}>{items[index]}</animated.div>
                 </animated.div>
             ))}
+            <div className="cv-res">
+                <button className ="cvres-btn">Resume</button>
+            </div>
         </div>
-        <div className="cv-res">
-           <button className ="cvres-btn">Resume</button>
-        </div>
-        
+        <p className="img-title">Crater Lake 10-07-2017</p> 
     </div>
     )
 }

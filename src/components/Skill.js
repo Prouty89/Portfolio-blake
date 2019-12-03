@@ -36,6 +36,9 @@ display: flex;
 }
 
 .first-skill{
+    height: 48%;
+    align-self: flex-end;
+    padding-bottom: 50px;
     display: flex;
     width: 20%;
     align-items: center;

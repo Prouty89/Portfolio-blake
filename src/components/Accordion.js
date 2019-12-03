@@ -91,6 +91,7 @@ padding-bottom: 20px;
 
 @media(max-width: 1300px){
     height: 75%;
+    align-items: flex-start;
 }
 
 .inds{
@@ -115,15 +116,15 @@ padding-bottom: 20px;
 
     .rows{
         width: 90%;
-        height: 150px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 115px;
 
         @media(max-width:1300px){
             width: 33%;
             display: flex;
-            height: 90%;
+            height: 400px;
             flex-direction: column;
             justify-content: space-around;
     
@@ -134,11 +135,12 @@ padding-bottom: 20px;
 }
 
 .toggle-bar{
-    height: 64%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
 
     @media(max-width:1300px){
         height: 100%;
@@ -146,6 +148,8 @@ padding-bottom: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: end;
+        padding-bottom: 0px;
+        height: 100%;
     }
     
 
@@ -158,8 +162,10 @@ padding-bottom: 20px;
     border-radius: 30px;
     width: 40px;
     border: none;
-    background: #76836a;
+    background: #7f7553;
     cursor: pointer;
+    height: 55%;
+    align-self: flex-end;
 
     &:focus{
       outline: 0;
