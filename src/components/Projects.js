@@ -7,9 +7,6 @@ import {
   MediaOverlay,
 } from 'react-md';
 
-
-import Mountains from '../assets/Mountains.jpg';
-
 // const nature = Mountains({ width: 600, height: 337, section: 'nature' });
 
 const Projects = () => (

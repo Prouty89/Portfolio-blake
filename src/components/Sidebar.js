@@ -10,10 +10,11 @@ import Trees from '../assets/Trees.svg';
 import Home from './Home';
 import Skill from './Skill';
 import Contact from './Contact';
-import Head from '../assets/Head.jpg';
 import Blake from '../assets/Blake.jpg';
 import Projects from './Projects';
 import About from './About';
+import LazyLoad from 'react-lazyload';
+
 
 function Side(){
     return(
@@ -374,9 +375,11 @@ color: black;
 
 .first-child{
     height: 100vh;
-    background-image: url(${Head});
-    background-position: top;
-    background-size: cover;
+    
+    bg-img{
+        height:100%;
+        width: 100%;
+    }
 }
 .second-child{
     background: #F8F8F1;
