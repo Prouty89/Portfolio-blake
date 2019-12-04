@@ -14,8 +14,8 @@ function Home(){
     const trail = useTrail(items.length, {
       config,
       opacity: toggle ? 1 : 0,
-      y: toggle ? 0 : 80,
-      height: toggle ? 60 : 0,
+      y: toggle ? 0 : 90,
+      height: toggle ? 30 : 0,
       from: { opacity: 0, x: 80, height: 10 },
     })
     return(
@@ -26,10 +26,10 @@ function Home(){
                 <img className="bg-img" alt ="bg" src={Head} />
             </StyledImage>
         </LazyLoad>
-        <LazyLoad offset>
+        <LazyLoad offset={100}>
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
-                    <animated.div
+                    <animated.div className="font"
                         key={items[index]}
                         className="trails-text"
                         style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>

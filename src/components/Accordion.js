@@ -1,20 +1,5 @@
 import React from "react";
-import SVG from "react-inlinesvg/lib/index";
 import Collapse from "@kunukn/react-collapse";
-import ReactJs from '../assets/ReactJs.svg';
-import Node from '../assets/Node.svg';
-import SQL from '../assets/SQL.svg';
-import Python from '../assets/Python.svg';
-import Figma from '../assets/Figma.svg';
-import VisualStudio from '../assets/VisualStudio.svg';
-import Git from '../assets/Git.svg';
-import Gatsby from '../assets/Gatsby.svg';
-import GraphQL from '../assets/GraphQL.svg';
-import Jest from '../assets/Jest.svg';
-import Postgresql from '../assets/Postgresql.svg';
-import Sqlite from '../assets/Sqlite.svg';
-import Express from '../assets/Express.svg';
-import Redux from '../assets/Redux.svg';
 import styled from 'styled-components';
 
 
@@ -56,24 +41,25 @@ function Accordion() {
       >
         <div className="accordion-skills">
             <div className="row-one rows">
-                <SVG title = "ReactJS" className="react inds" src= {ReactJs}/>
-                <SVG title = "Redux" className="redux inds" src= {Redux}/>
-                <SVG title = "Jest Testing Framework inds" className="jest inds" src= {Jest}/>
-                <SVG title = "GatsbyJS" className="gatsby inds" src= {Gatsby}/>
-                <SVG title = "GraphQL" className="graphql inds" src= {GraphQL}/>
+                <p  className="react inds">ReactJS</p>
+                <p  className="redux inds">Redux</p>
+                <p  className="jest inds">Jest JavaScript Testing</p>
+                <p  className="gatsby inds">GatsbyJS PWA Generator</p>
+                <p  className="graphql inds">GraphQL Data Query</p>
             </div>
             <div className="row-two rows">
-                <SVG title = "NodeJS" className="node inds" src= {Node}/>
-                <SVG title = "Structured Query Language inds" className="sql" src= {SQL}/>
-                <SVG title = "Sqlite3" className="sqlite inds" src= {Sqlite}/>
-                <SVG title = "PostgreSQL" className="postgres inds" src= {Postgresql}/>
-                <SVG title = "ExpressJS" className="express inds" src= {Express}/>
+                <p className="node inds">NodeJS</p>
+                <p className="node inds">RESTful API protocols</p>
+                <p  className="express inds">Express.js</p>
+                <p  className="sql">Structured Query Langquage</p>
+                <p  className="sqlite inds">SQLite DBMS</p>
+                <p  className="postgres inds">PostgreSQL DMBS</p>
             </div>
             <div className="row-three rows">
-                <SVG title = "Python3" className="python inds" src= {Python}/>
-                <SVG title = "Visual Studio Code" className="vsc inds" src= {VisualStudio}/>
-                <SVG title = "Best Git Practices" className="git inds" src= {Git}/>
-                <SVG title = "Figma Interface Design" className="figma inds" src= {Figma}/>
+                <p  className="python inds">Python3</p>
+                <p  className="vsc inds">Visual Studio Code</p>
+                <p className="git inds">Best Git Practices</p>
+                <p  className="figma inds">Figma Interface Design System</p>
             </div>
         </div>
       </Block>
@@ -88,6 +74,7 @@ const StyledAccordion = styled.div`
 display: flex;
 align-items: flex-end;
 padding-bottom: 20px;
+z-index: 1;
 
 @media(max-width: 1300px){
     height: 75%;
@@ -105,6 +92,11 @@ padding-bottom: 20px;
     padding: 15px;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 1%;
+    margin-right: 1%;
+    background: #F8F8F1;
+    color: #777777;
+    border-radius: 30px;
     justify-content: space-evenly;
 
     @media(max-width:1300px){
@@ -119,7 +111,7 @@ padding-bottom: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 115px;
+        height: 90px;
 
         @media(max-width:1300px){
             width: 33%;
@@ -164,7 +156,8 @@ padding-bottom: 20px;
     border: none;
     background: #373737;
     cursor: pointer;
-    height: 55%;
+    height: 300px;
+    margin-left: 2%;
     align-self: flex-end;
 
     &:focus{
@@ -176,6 +169,8 @@ padding-bottom: 20px;
         height: 30px;
         display: flex;
         text-align:center;
+        align-self: center;
+      margin-bottom: 2%;
     }
 }
    span{

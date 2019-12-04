@@ -5,19 +5,21 @@ import CSS from '../assets/CSS.svg';
 import HTML from '../assets/HTML.svg';
 import Accordion from "./Accordion";
 import styled from 'styled-components';
+import Computer from '../assets/Computer.jpg';
 
 
 function Skill(){
   
     
     return(
-        <StyledSkills className="skills-container">   
+        <StyledSkills className="skills-container">
+            <img className="computer" src = {Computer} alt ="comp-guy"/>   
                 <div className="first-skill">
                     <SVG className="html inds-b" src= {HTML}/>
                     <SVG className="css inds-b" src= {CSS}/>
                     <SVG className="js inds-b" src= {JS}/>
                 </div>
-               <Accordion />
+                    <Accordion />
             </StyledSkills>
     )
 }
@@ -27,6 +29,9 @@ export default Skill;
 const StyledSkills = styled.div`
 height: 90%;
 display: flex;
+flex-direction: column;
+justify-content: flex-end;
+position: relative; 
 
 @media(max-width:1300px){
     display: flex;
@@ -35,15 +40,20 @@ display: flex;
     align-items: center;
 }
 
+.computer{
+    height: 100px;
+    width: 100px;
+}
+
 .first-skill{
-    height: 48%;
-    align-self: flex-end;
+    height: 20%;
+    align-self: center;
     padding-bottom: 50px;
     display: flex;
     width: 20%;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;
+    
 
     @media(max-width:1250px){
         width: 90%;
