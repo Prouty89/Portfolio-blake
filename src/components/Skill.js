@@ -27,7 +27,7 @@ function Skill(){
 export default Skill;
 
 const StyledSkills = styled.div`
-height: 90%;
+height: 70%;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
@@ -38,11 +38,6 @@ position: relative;
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: center;
-}
-
-.computer{
-    height: 100px;
-    width: 100px;
 }
 
 .first-skill{

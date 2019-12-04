@@ -56,7 +56,8 @@ function Accordion() {
                 <p  className="postgres inds">PostgreSQL DMBS</p>
             </div>
             <div className="row-three rows">
-                <p  className="python inds">Python3</p>
+                <p  className="python inds">Python</p>
+                <p  className="vsc inds">Scrum Teamwork</p>
                 <p  className="vsc inds">Visual Studio Code</p>
                 <p className="git inds">Best Git Practices</p>
                 <p  className="figma inds">Figma Interface Design System</p>

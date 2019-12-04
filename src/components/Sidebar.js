@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import Sidebar from 'react-sidebar';
 import styled, {keyframes} from 'styled-components';
 import Github from '../assets/Github.svg';
@@ -8,13 +8,12 @@ import IG from '../assets/IG.svg';
 import SVG from 'react-inlinesvg';
 import Trees from '../assets/Trees.svg';
 import Home from './Home';
-import Skill from './Skill';
-import Contact from './Contact';
 import Blake from '../assets/Blake.jpg';
-import Projects from './Projects';
 import About from './About';
-import Computer from '../assets/Computer.jpg';
 
+const Skill = React.lazy(()=> import('./Skill'))
+const Projects = React.lazy(() => import('./Projects'))
+const Contact = React.lazy(()=> import('./Contact'))
 
 function Side(){
     return(
@@ -95,9 +94,16 @@ function Side(){
                                 <About />
                                 <SVG className="trees" src={Trees} />
                             </div>
+                            <Suspense fallback = {<h1> Loading... </h1>}>
                             <div className="third-child" id="skills" data-section="skills">
-                                <div className="skill-title">My Skill Set</div>
-                                <p className= "skills-par"> This is a Paragraph</p>
+                                <div className="skill-container">
+                                        <h4 className= "skills-head">Designing, testing, and devoloping your next progressive web application.</h4>
+                                    <div className = "skills-text">
+                                        <p className= "good-par">Problem Solving: Puts forth effort into understanding a problem before devising and executing a plan.</p>
+                                        <p className= "good-par">Communication: Conducts self in a patient, understanding manner. Clear, professional oral and written communication are core tenets. </p>
+                                        <p className= "good-par">Organisation: Self-managed, adheres to deadlines, delivers well-structured and thoughtful products.</p>
+                                    </div>
+                                </div>
                                 <Skill />
                             </div>
                             <div className="fourth-child" id="projects" data-section="projects">
@@ -106,6 +112,7 @@ function Side(){
                             <div className="fifth-child" id="contact" data-section="contract">
                             <Contact />
                             </div>
+                            </Suspense>
                     </StyledContent>
                     }
                     >
@@ -393,7 +400,7 @@ color: black;
         padding: 15px;
         animation: 5s ${rock} ease-in-out infinite;
 
-        @media(max-width:750px){
+        @media(max-width:1100px){
             display: none;
         }
     }
@@ -402,11 +409,58 @@ color: black;
     background: #ffffff;
     height: 100vh;
 
+    .skill-container{
+        height: 30%;
+        justify-content: center;
+        display: flex;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+
+        .skills-text{
+            border-radius: 8px;
+            width: 90%;
+            
+            background: #F8F8F1;
+            padding: 1%;
+            box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
+
+            @media(max-width: 1300px){
+
+            }
+        }
+
+        .skills-head{
+            font-size: 1.3rem;
+        }
+
+        p{
+            font-size: 1.3rem;
+            text-align: left;
+            margin-block-start: 10px;
+            margin-block-end: 0;
+
+            @media(max-width: 1100px){
+                font-size: 1rem;
+            }
+        }
+
+        @media(max-width: 1100px){
+        width: 90%;
+        margin: 5%;
+        height: 50%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
     .computer{
         width: 315px;
         height: 240px;
         position: absolute;
-        bottom: 7%;
+        bottom: 10%;
         left: 40%;
         z-index: 0;
 
