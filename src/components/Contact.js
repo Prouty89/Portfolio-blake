@@ -86,12 +86,12 @@ align-items: center;
     height: 70%;
     justify-content: center;
     display: flex;
-    background: #ffffff;
+    background: #F8F8F1;
     width: 750px;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
 
     @media(max-width: 1100px){
     height: 50%;
@@ -116,7 +116,7 @@ align-items: center;
 
     .submit-btn{
         font-family: 'Work Sans', sans-serif;
-        background: #F8F8F1;
+        background: #ffffff;
         border: none;
         color: #777777;
         font-weight: normal;
@@ -149,7 +149,7 @@ align-items: center;
         font-family: 'Work Sans', sans-serif;
         width: 550px;
         font-size: 1.2rem;
-        background: #F8F8F1;
+        background: #ffffff;
         height: 40px;
         border: none;
         border-radius: 4px;

@@ -13,7 +13,7 @@ import Contact from './Contact';
 import Blake from '../assets/Blake.jpg';
 import Projects from './Projects';
 import About from './About';
-import LazyLoad from 'react-lazyload';
+import Computer from '../assets/Computer.jpg';
 
 
 function Side(){
@@ -205,33 +205,34 @@ font-family: 'Work Sans', sans-serif;
             color: #ffffff
             display: flex;
             align-items: center;
-            justify-content: center;
-           
             font-family: 'Work Sans', sans-serif;
-            font-size: 2rem;
+            font-size: 1.5rem;
             justify-content: center;
+            width: 40%;
+            height: 80px;
+            border-right: 8px solid black;
+            border-left: 8px solid black;
             
-            width: 50%;
-            height: 100px;
             display: flex;
-            background: rgba(0, 0, 0, .4);
+            background: rgba(0, 0, 0, .7);
 
             @media(max-width:1700px){
                 margin-left: 0;
                 margin-left: 2%;
+                
                 font-size: 1.5rem;
-                width: 100%;
+                width: 70%;
                 height: 50px;
-                background: none; 
+                 
             }
 
             @media(max-width:1050px){
                 margin-left: 0;
                 margin-left: 8%;
                 font-size: 1rem;
-                width: 100%;
+                width: 90%;
                 height: 50px;
-                background: none; 
+               
             }
 
             @media(max-width:750px){
@@ -261,16 +262,16 @@ font-family: 'Work Sans', sans-serif;
     .cvres-btn{
         display: flex;
         font-family: 'Work Sans', sans-serif;
-        background: #7f7553;
-        border: none;
+        background: #373737;
+        
         color: white;
         font-weight: bold;
         box-shadow: 2px 2px 6px black;
         font-family: 'Work Sans', sans-serif;
-        height: 40px;
+        height: 50px;
         font-size: 22px;
         border-radius: 2px;
-        width: 96px;
+        width: 146px;
         justify-content: center;
         align-items: center;
         transition: width .6s;
@@ -281,7 +282,7 @@ font-family: 'Work Sans', sans-serif;
           }
 
         &:hover{
-            width:110px;
+            width:166px;
         }
     }
 
@@ -398,8 +399,21 @@ color: black;
     }
 }
 .third-child{
-    background: #F8F8F1;
+    background: #ffffff;
     height: 100vh;
+
+    .computer{
+        width: 315px;
+        height: 240px;
+        position: absolute;
+        bottom: 7%;
+        left: 40%;
+        z-index: 0;
+
+        @media(max-width: 1300px){
+            display: none;
+        }
+    }
 
     .skill-title{
         padding-top: 35px;
@@ -411,7 +425,6 @@ color: black;
 .fourth-child{
     background: #F8F8F1;
     height: 100vh;
-    display: flex;
 
     .card{
         margin: 15px;
@@ -432,7 +445,7 @@ color: black;
     }
 }
 .fifth-child{
-    background: #F8F8F1;
+    background: #ffffff;
     height: 100vh;
 }
 
