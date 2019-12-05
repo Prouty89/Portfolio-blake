@@ -25,8 +25,9 @@ function Home(){
     <div className="home-container">
         <p className="img-title">Crater Lake 10-07-2017</p>
             <StyledImage className="list">
-                <SimpleImg className="bg-img" alt ="bg" height={1000} animationDuration={1.5} disableAnimationAferCache={true} src={Head} />
+                <SimpleImg className="bg-img" placeholder={'black'} alt ="bg" height={1000}  animationDuration={1.5} disableAnimationAferCache={true} src={Head} />
             </StyledImage>
+            <p className="load">please wait...</p>
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
                     <animated.div className="font"
@@ -52,6 +53,7 @@ const StyledImage = styled.div`
     .bg-img{
         height: -webkit-fill-available;
         position: fixed !important;
+        width: 117%;
         top: 0;
         z-index: -1;
         display: flex;
