@@ -79,7 +79,7 @@ align-items: center;
 .form-heading{
     font-weight: bold;
     font-size: 1.2rem;
-    color: #777777;
+    color: black;
 }
 
 .form{

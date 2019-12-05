@@ -2,7 +2,9 @@ import React, {useState} from "react";
 import { useTrail, animated } from 'react-spring';
 import Head from '../assets/Head.jpg';
 import styled from 'styled-components';
-import LazyLoad from 'react-lazyload';
+import { SimpleImg } from 'react-simple-img';
+
+
 
 
 const items = ["Hello! I'm Blake, a full stack web developer", 'specialized in HTML, CSS, and Javascript.', 'Take a look at my work and lets connect!']
@@ -17,16 +19,14 @@ function Home(){
       y: toggle ? 0 : 90,
       height: toggle ? 30 : 0,
       from: { opacity: 0, x: 80, height: 10 },
+      delay: 1500,
     })
     return(
     <div className="home-container">
-        <LazyLoad>
         <p className="img-title">Crater Lake 10-07-2017</p>
             <StyledImage className="list">
-                <img className="bg-img" alt ="bg" src={Head} />
+                <SimpleImg className="bg-img" alt ="bg" height={1000} animationDuration={1.5} disableAnimationAferCache={true} src={Head} />
             </StyledImage>
-        </LazyLoad>
-        <LazyLoad offset={100}>
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
                     <animated.div className="font"
@@ -40,7 +40,7 @@ function Home(){
                     <button className ="cvres-btn">Resume</button>
                 </div>
             </div>
-        </LazyLoad> 
+      
     </div>
     )
 }
@@ -51,7 +51,7 @@ export default Home;
 const StyledImage = styled.div`
     .bg-img{
         height: -webkit-fill-available;
-        position: fixed;
+        position: fixed !important;
         top: 0;
         z-index: -1;
         display: flex;
