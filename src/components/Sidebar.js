@@ -321,6 +321,7 @@ font-family: 'Work Sans', sans-serif;
 .name-title{
 font-family: 'Work Sans', sans-serif;
 font-size: 30px;
+text-align: center;
 }
 
 .social-tray{
