@@ -138,6 +138,11 @@ const rock = keyframes`
   }
 `
 
+const fadeIn = keyframes`
+from { opacity: 0; }
+to   { opacity: 1; }
+`
+
 const StyledSB = styled.div`
 font-family: 'Work Sans', sans-serif;
 
@@ -255,6 +260,11 @@ font-family: 'Work Sans', sans-serif;
         align-items: flex-end;
         width: 200px;
         justify-content: center;
+        margin-top: 25px;
+        font-size: 21px;
+        text-align: center;
+        animation: 4s ${fadeIn};
+        
 
         @media(max-width:1700px){
             justify-content: center;
