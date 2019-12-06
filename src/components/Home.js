@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { useTrail, animated } from 'react-spring';
-import Head from '../assets/Head.jpg';
+import Mountains from '../assets/Mountains.jpg';
 import styled from 'styled-components';
 import { SimpleImg } from 'react-simple-img';
 
@@ -19,15 +19,14 @@ function Home(){
       y: toggle ? 0 : 90,
       height: toggle ? 30 : 0,
       from: { opacity: 0, x: 80, height: 10 },
-      delay: 1500,
+      delay: 500,
     })
     return(
     <div className="home-container">
         <p className="img-title">Crater Lake 10-07-2017</p>
             <StyledImage className="list">
-                <SimpleImg className="bg-img" placeholder={'black'} alt ="bg" height={1000}  animationDuration={1.5} disableAnimationAferCache={true} src={Head} />
+                <SimpleImg className="bg-img" placeholder={'black'} alt ="bg" height={1000}  animationDuration={.5} disableAnimationAferCache={true} src={Mountains} />
             </StyledImage>
-            <p className="load">please wait...</p>
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
                     <animated.div className="font"
@@ -51,9 +50,9 @@ export default Home;
 
 const StyledImage = styled.div`
     .bg-img{
-        height: -webkit-fill-available;
-        position: fixed !important;
-        width: 117%;
+        width: -webkit-fill-available;
+        position: absolute !important;
+        align-items: normal !important;
         top: 0;
         z-index: -1;
         display: flex;
