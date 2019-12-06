@@ -23,9 +23,8 @@ function Home(){
     })
     return(
     <div className="home-container">
-        <p className="img-title">Crater Lake 10-07-2017</p>
             <StyledImage className="list">
-                <SimpleImg className="bg-img" placeholder={'black'} alt ="bg" height={1000}  animationDuration={.5} disableAnimationAferCache={true} src={Mountains} />
+                <SimpleImg className="bg-img" placeholder={'black'} alt ="bg" height={1000}  animationDuration={.4} disableAnimationAferCache={true} src={Mountains} />
             </StyledImage>
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
