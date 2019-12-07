@@ -19,12 +19,12 @@ function Home(){
       y: toggle ? 0 : 90,
       height: toggle ? 30 : 0,
       from: { opacity: 0, x: 80, height: 10 },
-      delay: 500,
+      delay: 1500,
     })
     return(
     <div className="home-container">
             <StyledImage className="list">
-                <SimpleImg className="bg-img" placeholder={'black'} alt ="bg" height={1000}  animationDuration={.4} disableAnimationAferCache={true} src={Mountains} />
+                <SimpleImg className="bg-img" alt ="bg" animationDuration={1} src={Mountains} />
             </StyledImage>
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
@@ -49,10 +49,9 @@ export default Home;
 
 const StyledImage = styled.div`
     .bg-img{
-        width: -webkit-fill-available;
-        position: absolute !important;
-        align-items: normal !important;
+        position: fixed !important;
         top: 0;
+        height: auto !important;
         z-index: -1;
         display: flex;
     }

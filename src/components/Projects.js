@@ -1,11 +1,11 @@
 import React from 'react';
-import {
-  Card,
-  CardTitle,
-  CardText,
-  Media,
-  MediaOverlay,
-} from 'react-md';
+// import {
+//   Card,
+//   CardTitle,
+//   CardText,
+//   Media,
+//   MediaOverlay,
+// } from 'react-md';
 
 // const nature = Mountains({ width: 600, height: 337, section: 'nature' });
 

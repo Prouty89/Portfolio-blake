@@ -139,11 +139,12 @@ const rock = keyframes`
 `
 
 const fadeIn = keyframes`
-from { opacity: 0; }
+from { opacity: .4; }
 to   { opacity: 1; }
 `
 
 const StyledSB = styled.div`
+animation: 2s ${fadeIn};
 font-family: 'Work Sans', sans-serif;
 
 .image{
@@ -203,11 +204,11 @@ font-family: 'Work Sans', sans-serif;
         .trails-main{
             display: flex;
             flex-direction: column;
-            height: 85%;
+            height: 65%;
             width: 100%;
             align-items: center;
             display: flex;
-            justify-content: inherit;
+            justify-content: flex-end;
             @media(max-width:750px){
                 
             }
