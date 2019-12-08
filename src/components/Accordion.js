@@ -1,6 +1,9 @@
 import React from "react";
 import Collapse from "@kunukn/react-collapse";
 import styled from 'styled-components';
+import JS from '../assets/JS.svg';
+import CSS from '../assets/CSS.svg';
+import HTML from '../assets/HTML.svg';
 
 
 const initialState = [false];
@@ -33,6 +36,7 @@ function Accordion() {
 
   return (
     <StyledAccordion className="accordion">
+      
 
       <Block className="block"
         title="More!"
@@ -74,12 +78,13 @@ export default Accordion;
 const StyledAccordion = styled.div`
 display: flex;
 align-items: flex-end;
+width: 100%;
+height: 30%;
 padding-bottom: 20px;
 z-index: 1;
 
-@media(max-width: 1300px){
-    height: 75%;
-    align-items: flex-start;
+@media(max-width: 1350px){
+    display: none;
 }
 
 .inds{
@@ -90,14 +95,17 @@ z-index: 1;
 
 .accordion-skills{
     display: flex;
-    padding: 15px;
+    height: 93% !important;
+    margin-top: 7px;
+    width: 93%;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 1%;
     margin-right: 1%;
-    background: #F8F8F1;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
     color: #777777;
-    border-radius: 30px;
+    border-radius: 8px;
     justify-content: space-evenly;
 
     @media(max-width:1300px){
@@ -128,7 +136,8 @@ z-index: 1;
 }
 
 .toggle-bar{
-    height: 80%;
+    height: 61%;
+    margin-left: 4%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -151,14 +160,12 @@ z-index: 1;
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: 90%;
     border-radius: 30px;
     width: 40px;
     border: none;
     background: #373737;
     cursor: pointer;
-    height: 300px;
-    margin-left: 2%;
+    height: 292px;
     align-self: flex-end;
 
     &:focus{

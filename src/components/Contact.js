@@ -2,11 +2,14 @@ import React from 'react'
 import * as Yup from 'yup';
 import {Field, Form, withFormik} from "formik"
 import axios from 'axios';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import Trees from '../assets/Trees.svg';
+import SVG from 'react-inlinesvg';
 
 function ContactForm() {
     
     return (
+        <>
         <StyledForm className="form-container">
             <p className= "form-heading">I would love to hear from you!</p>
             <Form className="form">
@@ -29,7 +32,9 @@ function ContactForm() {
                 </button>
             </Form>
 
+        <SVG className="trees" src={Trees} />
         </StyledForm>
+        </>
     )
 }
 
@@ -68,10 +73,22 @@ const FormikContactForm = withFormik({
 
 export default FormikContactForm;
 
+const rock = keyframes`
+0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+`
+
 const StyledForm = styled.div`
 display: flex;
 flex-direction: column;
-height: 90%;
+height: 100%;
 font-size: 1.5rem;
 justify-content: center;
 align-items: center;
@@ -81,9 +98,18 @@ align-items: center;
     font-size: 1.2rem;
     color: black;
 }
+.trees{
+    padding: 15px;
+    animation: 5s ${rock} ease-in-out infinite;
+    align-self: flex-end;
+
+    @media(max-width:1100px){
+        display: none;
+    }
+}
 
 .form{
-    height: 70%;
+    height: 60%;
     justify-content: center;
     display: flex;
     background: #F8F8F1;
@@ -182,5 +208,6 @@ align-items: center;
         }
 
     }
+
 }
 `

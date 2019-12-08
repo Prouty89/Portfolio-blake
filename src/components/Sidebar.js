@@ -6,10 +6,13 @@ import Tweet from '../assets/Tweet.svg';
 import Linkd from '../assets/Linkd.svg';
 import IG from '../assets/IG.svg';
 import SVG from 'react-inlinesvg';
-import Trees from '../assets/Trees.svg';
+
 import Home from './Home';
 import Blake from '../assets/Blake.jpg';
-import About from './About';
+import Accordion from './Accordion';
+import JS from '../assets/JS.svg';
+import CSS from '../assets/CSS.svg';
+import HTML from '../assets/HTML.svg';
 
 const Skill = React.lazy(()=> import('./Skill'))
 const Projects = React.lazy(() => import('./Projects'))
@@ -32,12 +35,7 @@ function Side(){
                                 
                             </li>
                             <li>
-                                <a href ="#about" data-nav-section="about">About
-                                <div className="test"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href ="#skills" data-nav-section="skills">Skills</a>
+                                <a href ="#skills" data-nav-section="skills">About Me</a>
                             </li>
                             <li>
                                 <a href ="#projects" data-nav-section="projects">Projects</a>
@@ -90,21 +88,15 @@ function Side(){
                             <section className="first-child" id="home" data-section="home">
                                 <Home />  
                             </section>
-                            <div className="second-child" id="about" data-section="about">
-                                <About />
-                                <SVG className="trees" src={Trees} />
-                            </div>
                             <Suspense fallback = {<h1> Loading... </h1>}>
                             <div className="third-child" id="skills" data-section="skills">
-                                <div className="skill-container">
-                                        <h4 className= "skills-head">Designing, testing, and devoloping your next progressive web application.</h4>
-                                    <div className = "skills-text">
-                                        <p className= "good-par">Problem Solving: Puts forth effort into understanding a problem before devising and executing a plan.</p>
-                                        <p className= "good-par">Communication: Conducts self in a patient, understanding manner. Clear, professional oral and written communication are core tenets. </p>
-                                        <p className= "good-par">Organisation: Self-managed, adheres to deadlines, delivers well-structured and thoughtful products.</p>
+                                    <Skill />
+                                    <div className="base-skills">
+                                        <SVG className="html inds-b" src= {HTML}/>
+                                        <SVG className="css inds-b" src= {CSS}/>
+                                        <SVG className="js inds-b" src= {JS}/>
                                     </div>
-                                </div>
-                                <Skill />
+                                    <Accordion />
                             </div>
                             <div className="fourth-child" id="projects" data-section="projects">
                                 <Projects />
@@ -126,17 +118,6 @@ function Side(){
 export default Side;
 
 
-const rock = keyframes`
-0% {
-    transform: rotate(-2deg);
-  }
-  50% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(-2deg);
-  }
-`
 
 const fadeIn = keyframes`
 from { opacity: .4; }
@@ -407,77 +388,20 @@ color: black;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-
-    .trees{
-        padding: 15px;
-        animation: 5s ${rock} ease-in-out infinite;
-
-        @media(max-width:1100px){
-            display: none;
-        }
-    }
 }
 .third-child{
-    background: #ffffff;
+    background: #F8F8F1;
     height: 100vh;
 
-    .skill-container{
-        height: 30%;
-        justify-content: center;
+    .base-skills{
+        height: 20%
         display: flex;
-        background: #ffffff;
-        flex-direction: column;
-        align-items: center;
-
-        .skills-text{
-            border-radius: 8px;
-            width: 90%;
-            
-            background: #F8F8F1;
-            padding: 1%;
-            box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
-
-            @media(max-width: 1300px){
-
-            }
-        }
-
-        .skills-head{
-            font-size: 1.3rem;
-        }
-
-        p{
-            font-size: 1.3rem;
-            text-align: left;
-            margin-block-start: 10px;
-            margin-block-end: 0;
-
-            @media(max-width: 1100px){
-                font-size: 1rem;
-            }
-        }
-
-        @media(max-width: 1100px){
-        width: 90%;
-        margin: 5%;
-        height: 50%;
         justify-content: center;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        }
-    }
+        margin-top: 1%;
 
-    .computer{
-        width: 315px;
-        height: 240px;
-        position: absolute;
-        bottom: 10%;
-        left: 40%;
-        z-index: 0;
-
-        @media(max-width: 1300px){
-            display: none;
+        @media(max-width: 1200px){
+            display:none;
         }
     }
 
@@ -511,7 +435,7 @@ color: black;
     }
 }
 .fifth-child{
-    background: #ffffff;
+    background: #F8F8F1;
     height: 100vh;
 }
 
