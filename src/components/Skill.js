@@ -70,6 +70,7 @@ flex-direction: column;
     @media(max-width: 1350px){
         height: 33%;
         width: 90%;
+        font-size: .7rem;
         padding: 1%;
     }
 }
@@ -88,6 +89,7 @@ flex-direction: column;
     @media(max-width: 1350px){
         height: 32%;
         width: 90%;
+        font-size: .7rem;
         padding: 1%;
     }
 }
@@ -109,6 +111,10 @@ flex-direction: column;
         padding: 2%;
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
+
+        @media(max-width: 1350px){
+            font-size: .7rem;
+        }
     }
 }
 `

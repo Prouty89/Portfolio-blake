@@ -1,9 +1,6 @@
 import React from "react";
 import Collapse from "@kunukn/react-collapse";
 import styled from 'styled-components';
-import JS from '../assets/JS.svg';
-import CSS from '../assets/CSS.svg';
-import HTML from '../assets/HTML.svg';
 
 
 const initialState = [false];

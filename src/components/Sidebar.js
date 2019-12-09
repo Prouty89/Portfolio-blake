@@ -202,15 +202,15 @@ font-family: 'Work Sans', sans-serif;
             justify-content: center;
             width: 40%;
             height: 80px;
-            border-right: 8px solid black;
-            border-left: 8px solid black;
+            border-right: 4px solid black;
+            border-left: 4px solid black;
             
             display: flex;
             background: rgba(0, 0, 0, .7);
 
             @media(max-width:1700px){
                 margin-left: 0;
-                margin-left: 2%;
+                margin-left: 0;
                 
                 font-size: 1.5rem;
                 width: 70%;
@@ -220,7 +220,7 @@ font-family: 'Work Sans', sans-serif;
 
             @media(max-width:1050px){
                 margin-left: 0;
-                margin-left: 8%;
+                margin-left: 0;
                 font-size: 1rem;
                 width: 90%;
                 height: 50px;
@@ -374,11 +374,6 @@ color: black;
 
 .first-child{
     height: 100vh;
-    
-    bg-img{
-        height:100%;
-        width: 100%;
-    }
 }
 .second-child{
     background: #F8F8F1;
