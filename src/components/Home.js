@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useTrail, animated } from 'react-spring';
 import Mountains from '../assets/Mountains.jpg';
 import styled from 'styled-components';
-import { SimpleImg } from 'react-simple-img';
+
 
 
 
@@ -23,9 +23,7 @@ function Home(){
     })
     return(
     <div className="home-container">
-            {/* <StyledImage className="list">
-                <SimpleImg className="bg-img" alt ="bg" animationDuration={1} src={Mountains} />
-            </StyledImage> */}
+                <StyledImage className="bg-img" alt ="bg" src={Mountains} />
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
                     <animated.div className="font"
@@ -47,13 +45,14 @@ function Home(){
 export default Home;
 
 
-const StyledImage = styled.div`
-    .bg-img{
-        position: fixed !important;
-        top: 0;
-        height: auto !important;
+const StyledImage = styled.img`
+        width: 100%;
+        height: 100vh;
+        position: absolute;
         z-index: -1;
-        display: flex;
-    }
+
+        @media(max-width: 1100px){
+            width: 200%;
+        }
 `
 

@@ -6,7 +6,7 @@ import Tweet from '../assets/Tweet.svg';
 import Linkd from '../assets/Linkd.svg';
 import IG from '../assets/IG.svg';
 import SVG from 'react-inlinesvg';
-import Mountains from '../assets/Mountains.jpg';
+
 import Home from './Home';
 import Blake from '../assets/Blake.jpg';
 import Accordion from './Accordion';
@@ -89,11 +89,9 @@ function Side(){
                             <div className="third-child" id="skills" data-section="skills">
                                     <Skill />
                                     <div className="base-skills">
-                                        <div className ="svgs">
-                                            <SVG className="html inds-b" src= {HTML}/>
-                                            <SVG className="css inds-b" src= {CSS}/>
-                                            <SVG className="js inds-b" src= {JS}/>
-                                        </div>
+                                        <SVG className="html inds-b" src= {HTML}/>
+                                        <SVG className="css inds-b" src= {CSS}/>
+                                        <SVG className="js inds-b" src= {JS}/>
                                     </div>
                                     <Accordion />
                             </div>
@@ -118,13 +116,14 @@ export default Side;
 
 
 
+
 const fadeIn = keyframes`
 from { opacity: .4; }
 to   { opacity: 1; }
 `
 
 const StyledSB = styled.div`
-animation: 1.5s ${fadeIn};
+animation: 2s ${fadeIn};
 font-family: 'Work Sans', sans-serif;
 
 .image{
@@ -244,7 +243,7 @@ font-family: 'Work Sans', sans-serif;
         margin-top: 25px;
         font-size: 21px;
         text-align: center;
-    
+        animation: 3s ${fadeIn};
         
 
         @media(max-width:1700px){
@@ -375,8 +374,11 @@ color: black;
 
 .first-child{
     height: 100vh;
-    background-image: url(${Mountains});
-    background-size: cover;
+    
+    bg-img{
+        height:100%;
+        width: 100%;
+    }
 }
 .second-child{
     background: #F8F8F1;
@@ -389,11 +391,6 @@ color: black;
     background: #F8F8F1;
     height: 100vh;
 
-    @media(max-width: 1200px){
-        display: flex;
-        align-items: center;
-    }
-
     .base-skills{
         height: 20%
         display: flex;
@@ -401,7 +398,7 @@ color: black;
         align-items: center;
         margin-top: 1%;
 
-        @media(max-width: 1200px){
+        @media(max-width: 1350px){
             display:none;
         }
     }

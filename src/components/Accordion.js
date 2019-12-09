@@ -69,7 +69,7 @@ function Accordion() {
             </div>
         </div>
       </Block>
-    <div className="baseskill-text">I have a firm grasp on the core of Javascript including ES6 features. Understands async code and event looping. Utilizes developer tools to comfortably manipulate the DOM, and the network panel to debug requests. Has built several UIs, widgets, and game applications using the ReactJS framework. For backend applications I have used NodeJS to develop server-side and networking applications.</div>
+    <div className="baseskill-text">I have a firm grasp on the core of Javascript including ES6 features. Understands async code and event looping. Utilizes developer tools to comfortably manipulate the DOM, and the network panel to debug requests. Has built several UIs, widgets, and game applications using the ReactJS framework. For backend applications I use NodeJS to develop server-side and networking applications.</div>
     </StyledAccordion>
     </>
   );
@@ -141,16 +141,15 @@ z-index: 1;
 
 .baseskill-text{
   position: absolute;
-  bottom: 41%;
-  left: 17%;
+  bottom: 48%;
+  left: 16%;
   display: flex;
   align-items: center;
-  font-size: 1.3rem;
   text-align: justify;
-  width: 64%;
+  width: 66%;
   background: #ffffff;
   padding: 1%;
-  height: 43%;
+  height: 27%;
   color: #777777;
   border-radius: 8px;
   z-index: -1;

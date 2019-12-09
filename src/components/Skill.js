@@ -16,8 +16,7 @@ function Skill(){
                         <p className= "good-par">Organisation: Self-managed, adheres to deadlines, delivers well-structured and thoughtful products.</p>
                     </div>
                 </div>
-                <StyledAbout className="about-container">
-                    <div className="about-content">
+                <div className="about-container">
                         <div className="about-text">
                             <p className="locate">Location: Sioux Falls, SD.</p>
                             <p className="relocate">Relocation: Yes, please!</p> 
@@ -27,8 +26,13 @@ function Skill(){
                             <p className="location">Interests: Human connection, teamwork, life-long learning, everything outdoors!</p> 
                             <p className="employment">Seeking: Frontend, Backend, or Full-Stack software engineering.</p>
                         </div>  
+                </div>
+                <div className="base-container">
+                    <div className="base-text">
+                    <div className="baseskill-text">I have a firm grasp on the core of Javascript including ES6 features. Understands async code and event looping. Utilizes developer tools to comfortably manipulate the DOM, and the network panel to debug requests. Has built several UIs, widgets, and game applications using the ReactJS framework. For backend applications I use NodeJS to develop server-side and networking applications.
                     </div>
-                </StyledAbout>
+                    </div>  
+                </div>
         </StyledSkills>
     )
 }
@@ -38,152 +42,73 @@ export default Skill;
 const StyledSkills = styled.div`
 height: 50%;
 display: flex;
+align-items: center;
 flex-direction: column;
-justify-content: flex-end;
-position: relative; 
 
-    @media(max-width: 1300px){
-        justify-content: center;
-        display: flex;
-    }
-
-.first-skill{
-    height: 20%;
-    padding-bottom: 50px;
+@media(max-width: 1350px){
+    height: 100%;
     display: flex;
-    width: 20%;
-    align-items: center;
-    justify-content: space-around;
-    width: 315px;
-    height: 240px;
-    position: absolute;
-    bottom: 10%;
-    left: 40%;
-    z-index: 0;
-
-    @media(max-width: 1300px){
-        display: none;
-    }
-    
-
-    .inds-b{
-        
-        @media(max-width: 750px){
-            height: 60%;
-        }
-    }
+    justify-content: center;
 }
+
+.skills-head{
+    text-align: center;
+}
+
 
 .skill-container{
-    height: 100%;
-    justify-content: center;
-    display: flex;
-    background: #F8F8F1;
-    flex-direction: column;
-    align-items: center;
+    height: 50%;
+    width: 70%
 
     .skills-text{
-        border-radius: 8px;
-        width: 65%;
-        color: #777777;
         background: #ffffff;
         padding: 1%;
-        box-shadow: rgba(0,0,0,0.15) 0 0 4px;
-
-        @media(max-width: 1300px){
-
-        }
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
+        color: #777777;
     }
-
-    .skills-head{
-        font-size: 1.3rem;
-        text-align: center;
-        margin-block-end: 0px;
-        margin-block-start: 0px;
-        margin-bottom: 2%;
-    }
-
-    p{
-        font-size: 1.3rem;
-        text-align: left;
-        margin-block-start: 10px;
-        margin-block-end: 0;
-
-        @media(max-width: 1100px){
-            font-size: 1rem;
-        }
-    }
-
-    @media(max-width: 1100px){
-    width: 90%;
-    align-self: center;
-    height: 50%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media(max-width: 1350px){
+        height: 33%;
+        width: 90%;
+        padding: 1%;
     }
 }
 
-}
-`
-
-const StyledAbout = styled.div`
+.about-container{
     height: 50%;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    background: #F8F8F1;
-    flex-direction: column;
-    align-items: center;
+    width: 70%;
 
     .about-text{
-        border-radius: 8px;
-        width: 65%;
-        height: 85%;
-        color: #777777;
         background: #ffffff;
+        color: #777777;
         padding: 1%;
-        margin: auto;
-        box-shadow: rgba(0,0,0,0.15) 0 0 4px;
-}
-
-
-
-        @media(max-width: 1300px){
-
-        }
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
     }
-
-    .about-content{
-        width: 100%;
-        display: flex;
-    }
-
-    .about-head{
-        font-size: 1.3rem;
-    }
-
-    p{
-        font-size: 1.3rem;
-        text-align: left;
-        margin-block-start: 10px;
-        margin-block-end: 0;
-
-        @media(max-width: 1100px){
-            font-size: 1rem;
-        }
-    }
-
-    @media(max-width: 1100px){
-    width: 90%;
-    margin: 5%;
-    height: 50%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media(max-width: 1350px){
+        height: 32%;
+        width: 90%;
+        padding: 1%;
     }
 }
-    
+
+
+.base-container{
+    display: none;
+
+    @media(max-width: 1350px){
+        display: inherit;
+        height: auto;
+        width: 90%;
+        padding: 1%;
+    }
+
+    .base-text{
+        background: #ffffff;
+        color: #777777;
+        padding: 2%;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
+    }
+}
 `
