@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useTrail, animated } from 'react-spring';
 import Mountains from '../assets/Mountains.jpg';
 import styled from 'styled-components';
-
+import { SimpleImg } from 'react-simple-img';
 
 
 
@@ -19,11 +19,13 @@ function Home(){
       y: toggle ? 0 : 90,
       height: toggle ? 30 : 0,
       from: { opacity: 0, x: 80, height: 10 },
-      delay: 1500,
+      delay: 2000,
     })
     return(
     <div className="home-container">
-                <StyledImage className="bg-img" alt ="bg" src={Mountains} />
+            <StyledImage className="list">
+                <SimpleImg className="bg-img" alt ="bg" animationDuration={1} src={Mountains} />
+            </StyledImage>
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
                     <animated.div className="font"
@@ -45,14 +47,22 @@ function Home(){
 export default Home;
 
 
-const StyledImage = styled.img`
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        z-index: -1;
+const StyledImage = styled.div`
 
-        @media(max-width: 1100px){
-            width: 200%;
-        }
+.bg-img{
+    display: flex;
+    justify-content: end !important;
+    width: 100% !important;
+    position: fixed !important;
+    z-index: -1;
+
+    @media(max-width: 1350px){
+    width: 200% !important;
+    }
+
+    img{
+        height: 30% !important;
+    }
+}
 `
 
