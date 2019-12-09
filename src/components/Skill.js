@@ -90,7 +90,7 @@ flex-direction: column;
         height: 32%;
         width: 90%;
         font-size: .7rem;
-        padding: 1%;
+        
     }
 }
 
@@ -102,7 +102,7 @@ flex-direction: column;
         display: inherit;
         height: auto;
         width: 90%;
-        padding: 1%;
+        
     }
 
     .base-text{
