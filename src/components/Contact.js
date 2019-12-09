@@ -11,7 +11,7 @@ function ContactForm() {
     return (
         <>
         <StyledForm className="form-container">
-            <p className= "form-heading">I would love to hear from you!</p>
+            <p className= "form-heading">Contact me directly with your opportunity.</p>
             <Form className="form">
                 <Field name={"name"} placeholder={"Name*"} type={"text"} className="name-field field"/>
 

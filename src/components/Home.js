@@ -23,9 +23,9 @@ function Home(){
     })
     return(
     <div className="home-container">
-            <StyledImage className="list">
+            {/* <StyledImage className="list">
                 <SimpleImg className="bg-img" alt ="bg" animationDuration={1} src={Mountains} />
-            </StyledImage>
+            </StyledImage> */}
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
                     <animated.div className="font"

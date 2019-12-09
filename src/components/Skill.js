@@ -29,7 +29,6 @@ function Skill(){
                         </div>  
                     </div>
                 </StyledAbout>
-                
         </StyledSkills>
     )
 }
@@ -43,12 +42,10 @@ flex-direction: column;
 justify-content: flex-end;
 position: relative; 
 
-@media(max-width:1300px){
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: center;
-}
+    @media(max-width: 1300px){
+        justify-content: center;
+        display: flex;
+    }
 
 .first-skill{
     height: 20%;
@@ -87,12 +84,11 @@ position: relative;
 
     .skills-text{
         border-radius: 8px;
-        width: 90%;
+        width: 65%;
         color: #777777;
-        
         background: #ffffff;
         padding: 1%;
-        box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
+        box-shadow: rgba(0,0,0,0.15) 0 0 4px;
 
         @media(max-width: 1300px){
 
@@ -101,6 +97,10 @@ position: relative;
 
     .skills-head{
         font-size: 1.3rem;
+        text-align: center;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin-bottom: 2%;
     }
 
     p{
@@ -116,7 +116,7 @@ position: relative;
 
     @media(max-width: 1100px){
     width: 90%;
-    margin: 5%;
+    align-self: center;
     height: 50%;
     justify-content: center;
     display: flex;
@@ -139,13 +139,16 @@ const StyledAbout = styled.div`
 
     .about-text{
         border-radius: 8px;
-        width: 90%;
+        width: 65%;
+        height: 85%;
         color: #777777;
-        
         background: #ffffff;
         padding: 1%;
         margin: auto;
-        box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
+        box-shadow: rgba(0,0,0,0.15) 0 0 4px;
+}
+
+
 
         @media(max-width: 1300px){
 

@@ -6,7 +6,7 @@ import Tweet from '../assets/Tweet.svg';
 import Linkd from '../assets/Linkd.svg';
 import IG from '../assets/IG.svg';
 import SVG from 'react-inlinesvg';
-
+import Mountains from '../assets/Mountains.jpg';
 import Home from './Home';
 import Blake from '../assets/Blake.jpg';
 import Accordion from './Accordion';
@@ -35,13 +35,13 @@ function Side(){
                                 
                             </li>
                             <li>
-                                <a href ="#skills" data-nav-section="skills">About Me</a>
+                                <a href ="#skills" data-nav-section="skills">About</a>
                             </li>
                             <li>
-                                <a href ="#projects" data-nav-section="projects">Projects</a>
+                                <a href ="#projects" data-nav-section="projects">My Work</a>
                             </li>
                             <li>
-                                <a href ="#contact" data-nav-section="contact">Contact</a>
+                                <a href ="#contact" data-nav-section="contact">Contact Me</a>
                             </li>
                         </ul>
                         <div className ="social-tray">
@@ -73,16 +73,13 @@ function Side(){
                                 
                             </li>
                             <li>
-                                <a href ="#about" data-nav-section="about">About</a>
+                                <a href ="#skills" data-nav-section="skills">About</a>
                             </li>
                             <li>
-                                <a href ="#skills" data-nav-section="skills">Skills</a>
+                                <a href ="#projects" data-nav-section="projects">My Work</a>
                             </li>
                             <li>
-                                <a href ="#projects" data-nav-section="projects">Projects</a>
-                            </li>
-                            <li>
-                                <a href ="#contact" data-nav-section="contact">Contact</a>
+                                <a href ="#contact" data-nav-section="contact">Contact Me</a>
                             </li>
                         </ul>
                             <section className="first-child" id="home" data-section="home">
@@ -92,9 +89,11 @@ function Side(){
                             <div className="third-child" id="skills" data-section="skills">
                                     <Skill />
                                     <div className="base-skills">
-                                        <SVG className="html inds-b" src= {HTML}/>
-                                        <SVG className="css inds-b" src= {CSS}/>
-                                        <SVG className="js inds-b" src= {JS}/>
+                                        <div className ="svgs">
+                                            <SVG className="html inds-b" src= {HTML}/>
+                                            <SVG className="css inds-b" src= {CSS}/>
+                                            <SVG className="js inds-b" src= {JS}/>
+                                        </div>
                                     </div>
                                     <Accordion />
                             </div>
@@ -125,7 +124,7 @@ to   { opacity: 1; }
 `
 
 const StyledSB = styled.div`
-animation: 2s ${fadeIn};
+animation: 1.5s ${fadeIn};
 font-family: 'Work Sans', sans-serif;
 
 .image{
@@ -245,7 +244,7 @@ font-family: 'Work Sans', sans-serif;
         margin-top: 25px;
         font-size: 21px;
         text-align: center;
-        animation: 4s ${fadeIn};
+    
         
 
         @media(max-width:1700px){
@@ -376,11 +375,8 @@ color: black;
 
 .first-child{
     height: 100vh;
-    
-    bg-img{
-        height:100%;
-        width: 100%;
-    }
+    background-image: url(${Mountains});
+    background-size: cover;
 }
 .second-child{
     background: #F8F8F1;
@@ -392,6 +388,11 @@ color: black;
 .third-child{
     background: #F8F8F1;
     height: 100vh;
+
+    @media(max-width: 1200px){
+        display: flex;
+        align-items: center;
+    }
 
     .base-skills{
         height: 20%
