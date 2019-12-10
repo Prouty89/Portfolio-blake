@@ -409,23 +409,11 @@ color: black;
     background: #F8F8F1;
     height: 100vh;
 
-    .card{
-        margin: 15px;
+    @media(max-width: 1150px){
+        height: 2000px;
     }
 
-    .md-paper{
-        height: 50%;
-        width: 350px;
-        padding: 10px;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
-        min-height: 350px;
-        
-    }
 
-    .md-grid{
-        display: flex;
-
-    }
 }
 .fifth-child{
     background: #F8F8F1;
