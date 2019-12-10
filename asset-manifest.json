@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "./static/js/main.02711309.chunk.js",
-    "main.js.map": "./static/js/main.02711309.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.319f612a.js",
-    "runtime-main.js.map": "./static/js/runtime-main.319f612a.js.map",
+    "main.js": "./static/js/main.626d9f58.chunk.js",
+    "main.js.map": "./static/js/main.626d9f58.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.98699f76.js",
+    "runtime-main.js.map": "./static/js/runtime-main.98699f76.js.map",
     "static/js/2.39f8e059.chunk.js": "./static/js/2.39f8e059.chunk.js",
     "static/js/2.39f8e059.chunk.js.map": "./static/js/2.39f8e059.chunk.js.map",
     "static/js/3.032bd0c9.chunk.js": "./static/js/3.032bd0c9.chunk.js",
     "static/js/3.032bd0c9.chunk.js.map": "./static/js/3.032bd0c9.chunk.js.map",
     "static/css/4.c0851dc3.chunk.css": "./static/css/4.c0851dc3.chunk.css",
-    "static/js/4.01c364db.chunk.js": "./static/js/4.01c364db.chunk.js",
-    "static/js/4.01c364db.chunk.js.map": "./static/js/4.01c364db.chunk.js.map",
+    "static/js/4.9afb6b73.chunk.js": "./static/js/4.9afb6b73.chunk.js",
+    "static/js/4.9afb6b73.chunk.js.map": "./static/js/4.9afb6b73.chunk.js.map",
     "static/js/5.f8cd5e5a.chunk.js": "./static/js/5.f8cd5e5a.chunk.js",
     "static/js/5.f8cd5e5a.chunk.js.map": "./static/js/5.f8cd5e5a.chunk.js.map",
     "static/js/6.d63f7e08.chunk.js": "./static/js/6.d63f7e08.chunk.js",
     "static/js/6.d63f7e08.chunk.js.map": "./static/js/6.d63f7e08.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.b0df14d9175c8148577bcaf88b56612d.js": "./precache-manifest.b0df14d9175c8148577bcaf88b56612d.js",
+    "precache-manifest.61f3ed8e380ee702bd37f01cf624030a.js": "./precache-manifest.61f3ed8e380ee702bd37f01cf624030a.js",
     "service-worker.js": "./service-worker.js",
     "static/css/4.c0851dc3.chunk.css.map": "./static/css/4.c0851dc3.chunk.css.map",
     "static/media/Blake.jpg": "./static/media/Blake.ba0fcf34.jpg",
@@ -31,8 +31,8 @@
     "static/media/Tweet.svg": "./static/media/Tweet.af5cbb1c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.319f612a.js",
+    "static/js/runtime-main.98699f76.js",
     "static/js/3.032bd0c9.chunk.js",
-    "static/js/main.02711309.chunk.js"
+    "static/js/main.626d9f58.chunk.js"
   ]
 }
