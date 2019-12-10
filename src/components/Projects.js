@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
-import styled from 'styled-components';
+import { StyledProjects } from '../styles';
 
 
-function Projects(props){
+function Projects(){
  
   return(
     <StyledProjects className="card-container">
@@ -20,11 +20,11 @@ function Projects(props){
             }}
           >
             <h3>Riders for Life</h3>
-            <h4>Co-opting prototype for a non-profit organization</h4>
+            <h4>Co-op fullstack prototype application for the non-profit organization Safe Mothers, Safe Babies</h4>
             <div className="card-links">
-              <a className="link" target="_blank" href="https://www.youtube.com">Demo</a>
-              <a className="link" target="_blank" href="https://www.github.com">BE Repo</a>
-              <a className="link" target="_blank" href="https://www.github.com">FE Repo</a>
+              <a className="link" target="_blank" href="https://youtu.be/KM4jNYUOg7Y">Demo</a>
+              <a className="link" target="_blank" href="https://github.com/Lambda-School-Labs/safe-mothers-be">BE Codebase</a>
+              <a className="link" target="_blank" href="https://github.com/Lambda-School-Labs/safe-mothers-fe">FE Codebase</a>
             </div>
           <button className="dead-btn">More details!</button>
           </FrontSide>
@@ -48,12 +48,11 @@ function Projects(props){
               backgroundColor: '#ffffff', borderRadius: '8px'
             }}
           >
-            <h3>Riders for Life</h3>
-            <h4>Co-opting prototype for a non-profit organization</h4>
+            <h3>Tetris</h3>
+            <h4>Tetris game built using React</h4>
             <div className="card-links">
-              <a className="link" target="_blank" href="https://www.youtube.com">Demo Video</a>
-              <a className="link" target="_blank" href="https://www.github.com">Backend Repo</a>
-              <a className="link" target="_blank" href="https://www.github.com">Frontend Repo</a>
+              <a className="link" target="_blank" href="https://tetrisreact-54w8sfs49.now.sh/">Play it!</a>
+              <a className="link" target="_blank" href="https://github.com/Prouty89/TetrisReact">Codebase</a>
             </div>
           </FrontSide>
           <BackSide
@@ -173,84 +172,4 @@ function Projects(props){
 
 export default Projects;
 
-const StyledProjects = styled.div`
-display: flex; 
-justify-content: end;
-height: 100%;
-width: 100%;
-flex-wrap: wrap;
-flex-direction: column;
-align-items: center;
-
-@media(max-width: 1150px){
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.dead-btn{
-  transform: rotate(270deg);
-  position: absolute;
-  left: 87%;
-  top: 45%;
-  font-size: 1rem;
-  color: black;
-  width: 125px;
-  font-weight: bold;
-  background: #F8F8F1;
-  border: none;
-  cursor: pointer;
-}
-
-.a-link{
-  visibility:hidden;
-}
-
-.flippy-container{
-  border-radius: 8px;
-}
-
-.card-links{
-  position: absolute;
-  bottom: 3%;
-  display: flex;
-  border-top: 2px solid #777777;
-  justify-content: space-between;
-  width: 90%;
-
-  .link{
-    text-decoration: none;
-    color: #777777;
-    padding: 2%;
-   
-  }
-}
-
-h3{
-  text-align: center;
-}
-
-h4{
-  text-align: center;
-}
-
-.card-four{
-  @media(max-width: 1150px){
-    display: none
-  }
-}
-
-.card-five{
-  @media(max-width: 1150px){
-    display: none
-  }
-}
-
-.card-six{
-  @media(max-width: 1150px){
-    display: none
-  }
-}
-
-`
 

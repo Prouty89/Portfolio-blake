@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { useTrail, animated } from 'react-spring';
 import Mountains from '../assets/Mountains.jpg';
-import styled from 'styled-components';
+import { StyledImage } from '../styles';
 import { SimpleImg } from 'react-simple-img';
 
 
@@ -45,24 +45,4 @@ function Home(){
 }
 
 export default Home;
-
-
-const StyledImage = styled.div`
-
-.bg-img{
-    display: flex;
-    justify-content: end !important;
-    width: 100% !important;
-    position: fixed !important;
-    z-index: -1;
-
-    @media(max-width: 1350px){
-    width: 200% !important;
-    }
-
-    img{
-        height: 30% !important;
-    }
-}
-`
 
