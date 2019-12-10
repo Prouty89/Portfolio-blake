@@ -410,7 +410,7 @@ color: black;
     height: 100vh;
 
     @media(max-width: 1150px){
-        height: 2000px;
+        height: 1500px;
     }
 
 
@@ -418,6 +418,8 @@ color: black;
 .fifth-child{
     background: #F8F8F1;
     height: 100vh;
+
+   
 }
 
 .nav-list{

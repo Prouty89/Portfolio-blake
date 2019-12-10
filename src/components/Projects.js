@@ -234,5 +234,23 @@ h4{
   text-align: center;
 }
 
+.card-four{
+  @media(max-width: 1150px){
+    display: none
+  }
+}
+
+.card-five{
+  @media(max-width: 1150px){
+    display: none
+  }
+}
+
+.card-six{
+  @media(max-width: 1150px){
+    display: none
+  }
+}
+
 `
 
