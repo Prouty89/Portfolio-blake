@@ -22,9 +22,9 @@ function Projects(){
             <h3>Riders for Life</h3>
             <h4>Co-op fullstack prototype application for the non-profit organization Safe Mothers, Safe Babies</h4>
             <div className="card-links">
-              <a className="link" target="_blank" href="https://youtu.be/KM4jNYUOg7Y">Demo</a>
-              <a className="link" target="_blank" href="https://github.com/Lambda-School-Labs/safe-mothers-be">BE Codebase</a>
-              <a className="link" target="_blank" href="https://github.com/Lambda-School-Labs/safe-mothers-fe">FE Codebase</a>
+              <a className="link" target="_blank" rel = "noopener" href="https://youtu.be/KM4jNYUOg7Y">Demo</a>
+              <a className="link" target="_blank" rel = "noopener" href="https://github.com/Lambda-School-Labs/safe-mothers-be">BE Codebase</a>
+              <a className="link" target="_blank" rel = "noopener" href="https://github.com/Lambda-School-Labs/safe-mothers-fe">FE Codebase</a>
             </div>
           <button className="dead-btn">More details!</button>
           </FrontSide>
@@ -37,7 +37,7 @@ function Projects(){
         </Flippy>
       </div>
       <div className="card-two">
-        <a className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
+        <a className="a-link" target="_blank" rel = "noopener" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} // default false
           flipDirection="horizontal" // horizontal or vertical
@@ -51,8 +51,8 @@ function Projects(){
             <h3>Tetris</h3>
             <h4>Tetris game built using React</h4>
             <div className="card-links">
-              <a className="link" target="_blank" href="https://tetrisreact-54w8sfs49.now.sh/">Play it!</a>
-              <a className="link" target="_blank" href="https://github.com/Prouty89/TetrisReact">Codebase</a>
+              <a className="link" target="_blank" rel = "noopener" href="https://tetrisreact-54w8sfs49.now.sh/">Play it!</a>
+              <a className="link" target="_blank" rel = "noopener" href="https://github.com/Prouty89/TetrisReact">Codebase</a>
             </div>
           </FrontSide>
           <BackSide
@@ -62,7 +62,7 @@ function Projects(){
         </Flippy>
       </div>
       <div className="card-three">
-        <a className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
+        <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} // default false
           flipDirection="horizontal" // horizontal or vertical
@@ -76,9 +76,9 @@ function Projects(){
             <h3>Riders for Life</h3>
             <h4>Co-op prototype application for a non-profit organization</h4>
             <div className="card-links">
-              <a className="link" target="_blank" href="https://www.youtube.com">Demo</a>
-              <a className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
-              <a className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.youtube.com">Demo</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
             </div>
           </FrontSide>
           <BackSide
@@ -102,9 +102,9 @@ function Projects(){
             <h3>Riders for Life</h3>
             <h4>Co-op prototype application for a non-profit organization</h4>
             <div className="card-links">
-              <a className="link" target="_blank" href="https://www.youtube.com">Demo</a>
-              <a className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
-              <a className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.youtube.com">Demo</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
             </div>
           </FrontSide>
           <BackSide
@@ -114,7 +114,7 @@ function Projects(){
         </Flippy>
       </div>
       <div className="card-five">
-        <a className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
+        <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} // default false
           flipDirection="horizontal" // horizontal or vertical
@@ -128,9 +128,9 @@ function Projects(){
             <h3>Riders for Life</h3>
             <h4>Co-op prototype application for a non-profit organization</h4>
             <div className="card-links">
-              <a className="link" target="_blank" href="https://www.youtube.com">Demo</a>
-              <a className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
-              <a className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.youtube.com">Demo</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
             </div>
           </FrontSide>
           <BackSide
@@ -154,9 +154,9 @@ function Projects(){
             <h3>Riders for Life</h3>
             <h4>Co-op prototype application for a non-profit organization</h4>
             <div className="card-links">
-              <a className="link" target="_blank" href="https://www.youtube.com">Demo</a>
-              <a className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
-              <a className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.youtube.com">Demo</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
             </div>
           </FrontSide>
           <BackSide
