@@ -398,6 +398,14 @@ export const StyledProjects = styled.div`
     border-radius: 8px;
   }
 
+  .design-desc{
+    text-align: center;
+  }
+
+  .framework-desc{
+    text-align: center;
+  }
+
   .card-links {
     position: absolute;
     bottom: 3%;
@@ -514,15 +522,8 @@ export const StyledSkills = styled.div`
           margin-block-end: .2em;
       }
     }
-  
-  
   }
-
-
-
   .base-container {
-   
-
     @media (max-width: 1150px) {
       display: inherit;
       height: auto;

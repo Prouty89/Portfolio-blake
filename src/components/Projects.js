@@ -49,7 +49,10 @@ function Projects(){
             }}
           >
             <h3>Tetris</h3>
-            <h4>Tetris game built using React</h4>
+            <h4>Game design and functionality</h4>
+            <div className="proj-desc">
+              All the game mechanics you know from classic tetris brought to you by React. My first real independent deep dive into the power of hooks, and introduction to algorithms. I fell in love with Styled Components throughout this build and thoroughly enjoyed sharing it with family and friends.
+            </div>
             <div className="card-links">
               <a className="link" target="_blank" rel = "noopener" href="https://tetrisreact-54w8sfs49.now.sh/">Play it!</a>
               <a className="link" target="_blank" rel = "noopener" href="https://github.com/Prouty89/TetrisReact">Codebase</a>
@@ -57,7 +60,13 @@ function Projects(){
           </FrontSide>
           <BackSide
             style={{ backgroundColor: '#ffffff', borderRadius: '8px'}}>
-            ROCKS
+            <div className="back-container">
+            <h3>Tech Stack</h3>
+            <h4>Framework:</h4>
+            <div className="framework-desc">ReactJS</div>
+            <h4>Design:</h4>
+            <div className="design-desc">Styled Components</div>
+            </div>
           </BackSide>
         </Flippy>
       </div>
