@@ -9,9 +9,6 @@ import SVG from 'react-inlinesvg';
 
 import Home from './Home';
 import Accordion from './Accordion';
-import JS from '../assets/JS.svg';
-import CSS from '../assets/CSS.svg';
-import HTML from '../assets/HTML.svg';
 
 const Skill = React.lazy(()=> import('./Skill'))
 const Projects = React.lazy(() => import('./Projects'))
@@ -46,10 +43,10 @@ function Side(){
                         <div className ="social-tray">
                             <h3>Get in touch</h3>
                             <div className="social-icons">
-                                <SVG className="svg" src = {IG}/>
-                                <SVG className="svg" src = {Github}/>
-                                <SVG className="svg" src = {Tweet}/>
-                                <SVG className="svg" src = {Linkd}/>
+                                <SVG rel = "noopener" className="svg" src = {IG}/>
+                                <SVG rel = "noopener" className="svg" src = {Github}/>
+                                <SVG rel = "noopener" className="svg" src = {Tweet}/>
+                                <SVG rel = "noopener" className="svg" src = {Linkd}/>
                             </div>
                         </div>
                         </StyledList>
@@ -87,11 +84,6 @@ function Side(){
                             <Suspense fallback = {<h1> Loading... </h1>}>
                             <div className="third-child" id="skills" data-section="skills">
                                     <Skill />
-                                    <div className="base-skills">
-                                        <SVG className="html inds-b" src= {HTML}/>
-                                        <SVG className="css inds-b" src= {CSS}/>
-                                        <SVG className="js inds-b" src= {JS}/>
-                                    </div>
                                     <Accordion />
                             </div>
                             <div className="fourth-child" id="projects" data-section="projects">

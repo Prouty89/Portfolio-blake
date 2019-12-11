@@ -37,7 +37,7 @@ function Accordion() {
       
 
       <Block className="block"
-        title="More!"
+        title="More Skills!"
         isOpen={state[0]}
         onToggle={() => dispatch({ type: "toggle", index: 0 })}
       >
@@ -66,7 +66,6 @@ function Accordion() {
             </div>
         </div>
       </Block>
-    <div className="baseskill-text">I have a firm grasp on the core of Javascript including ES6 features. Understands async code and event looping. Utilizes developer tools to comfortably manipulate the DOM, and the network panel to debug requests. Has built several UIs, widgets, and game applications using the ReactJS framework. For backend applications I use NodeJS to develop server-side and networking applications.</div>
     </StyledAccordion>
     </>
   );

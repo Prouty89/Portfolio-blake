@@ -269,13 +269,18 @@ color: black;
 .third-child{
     background: #F8F8F1;
     height: 100vh;
+    position: relative;
+
+    @media(max-width: 1150px){
+      height: 1150px;
+    }
 
     .base-skills{
         height: 20%
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 1%;
+        margin-top: 3%;
 
         @media(max-width: 1350px){
             display:none;
@@ -368,6 +373,7 @@ export const StyledProjects = styled.div`
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+    padding-top: 11%;
   }
 
   .dead-btn {
@@ -435,7 +441,7 @@ export const StyledProjects = styled.div`
 `;
 // Skills.js Styles
 export const StyledSkills = styled.div`
-  height: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -450,71 +456,95 @@ export const StyledSkills = styled.div`
     text-align: center;
   }
 
-  .skills-text{
-    background: #ffffff;
-    color: #777777;
-    padding: 1%;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
-
-    p{
-        text-align: left;
-    }
-  }
-
+  
   .skill-container {
-    height: 50%;
-    width: 70% .skills-text {
+    height: 95%;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .good-par{
+      display: flex;
+      flex-direction: column;
+
+      @media(max-width: 1150px){
+        align-items: center;
+      }
+
+      .par-title{
+        width: 50%;
+        margin-bottom: 1%;
+        text-decoration: underline;
+        font-weight: bold;
+
+        @media(max-width: 1150px){
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      .par-text{
+        margin-bottom: 1%;
+
+        @media(max-width: 1150px){
+          text-align: center;
+          width: 90%;
+        }
+      }
+    }
+    
+    .skills-text{
       background: #ffffff;
+      color: black;
       padding: 1%;
+      text-align: left;
+      font-size: 1.1rem;
+      text-rendering: optimizeLegibility;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
       border-radius: 8px;
-      box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
-      color: #777777;
+      box-shadow: rgba(0,0,0,0.15) 0 0 6px;
+  
+      p{
+          text-align: left;
+          margin-block-start: .2em;
+          margin-block-end: .2em;
+      }
     }
-    @media (max-width: 1350px) {
-      height: 75%;
-      width: 90%;
-      font-size: 0.9rem;
-      padding: 1%;
-    }
+  
+  
   }
 
-  .about-container {
-    height: 50%;
-    width: 70%;
 
-    .about-text {
-      background: #ffffff;
-      color: #777777;
-      padding: 1%;
-      border-radius: 8px;
-      box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
-    }
-    @media (max-width: 1350px) {
-      height: 32%;
-      width: 90%;
-      font-size: 0.7rem;
-    }
-  }
 
   .base-container {
-    display: none;
+   
 
-    @media (max-width: 1350px) {
+    @media (max-width: 1150px) {
       display: inherit;
       height: auto;
-      width: 90%;
+      width: 100%;
+      justify-content: center;
     }
 
     .base-text {
       background: #ffffff;
       color: #777777;
-      padding: 2%;
-      border-radius: 8px;
-      box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
+      text-align: justify;
+      text-align-last: center;
+      font-size: 1.2rem;
+      color: black;
+      margin-top: 3%;
+      text-rendering: optimizeLegibility;
+  
+      @media (max-width: 1150px) {
+        font-size: 1.1rem;
+        width: 90%;
+        
 
-      @media (max-width: 1350px) {
-        font-size: 0.9rem;
       }
     }
   }
@@ -523,8 +553,8 @@ export const StyledSkills = styled.div`
 // Accordion Style on Skill.js
 export const StyledAccordion = styled.div`
 display: flex;
-position: relative;
-align-items: flex-end;
+position: absolute;
+bottom: 5px;
 width: 100%;
 height: 30%;
 padding-bottom: 20px;
@@ -542,8 +572,8 @@ z-index: 1;
 
 .accordion-skills{
     display: flex;
-    height: 93% !important;
-    margin-top: 7px;
+    height: 270px !important;
+    margin-top: 1%;
     width: 93%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -600,8 +630,8 @@ z-index: 1;
 }
 
 .toggle-bar{
-    height: 61%;
-    margin-left: 4%;
+    height: 100%;
+    margin-left: 3%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -629,7 +659,7 @@ z-index: 1;
     border: none;
     background: #373737;
     cursor: pointer;
-    height: 292px;
+    height: 274px;
     align-self: flex-end;
 
     &:focus{

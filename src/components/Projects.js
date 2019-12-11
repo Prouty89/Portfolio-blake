@@ -8,7 +8,7 @@ function Projects(){
   return(
     <StyledProjects className="card-container">
       <div className="card-one">
-        <a className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
+        <a rel = "noopener" className= "a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} // default false
           flipDirection="horizontal" // horizontal or vertical
@@ -88,7 +88,7 @@ function Projects(){
         </Flippy>
       </div>
       <div className="card-four">
-        <a className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
+        <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} // default false
           flipDirection="horizontal" // horizontal or vertical
@@ -140,7 +140,7 @@ function Projects(){
         </Flippy>
       </div>
       <div className="card-six">
-        <a className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
+        <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} // default false
           flipDirection="horizontal" // horizontal or vertical
