@@ -271,6 +271,8 @@ color: black;
     height: 100vh;
     position: relative;
 
+
+
     @media(max-width: 1150px){
       height: 1150px;
     }
@@ -299,13 +301,18 @@ color: black;
     height: 100vh;
 
     @media(max-width: 1150px){
-        height: 1500px;
+        height: 140vh;
     }
 }
 
 .fifth-child{
     background: #F8F8F1;
     height: 100vh;
+    position: relative;
+
+    @media(max-width: 1500px){
+      
+    }
 }
 
 .nav-list{
@@ -362,18 +369,21 @@ export const StyledImage = styled.div`
 // Projects.js Styles
 export const StyledProjects = styled.div`
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 1150px) {
-    flex-direction: column;
+  @media (max-width: 1500px) {
     align-items: center;
-    flex-wrap: nowrap;
-    padding-top: 11%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media(max-width: 1100px){
+    flex-direction: column;
   }
 
   .dead-btn {
@@ -388,6 +398,13 @@ export const StyledProjects = styled.div`
     background: #f8f8f1;
     border: none;
     cursor: pointer;
+  }
+
+  ul{
+    list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .a-link {
@@ -405,6 +422,15 @@ export const StyledProjects = styled.div`
   .framework-desc{
     text-align: center;
   }
+
+  p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    color: #777777;
+    padding: 2%;
+  }
+
+
 
   .card-links {
     position: absolute;
@@ -430,19 +456,19 @@ export const StyledProjects = styled.div`
   }
 
   .card-four {
-    @media (max-width: 1150px) {
+    @media (max-width: 1050px) {
       display: none;
     }
   }
 
   .card-five {
-    @media (max-width: 1150px) {
+    @media (max-width: 1450px) {
       display: none;
     }
   }
 
   .card-six {
-    @media (max-width: 1150px) {
+    @media (max-width: 1450px) {
       display: none;
     }
   }
@@ -740,6 +766,14 @@ export const StyledForm = styled.div`
     @media (max-width: 1100px) {
       display: none;
     }
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 20px;
+    color: #777777;
+    font-size: 1.3rem;
+    text-align: center;
   }
 
   .form {
