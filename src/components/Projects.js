@@ -29,7 +29,7 @@ function Projects(){
               <a className="link" target="_blank" rel = "noopener" href="https://github.com/Lambda-School-Labs/safe-mothers-be">BE Codebase</a>
               <a className="link" target="_blank" rel = "noopener" href="https://github.com/Lambda-School-Labs/safe-mothers-fe">FE Codebase</a>
             </div>
-          <button className="dead-btn">More detail!</button>
+          <button className="dead-btn">{'\u21B7'}</button>
           </FrontSide>
           <BackSide
             style={{ backgroundColor: '#ffffff', borderRadius: '8px'}}>
@@ -83,6 +83,7 @@ function Projects(){
               <a className="link" target="_blank" rel = "noopener" href="https://github.com/Prouty89/TetrisReact">Codebase</a>
               <a className="link" target="_blank" rel = "noopener" href="https://tetrisreact-54w8sfs49.now.sh/">Play it!</a>
             </div>
+            <button className="dead-btn">{'\u21B7'}</button>
           </FrontSide>
           <BackSide
             style={{ backgroundColor: '#ffffff', borderRadius: '8px'}}>
@@ -120,6 +121,7 @@ function Projects(){
               <a rel = "noopener" className="link" target="_blank" href="https://github.com/bw-expat-journal/Front-End">Codebase</a>
               <a rel = "noopener" className="link" target="_blank" href="https://expat-journal-ui.netlify.com/">Visit Application</a>
             </div>
+            <button className="dead-btn">{'\u21B7'}</button>
           </FrontSide>
           <BackSide
             style={{ backgroundColor: '#ffffff', borderRadius: '8px'}}>
@@ -149,12 +151,13 @@ function Projects(){
             <h3>Movie Trivia</h3>
             <h4>Open Database, React Single Page Application</h4>
             <div className="proj-desc">
-              Open API's are a fantastic way to push forth your next hobby application. I'd like to re-build and refactor this application to use my own database, a more modern approach to state management. This was meant to be quick, fun, and expand my comfort level with AJAX fetching.
+              Open API's are a great way to push forth your next hobby application. I'd like to re-build and refactor this application to use my own database, a more modern approach to state management. This was meant to be quick, fun, and expand my comfort level with AJAX fetching.
             </div>
             <div className="card-links">
               <a rel = "noopener" className="link" target="_blank" href="https://github.com/Prouty89/Movie-Trivia">Codebase</a>
-              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">Play it!</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://movie-trivia.bpro0821.now.sh/">Play it!</a>
             </div>
+            <button className="dead-btn">{'\u21B7'}</button>
           </FrontSide>
           <BackSide
             style={{ backgroundColor: '#ffffff', borderRadius: '8px'}}>
@@ -163,7 +166,7 @@ function Projects(){
             <h4>Framework:</h4>
             <div className="design-desc">React</div>
             <h4>Design:</h4>
-            Styled Components
+            Emotion
             </div>
             <div className="card-links project-type">
               <p>Personal Project</p>
@@ -192,6 +195,7 @@ function Projects(){
               <a rel = "noopener" className="link" target="_blank" href="https://github.com/Prouty89/dark-mode">Codebase</a>
               <a rel = "noopener" className="link" target="_blank" href="https://dark-mode-kappa-peach.now.sh/">Visit Application</a>
             </div>
+            <button className="dead-btn">{'\u21B7'}</button>
           </FrontSide>
           <BackSide
             style={{ backgroundColor: '#ffffff', borderRadius: '8px'}}>
@@ -218,13 +222,13 @@ function Projects(){
               backgroundColor: '#ffffff', borderRadius: '8px'
             }}
           >
-            <h3>Riders for Life</h3>
-            <h4>Co-op prototype application for a non-profit organization</h4>
+            <h3>Project</h3>
+            <h4>Description</h4>
             <div className="card-links">
-              <a rel = "noopener" className="link" target="_blank" href="https://www.youtube.com">Demo</a>
-              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">BE Codebase</a>
-              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">FE Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.youtube.com">Visit Application</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">Codebase</a>
             </div>
+            <button className="dead-btn">{'\u21B7'}</button>
           </FrontSide>
           <BackSide
             style={{ backgroundColor: '#ffffff', borderRadius: '8px'}}>

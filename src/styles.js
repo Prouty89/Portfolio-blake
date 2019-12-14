@@ -15,12 +15,12 @@ font-family: 'Work Sans', sans-serif;
 .image{
     background-image: url(${Blake});
     height: 200px;
-    width: 55%;
+    width: 50%;
     padding: 5%;
     display: flex;
     margin: 0 auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 150px;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
     background-position: top;
@@ -242,11 +242,12 @@ export const StyledList = styled.div`
     a {
       text-decoration: none;
       color: white;
-      transition: color 0.4s ease-in, border-bottom 0.2s ease;
+      transition:  border-bottom 0.3s ease;
 
       &:hover {
-        color: #4b67ff;
+        
         border-bottom: 2px solid #4b67ff;
+        border-bottom-style: inset;
       }
     }
   }
@@ -387,15 +388,17 @@ export const StyledProjects = styled.div`
   }
 
   .dead-btn {
-    transform: rotate(270deg);
+    transform: rotate(290deg);
     position: absolute;
-    left: 87%;
-    top: 45%;
+    left: 81%;
+    top: 6%;
+    height: 0px;
+    outline: none;
     font-size: 1rem;
     color: black;
-    width: 125px;
-    font-weight: bold;
-    background: #f8f8f1;
+    width: 50px;
+    font-size: 2rem;
+    background: #ffffff;
     border: none;
     cursor: pointer;
   }
@@ -486,18 +489,40 @@ export const StyledSkills = styled.div`
     justify-content: center;
   }
 
+  .location{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+  .relocation{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
   .skills-head {
     text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
   }
 
   
   .skill-container {
-    height: 95%;
-    width: 88%;
+    height: 70%;
+    width: 82%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+
+    .availibility{
+      display: flex;
+      flex-wrap: wrap;
+      color: #777777;
+      width: 100%;
+      justify-content: space-around;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
 
     .good-par{
       display: flex;
@@ -508,8 +533,11 @@ export const StyledSkills = styled.div`
       }
 
       .par-title{
-        width: 50%;
+        width: 100%;
         margin-bottom: 1%;
+        margin-top: 1%;
+        align-self: center;
+        text-align: center;
         text-decoration: underline;
         font-weight: bold;
 
@@ -519,8 +547,12 @@ export const StyledSkills = styled.div`
         }
       }
 
-      .par-text{
+      .small{
         margin-bottom: 1%;
+        width: 375px;
+        align-self: center;
+        text-align: center;
+        
 
         @media(max-width: 1150px){
           text-align: center;
@@ -528,11 +560,52 @@ export const StyledSkills = styled.div`
         }
       }
     }
+      .education{
+        margin-bottom: 1%;
+        width: 375px;
+        align-self: center;
+        color: #777777;
+        text-align: left;
+        text-align-last: auto;
+
+        @media(max-width: 1150px){
+          text-align: center;
+          width: 90%;
+        }
+      }
+
+      .par-text{
+        margin-bottom: 1%;
+        width: 375px;
+        align-self: center;
+        text-align: justify;
+        color: #777777;
+        text-align-last: auto;
+
+        @media(max-width: 1150px){
+          text-align: center;
+          width: 90%;
+        }
+      }
+    }
+
+    .character{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .character-skills{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
     
     .skills-text{
       background: #ffffff;
       color: black;
-      padding: 1%;
+      padding: 2%;
       text-align: left;
       font-size: 1.1rem;
       text-rendering: optimizeLegibility;
@@ -550,12 +623,14 @@ export const StyledSkills = styled.div`
     }
   }
   .base-container {
-    @media (max-width: 1150px) {
-      display: inherit;
-      height: auto;
-      width: 100%;
-      justify-content: center;
-    }
+    width: 90%;
+    align-self: center;
+      @media (max-width: 1150px) {
+        display: inherit;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+      }
 
     .base-text {
       background: #ffffff;

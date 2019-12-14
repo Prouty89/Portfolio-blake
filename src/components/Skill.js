@@ -11,11 +11,21 @@ function Skill() {
   return (
     <StyledSkills className="skills-content">
       <div className="skill-container">
-        <h3 className="skills-head">
+        <h2 className="skills-head">
           Designing, testing, and devoloping your next progressive web
           application.
+        </h2>
+      <div className="availibility">
+        <h3 className="location">
+          Current Location: Sioux Falls, SD 
         </h3>
+        <h3 className="relocation">
+          Relocation: Yes, please.
+        </h3>
+      </div>
+        
         <div className="skills-text">
+          <div className = "character">
           <div className="good-par">
           <div className="par-title">
             Problem Solving
@@ -43,30 +53,18 @@ function Skill() {
             well-structured and thoughtful products.
             </div>
           </div>
+          </div>
           <br />
-          <div className="good-par">
-            <div className="par-title">
-              Location
-            </div>
-            <div className="par-text">
-               Sioux Falls, SD.
-            </div>
-          </div>
-          <div className="good-par">
-            <div className="par-title">
-              Relocation
-            </div>
-            <div className="par-text">
-               Yes, please!
-            </div>
-          </div>
+          <div className = "character-skills">
           <div className="good-par">
             <div className="par-title">
             Education
             </div>
-            <div className="par-text">
-             Full Stack Web-Development, Lambda School. B.S. Nutrition
-            and Food Sciences, South Dakota State University.
+            <div className="education">
+             Full Stack Web-Development, Lambda School.
+            </div>
+            <div className="education">
+            B.S. Nutrition and Food Sciences, South Dakota State University.
             </div>
           </div>
           <div className="good-par">
@@ -86,11 +84,7 @@ function Skill() {
             Frontend, Backend, or Full-Stack software engineering.
             </div>
           </div>
-            <div className="base-skills">
-                <SVG className="html inds-b" src={HTML} />
-                <SVG className="css inds-b" src={CSS} />
-                <SVG className="js inds-b" src={JS} />
-            </div>
+          </div>
             <div className="base-container">
             <div className="base-text">
                 <div className="baseskill-text">
@@ -105,6 +99,11 @@ function Skill() {
         </div>
       </div>
       </div>
+        <div className="base-skills">
+        <SVG className="html inds-b" src={HTML} />
+        <SVG className="css inds-b" src={CSS} />
+        <SVG className="js inds-b" src={JS} />
+        </div>
     </StyledSkills>
   );
 }

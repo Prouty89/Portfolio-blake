@@ -7,8 +7,8 @@ import { SimpleImg } from 'react-simple-img';
 
 
 
-const items = ["Hello! I'm Blake, a full stack web developer", 'specialized in HTML, CSS, and Javascript.', 'Take a look at my work and lets connect!']
-const config = { mass: 30, tension: 1500, friction: 200 }
+const items = ["Hello! I'm Blake, a full stack developer", 'specializing in Javascript and Python', 'Take a look at my work and lets connect!']
+const config = { mass: 30, tension: 1500, friction: 300 }
 
 
 function Home(){
@@ -18,8 +18,8 @@ function Home(){
       opacity: toggle ? 1 : 0,
       y: toggle ? 0 : 90,
       height: toggle ? 30 : 0,
-      from: { opacity: 0, x: 80, height: 10 },
-      delay: 2000,
+      from: { opacity: 0, x: 80, height: 600 },
+      delay: 1700,
     })
     return(
     <div className="home-container">
