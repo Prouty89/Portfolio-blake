@@ -189,7 +189,7 @@ function Projects(){
             <h3>Dark Mode</h3>
             <h4>Using Custom Hooks to implement Dark Mode functionality</h4>
             <div className="proj-desc">
-              Implementing "dark-mode" on your modern web application allows for easier viewing of the information your user enjoy, it's a feature people have come to expect. This application uses custom hooks to pass a key into local storage and a callback to access whether it exists in local storage in order to toggle styles on and off. The mock application is a Crypto tracker that fetches data from an open API. 
+              Implementing "dark-mode" on your modern web application allows for easier viewing of the information your users enjoy, it's a feature people have come to expect. This application uses custom hooks to pass a key into local storage and a callback to access whether it exists in local storage in order to toggle styles on and off. The mock application is a Crypto tracker that fetches data from an open API. 
             </div>
             <div className="card-links">
               <a rel = "noopener" className="link" target="_blank" href="https://github.com/Prouty89/dark-mode">Codebase</a>

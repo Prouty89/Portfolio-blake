@@ -356,8 +356,13 @@ export const StyledImage = styled.div`
     width: 100% !important;
     position: fixed !important;
     z-index: -1;
+    height: 3235px !important;
 
     @media (max-width: 1350px) {
+      width: 150% !important;
+    }
+
+    @media (max-width: 1150px) {
       width: 200% !important;
     }
 
@@ -385,6 +390,7 @@ export const StyledProjects = styled.div`
 
   @media(max-width: 1100px){
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .dead-btn {
@@ -514,6 +520,11 @@ export const StyledSkills = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media(max-width: 1761px){
+      height: 80%;
+    }
+
+
     .availibility{
       display: flex;
       flex-wrap: wrap;
@@ -534,7 +545,8 @@ export const StyledSkills = styled.div`
 
       .par-title{
         width: 100%;
-        margin-bottom: 1%;
+        margin-bottom: 2%;
+        font-size: 1.2rem;
         margin-top: 1%;
         align-self: center;
         text-align: center;
