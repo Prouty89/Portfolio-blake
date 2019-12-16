@@ -260,13 +260,7 @@ color: black;
 .first-child{
     height: 100vh;
 }
-.second-child{
-    background: #F8F8F1;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
+
 .third-child{
     background: #F8F8F1;
     height: 100vh;
@@ -275,7 +269,7 @@ color: black;
 
 
     @media(max-width: 1150px){
-      height: 1150px;
+      height: 1350px;
     }
 
     .base-skills{
@@ -302,7 +296,7 @@ color: black;
     height: 100vh;
 
     @media(max-width: 1150px){
-        height: 140vh;
+        height: 200vh;
     }
 }
 
@@ -311,8 +305,8 @@ color: black;
     height: 100vh;
     position: relative;
 
-    @media(max-width: 1500px){
-      
+    @media(max-width: 1100px){
+      min-height: 500px;
     }
 }
 
@@ -391,6 +385,8 @@ export const StyledProjects = styled.div`
   @media(max-width: 1100px){
     flex-direction: column;
     flex-wrap: nowrap;
+    min-height: 1200px;
+    justify-content: center;
   }
 
   .dead-btn {
@@ -492,6 +488,7 @@ export const StyledSkills = styled.div`
   @media (max-width: 1350px) {
     height: 100%;
     display: flex;
+    min-height: 100 vh;
     justify-content: center;
   }
 
@@ -844,6 +841,7 @@ export const StyledForm = styled.div`
     font-weight: bold;
     font-size: 1.2rem;
     color: black;
+    text-align: center;
   }
   .trees {
     padding: 15px;
@@ -857,7 +855,7 @@ export const StyledForm = styled.div`
 
   .footer{
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     color: #777777;
     font-size: 1.3rem;
     text-align: center;
@@ -875,10 +873,10 @@ export const StyledForm = styled.div`
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
 
     @media (max-width: 1100px) {
-      height: 50%;
+      height: 300px;
       justify-content: center;
       display: flex;
-      width: 375px;
+      width: 355px;
       flex-direction: column;
       align-items: center;
     }
@@ -909,6 +907,12 @@ export const StyledForm = styled.div`
       justify-content: center;
       align-items: center;
 
+      @media (max-width: 1100px){
+        height: 30px;
+        width: 76px;
+        font-size: 1.2rem;
+      }
+
       &:hover {
         width: 110px;
         background: #76836a;
@@ -933,7 +937,7 @@ export const StyledForm = styled.div`
         height: 30px;
         justify-content: center;
         display: flex;
-        width: 350px;
+        width: 330px;
         font-size: 15px;
         flex-direction: column;
         align-items: center;
