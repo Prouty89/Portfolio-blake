@@ -131,6 +131,7 @@ font-family: 'Work Sans', sans-serif;
         text-align: center;
         animation: 3s ${fadeIn};
         
+        
 
         @media(max-width:1700px){
             justify-content: center;
@@ -146,7 +147,7 @@ font-family: 'Work Sans', sans-serif;
         display: flex;
         font-family: 'Work Sans', sans-serif;
         background: #373737;
-        
+        text-decoration: none;
         color: white;
         font-weight: bold;
         box-shadow: 2px 2px 6px black;
@@ -857,8 +858,9 @@ export const StyledForm = styled.div`
     position: absolute;
     bottom: 40px;
     color: #777777;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
+    z-index: 0;
   }
 
   .form {
@@ -870,6 +872,7 @@ export const StyledForm = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
+    z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
 
     @media (max-width: 1100px) {

@@ -3,6 +3,9 @@ import { useTrail, animated } from 'react-spring';
 import Mountains from '../assets/Mountains.jpg';
 import { StyledImage } from '../styles';
 import { SimpleImg } from 'react-simple-img';
+import { Resume } from '../assets/resume.pdf';
+import Pdf from '../assets/resume.pdf';
+
 
 
 
@@ -36,7 +39,7 @@ function Home(){
                     </animated.div>
                 ))}
                 <div className="cv-res">
-                    <button className ="cvres-btn">Resume</button>
+                    <a href={Pdf} target = "_blank" className ="cvres-btn">Resume</a>
                 </div>
             </div>
       
