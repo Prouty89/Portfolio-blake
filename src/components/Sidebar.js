@@ -3,9 +3,10 @@ import Sidebar from 'react-sidebar';
 import { StyledContent, StyledList, StyledSB } from '../styles';
 import Github from '../assets/Github.svg';
 import Tweet from '../assets/Tweet.svg';
-import Linkd from '../assets/Linkd.svg';
 import IG from '../assets/IG.svg';
+import Linkd from '../assets/Linkd.svg';
 import SVG from 'react-inlinesvg';
+
 
 import Home from './Home';
 import Accordion from './Accordion';

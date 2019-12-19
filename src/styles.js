@@ -50,7 +50,7 @@ font-family: 'Work Sans', sans-serif;
     
     .home-container{
         
-        height: 100%;
+        height: 100vh;
         position: relative;
 
         @media(max-width:750px){
@@ -259,12 +259,12 @@ font-family: 'Work Sans', sans-serif;
 color: black;
 
 .first-child{
-    height: 100vh;
+    
 }
 
 .third-child{
     background: #F8F8F1;
-    height: 100vh;
+ 
     position: relative;
 
 
@@ -481,7 +481,7 @@ export const StyledProjects = styled.div`
 `;
 // Skills.js Styles
 export const StyledSkills = styled.div`
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
