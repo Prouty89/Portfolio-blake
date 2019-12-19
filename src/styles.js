@@ -481,7 +481,7 @@ export const StyledProjects = styled.div`
 `;
 // Skills.js Styles
 export const StyledSkills = styled.div`
-  height: 100vh;
+  height: 910px;
   display: flex;
   align-items: center;
   flex-direction: column;
