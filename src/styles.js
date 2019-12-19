@@ -539,6 +539,7 @@ export const StyledSkills = styled.div`
 
       @media(max-width: 1150px){
         align-items: center;
+        width: 100%;
       }
 
       .par-title{
@@ -790,13 +791,14 @@ z-index: 1;
    span{
        font-family: 'Work Sans', sans-serif;
        display: flex;
-       justify content: center; 
+       justify-content: center; 
        align-items: center;
+       height: 100%;
        font-size: 1.5rem;
        text-align: center;
        writing-mode: vertical-lr;
        transform: rotate(180deg);
-       width: 100%
+       width: 100%;
        color: #ffffff;
 
        @media(max-width:1300px){

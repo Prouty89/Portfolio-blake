@@ -53,9 +53,7 @@ function Skill() {
             well-structured and thoughtful products.
             </div>
           </div>
-          </div>
-          <br />
-          <div className = "character-skills">
+         
           <div className="good-par">
             <div className="par-title">
             Education
@@ -83,7 +81,7 @@ function Skill() {
             <div className="par-text">
             Frontend, Backend, or Full-Stack software engineering.
             </div>
-          </div>
+            </div>
           </div>
             <div className="base-container">
             <div className="base-text">

@@ -90,7 +90,7 @@ function Side(){
                             <div className="fourth-child" id="projects" data-section="projects">
                                 <Projects />
                             </div>
-                            <div className="fifth-child" id="contact" data-section="contract">
+                            <div className="fifth-child" id="contact" data-section="contact">
                             <Contact />
                             </div>
                             </Suspense>
