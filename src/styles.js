@@ -69,11 +69,11 @@ font-family: 'Work Sans', sans-serif;
         .trails-main{
             display: flex;
             flex-direction: column;
-            height: 65%;
+            height: 80%;
             width: 100%;
             align-items: center;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             @media(max-width:750px){
                 
             }
@@ -259,7 +259,12 @@ font-family: 'Work Sans', sans-serif;
 color: black;
 
 .first-child{
-    
+  .bg-img {
+    width: 85%;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: -1;
+  }
 }
 
 .third-child{
@@ -274,12 +279,9 @@ color: black;
     }
 
     .base-skills{
-        height: 20%
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 3%;
-
         @media(max-width: 1350px){
             display:none;
         }
@@ -290,10 +292,12 @@ color: black;
         padding-bottom: 10px;
         font-size: 30px;
         font-weight: bold;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
 }
 .fourth-child{
-    background: #F8F8F1;
+    background: rgba(0, 0, 0, 0.5);
     height: 100vh;
 
     @media(max-width: 1150px){
@@ -344,28 +348,6 @@ color: black;
 
 
 // Home.js Styles
-export const StyledImage = styled.div`
-  .bg-img {
-    display: flex;
-    justify-content: end !important;
-    width: 100% !important;
-    position: fixed !important;
-    z-index: -1;
-    height: 3235px !important;
-
-    @media (max-width: 1350px) {
-      width: 150% !important;
-    }
-
-    @media (max-width: 1150px) {
-      width: 200% !important;
-    }
-
-    img {
-      height: 30% !important;
-    }
-  }
-`;
 
 // Projects.js Styles
 export const StyledProjects = styled.div`
@@ -481,7 +463,7 @@ export const StyledProjects = styled.div`
 `;
 // Skills.js Styles
 export const StyledSkills = styled.div`
-  height: 910px;
+  height: 978px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -491,6 +473,22 @@ export const StyledSkills = styled.div`
     display: flex;
     min-height: 100 vh;
     justify-content: center;
+  }
+
+  .skills-title{
+      width: 100%;
+      margin-bottom: 1%;
+      font-size: 1.2rem;
+      margin-top: 1%;
+      align-self: center;
+      text-align: center;
+      text-decoration: underline;
+      font-weight: bold;
+
+      @media(max-width: 1150px){
+        text-align: center;
+        width: 100%;
+    }
   }
 
   .location{
@@ -509,10 +507,18 @@ export const StyledSkills = styled.div`
     margin-block-end: 0px;
   }
 
+  .accordion-skills{
+    display: flex;
+    color: #777777;
+    justify-content: space-between;
+    width: 80%;
+    align-self: center;
+  }
+
   
   .skill-container {
-    height: 70%;
-    width: 82%;
+    height: 810px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -529,7 +535,7 @@ export const StyledSkills = styled.div`
       color: #777777;
       width: 100%;
       justify-content: space-around;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-bottom: 10px;
     }
 
@@ -603,6 +609,7 @@ export const StyledSkills = styled.div`
     .character{
       display: flex;
       justify-content: space-between;
+      margin-bottom: 2%;
       flex-wrap: wrap;
     }
 
@@ -634,7 +641,9 @@ export const StyledSkills = styled.div`
     }
   }
   .base-container {
-    width: 90%;
+    width: 80%;
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #373737;
     align-self: center;
       @media (max-width: 1150px) {
         display: inherit;
@@ -648,9 +657,10 @@ export const StyledSkills = styled.div`
       color: #777777;
       text-align: justify;
       text-align-last: center;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: black;
-      margin-top: 3%;
+      margin-top: 1%;
+      margin-bottom: 1%;
       text-rendering: optimizeLegibility;
   
       @media (max-width: 1150px) {
@@ -663,161 +673,7 @@ export const StyledSkills = styled.div`
   }
 `;
 
-// Accordion Style on Skill.js
-export const StyledAccordion = styled.div`
-display: flex;
-position: absolute;
-bottom: 5px;
-width: 100%;
-height: 30%;
-padding-bottom: 20px;
-z-index: 1;
 
-@media(max-width: 1350px){
-    display: none;
-}
-
-.inds{
-  @media(max-width:1300px){
-    width: 50%;
-  }
-}
-
-.accordion-skills{
-    display: flex;
-    height: 270px !important;
-    margin-top: 1%;
-    width: 93%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 1%;
-    margin-right: 1%;
-    background: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
-    color: #777777;
-    border-radius: 8px;
-    justify-content: space-evenly;
-
-    @media(max-width:1300px){
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .rows{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 90px;
-
-        @media(max-width:1300px){
-            width: 33%;
-            display: flex;
-            height: 400px;
-            flex-direction: column;
-            justify-content: space-around;
-    
-        }
-    }
-
-
-}
-
-.baseskill-text{
-  position: absolute;
-  bottom: 48%;
-  left: 17%;
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  width: 64%;
-  background: #ffffff;
-  padding: 1%;
-  height: 27%;
-  color: #777777;
-  border-radius: 8px;
-  z-index: -1;
-  box-shadow: rgba(0,0,0,0.15) 0 0 4px;
-}
-
-.toggle-bar{
-    height: 100%;
-    margin-left: 3%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: flex-end;
-    padding-bottom: 50px;
-
-    @media(max-width:1300px){
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        padding-bottom: 0px;
-        height: 100%;
-    }
-    
-
-.btn-toggle{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    width: 40px;
-    border: none;
-    background: #373737;
-    cursor: pointer;
-    height: 274px;
-    align-self: flex-end;
-
-    &:focus{
-      outline: 0;
-    }
-
-    @media(max-width:1300px){
-        width: 350px;
-        height: 30px;
-        display: flex;
-        text-align:center;
-        align-self: center;
-      margin-bottom: 2%;
-    }
-}
-   span{
-       font-family: 'Work Sans', sans-serif;
-       display: flex;
-       justify-content: center; 
-       align-items: center;
-       height: 100%;
-       font-size: 1.5rem;
-       text-align: center;
-       writing-mode: vertical-lr;
-       transform: rotate(180deg);
-       width: 100%;
-       color: #ffffff;
-
-       @media(max-width:1300px){
-        display: flex;
-        justify-content: center;
-        writing-mode: rl;
-        font-size: 1rem;
-        text-align: center;
-        transform: rotate(0deg);
-    }
-   }
-
-   .row-one{
-    @media(max-width:1300px){
-        align-items: center;
-    } 
-   }
-}
-`;
 
 //Trees animation
 const rock = keyframes`

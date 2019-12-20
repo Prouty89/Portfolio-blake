@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { useTrail, animated } from 'react-spring';
 import Mountains from '../assets/Mountains.jpg';
-import { StyledImage } from '../styles';
-import { SimpleImg } from 'react-simple-img';
+
+import { LazyImageFull, ImageState } from 'react-lazy-images';
 
 
 
@@ -24,9 +24,20 @@ function Home(){
     })
     return(
     <div className="home-container">
-            <StyledImage className="list">
-                <SimpleImg className="bg-img" alt ="bg" animationDuration={1} src={Mountains} />
-            </StyledImage>
+    <LazyImageFull className="bg-img" src={Mountains}>
+        {({ imageProps, imageState, ref }) => (
+        <img
+            {...imageProps}
+            ref={ref}
+            src={
+            imageState === ImageState.LoadSuccess
+                ? imageProps.src
+                : "../assets/Computer.jpg"
+            }
+            style={{ opacity: ImageState.LoadSuccess ? "1" : "0.5" }}
+        />
+        )}
+    </LazyImageFull>
             <div className="trails-main" onFocus={() => set(state => !state)}>
                 {trail.map(({ x, height, ...rest }, index) => (
                     <animated.div className="font"

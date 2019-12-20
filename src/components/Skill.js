@@ -95,6 +95,9 @@ function Skill() {
                 </div>
             </div>
         </div>
+        <div className="skills-title">
+            Additional Development Skills
+        </div>
         <div className="accordion-skills">
             <div className="row-one rows">
                 <p  className="react inds">ReactJS</p>
