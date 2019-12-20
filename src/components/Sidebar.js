@@ -6,10 +6,10 @@ import Tweet from '../assets/Tweet.svg';
 import IG from '../assets/IG.svg';
 import Linkd from '../assets/Linkd.svg';
 import SVG from 'react-inlinesvg';
-
+import Pdf from '../assets/resume.pdf';
 
 import Home from './Home';
-import Accordion from './Accordion';
+
 
 const Skill = React.lazy(()=> import('./Skill'))
 const Projects = React.lazy(() => import('./Projects'))
@@ -39,6 +39,9 @@ function Side(){
                             </li>
                             <li>
                                 <a href ="#contact" data-nav-section="contact">Contact Me</a>
+                            </li>
+                            <li className="cv-res">
+                                <a href={Pdf} target = "_blank" className ="cvres-btn">Resume</a>
                             </li>
                         </ul>
                         <div className ="social-tray">
@@ -85,7 +88,7 @@ function Side(){
                             <Suspense fallback = {<h1> Loading... </h1>}>
                             <div className="third-child" id="skills" data-section="skills">
                                     <Skill />
-                                    <Accordion />
+                                
                             </div>
                             <div className="fourth-child" id="projects" data-section="projects">
                                 <Projects />
