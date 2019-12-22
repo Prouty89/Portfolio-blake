@@ -81,6 +81,9 @@ function Side(){
                             <li>
                                 <a href ="#contact" data-nav-section="contact">Contact Me</a>
                             </li>
+                            <li className="cv-res">
+                                <a href={Pdf} target = "_blank" className ="cvres-btn">Resume</a>
+                            </li>
                         </ul>
                             <section className="first-child" id="home" data-section="home">
                                 <Home />  

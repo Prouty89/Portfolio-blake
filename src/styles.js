@@ -88,11 +88,12 @@ font-family: 'Work Sans', sans-serif;
             justify-content: center;
             width: 40%;
             height: 80px;
-            border-right: 4px solid black;
-            border-left: 4px solid black;
             
             display: flex;
-            background: rgba(0, 0, 0, .7);
+            background: rgba(0, 0, 0, .5);
+            -moz-box-shadow: 3px 3px 5px black;
+            -webkit-box-shadow:3px 3px 5px black;
+            box-shadow:3px 3px 5px black;
 
             @media(max-width:1700px){
                 margin-left: 0;
@@ -120,55 +121,7 @@ font-family: 'Work Sans', sans-serif;
         }
     }
 
-    .cv-res{
-        height: 150px;
-        display: flex;
-        align-items: flex-end;
-        width: 200px;
-        justify-content: center;
-        margin-top: 25px;
-        font-size: 21px;
-        text-align: center;
-        animation: 3s ${fadeIn};
-        
-        
 
-        @media(max-width:1700px){
-            justify-content: center;
-            padding-right: 10px;
-        }
-
-        @media(max-height:600px){
-           
-        }
-    }
-
-    .cvres-btn{
-        display: flex;
-        font-family: 'Work Sans', sans-serif;
-        background: #373737;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        box-shadow: 2px 2px 6px black;
-        font-family: 'Work Sans', sans-serif;
-        height: 50px;
-        font-size: 22px;
-        border-radius: 2px;
-        width: 146px;
-        justify-content: center;
-        align-items: center;
-        transition: width .6s;
-        cursor: pointer;
-
-        &:focus{
-            outline: 0;
-          }
-
-        &:hover{
-            width:166px;
-        }
-    }
 
     
 }
@@ -260,7 +213,8 @@ color: black;
 
 .first-child{
   .bg-img {
-    width: 85%;
+    width: 1980px;
+    height: 1000px;
     overflow-x: hidden;
     position: fixed;
     z-index: -1;
@@ -418,6 +372,9 @@ export const StyledProjects = styled.div`
     padding: 2%;
   }
 
+  .card-six{
+    visibility: hidden;
+  }
 
 
   .card-links {
@@ -487,6 +444,7 @@ export const StyledSkills = styled.div`
 
       @media(max-width: 1150px){
         text-align: center;
+        display: none;
         width: 100%;
     }
   }
@@ -505,7 +463,15 @@ export const StyledSkills = styled.div`
     text-align: center;
     margin-block-start: 0px;
     margin-block-end: 0px;
+    font-size: 2rem;
+    padding: 1%;
+
+    @media(max-width: 1150px){
+      font-size: 1.3rem;
+    }
   }
+
+  
 
   .accordion-skills{
     display: flex;
@@ -513,6 +479,10 @@ export const StyledSkills = styled.div`
     justify-content: space-between;
     width: 80%;
     align-self: center;
+
+    @media(max-width: 1150px){
+      display: none;
+    }
   }
 
   

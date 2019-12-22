@@ -32,9 +32,9 @@ function Home(){
             src={
             imageState === ImageState.LoadSuccess
                 ? imageProps.src
-                : "../assets/Computer.jpg"
+                : " "
             }
-            style={{ opacity: ImageState.LoadSuccess ? "1" : "0.5" }}
+            style={{ opacity: ImageState.LoadSuccess ? "1" : "0.8" }}
         />
         )}
     </LazyImageFull>

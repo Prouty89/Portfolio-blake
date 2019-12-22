@@ -1,4 +1,3 @@
 # Todo
 
--fix background img 
-- fix responsive about, projects
+- Add 6th Project
