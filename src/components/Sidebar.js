@@ -18,54 +18,8 @@ const Contact = React.lazy(()=> import('./Contact'))
 function Side(){
     return(
         <>
-            <StyledSB>
-     
-                <Sidebar className = "main-container"
-                    sidebar=
-                    {<b>
-                        <StyledList>
-                        <div className = "image"></div>
-                        <div className = "name-title">Blake Prouty</div>        
-                        <ul className= "sidebar-list">
-                            <li>
-                                <a href ="#home" data-nav-section="home">Home</a>
-                                
-                            </li>
-                            <li>
-                                <a href ="#skills" data-nav-section="skills">About</a>
-                            </li>
-                            <li>
-                                <a href ="#projects" data-nav-section="projects">My Work</a>
-                            </li>
-                            <li>
-                                <a href ="#contact" data-nav-section="contact">Contact Me</a>
-                            </li>
-                            <li className="cv-res">
-                                <a href={Pdf} target = "_blank" className ="cvres-btn">Resume</a>
-                            </li>
-                        </ul>
-                        <div className ="social-tray">
-                            <h3>Get in touch</h3>
-                            <div className="social-icons">
-                                <SVG rel = "noopener" className="svg" src = {IG}/>
-                                <SVG rel = "noopener" className="svg" src = {Github}/>
-                                <SVG rel = "noopener" className="svg" src = {Tweet}/>
-                                <SVG rel = "noopener" className="svg" src = {Linkd}/>
-                            </div>
-                        </div>
-                        </StyledList>
-                    </b>}
-                    styles={{content: {overflowY: "visible", overflowX: "hidden"}},
-                            {root: {overflow: "hidden"}}}
-                    open={true}
-                    docked={false}
-                    onSetOpen={false}
-                    pullRight={false}
-                    contentClassName = {"content-container"}
-                    sidebarClassName = {"sidebar-container"}
-                    rootClassName = {"root-container"}
-                    overlayClassName = {"overlay-container"}
-                    children = {
+           
+                   
                     <StyledContent>
                         <ul className= "nav-list">
                             <li>
@@ -103,8 +57,8 @@ function Side(){
                     </StyledContent>
                     }
                     >
-                </Sidebar>
-            </StyledSB>
+               
+         
         </>
     )
 };

@@ -22,7 +22,7 @@ function Projects(){
             <h3>Riders for Life</h3>
             <h4>User Interface, Backend Application, SMS Messaging Utility</h4>
             <div className="proj-desc">
-              An 8 week co-op prototype application built for the non-profit organization Safe Mothers, Safe Babies. My primary focus included the development of a dashboard utility to process CRUD operations of individual Driver, Mother, and Admin user types stored in our database. Frontline SMS messaging platform was configured to our database, allowed for request/response messaging correspondence.
+              8 week project. Prototype application built for the non-profit organization Safe Mothers, Safe Babies. My primary focus included the development of a dashboard utility to process CRUD operations of individual Driver, Mother, and Admin user types stored in our database. Frontline SMS messaging platform was configured to our database, allowed for request/response messaging correspondence.
             </div>
             <div className="card-links">
               <a className="link" target="_blank" rel = "noopener" href="https://youtu.be/KM4jNYUOg7Y">Demo</a>

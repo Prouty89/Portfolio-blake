@@ -105,6 +105,7 @@ function Skill() {
                 <p  className="jest inds">Jest JavaScript Testing</p>
                 <p  className="gatsby inds">GatsbyJS PWA Generator</p>
                 <p  className="graphql inds">GraphQL Data Query</p>
+                <p  className="graphql inds">Typescript</p>
             </div>
             <div className="row-two rows">
                 <p className="node inds">NodeJS</p>

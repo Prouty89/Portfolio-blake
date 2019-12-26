@@ -1,168 +1,82 @@
 import styled, { keyframes } from 'styled-components';
-import Blake from './assets/Blake.jpg';
 
 
-// Sidebar.js Styles
-const fadeIn = keyframes`
-from { opacity: .4; }
-to   { opacity: 1; }
-`;
-// Sidebar.js main containers
-export const StyledSB = styled.div`
-animation: 2s ${fadeIn};
-font-family: 'Work Sans', sans-serif;
+// Sidebar.js component container styles
+export const StyledContent = styled.div`
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+scroll-behavior: smooth;
+color: black;
 
-.image{
-    background-image: url(${Blake});
-    height: 200px;
-    width: 50%;
-    padding: 5%;
+.first-child{
+  
+  height: 1000px;
+
+  .trails-main{
+
     display: flex;
-    margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 10px;
-    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
     align-items: center;
-    background-position: top;
-    background-size: cover;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.65) 2px 2px 6px;
-}
-
-.overlay-container{
-    display: none;
-}
-
-.content-container{
-    position: absolute;
-    width: calc(100% - 300px);
-    scroll-behavior: smooth;
-    left: initial !important;
-    overflow-x: hidden;
-
+    display: flex;
+    justify-content: flex-end;
     @media(max-width:750px){
-        width: 100%;
-    }
-
-    @media(max-height:750px){
-        overflow-y: hidden;
-    }
-    
-    .home-container{
         
-        height: 100vh;
-        position: relative;
-
-        @media(max-width:750px){
-            width: 100%;
-            height: 100vh;
-        }
-
-        .img-title{
-            color:white;
-            position: absolute;
-            bottom: 0;
-            left: 25px;
-        }
-        
-
-        .trails-main{
-            display: flex;
-            flex-direction: column;
-            height: 80%;
-            width: 100%;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            @media(max-width:750px){
-                
-            }
-        }
-
-        .trails-text{
-            color: #ffffff
-            display: flex;
-            align-items: center;
-            font-family: 'Work Sans', sans-serif;
-            font-size: 1.5rem;
-            justify-content: center;
-            width: 40%;
-            height: 80px;
-            
-            display: flex;
-            background: rgba(0, 0, 0, .5);
-            -moz-box-shadow: 3px 3px 5px black;
-            -webkit-box-shadow:3px 3px 5px black;
-            box-shadow:3px 3px 5px black;
-
-            @media(max-width:1700px){
-                margin-left: 0;
-                margin-left: 0;
-                
-                font-size: 1.5rem;
-                width: 70%;
-                height: 50px;
-                 
-            }
-
-            @media(max-width:1050px){
-                margin-left: 0;
-                margin-left: 0;
-                font-size: 1rem;
-                width: 90%;
-                height: 50px;
-               
-            }
-
-            @media(max-width:750px){
-                margin-left: 0%;
-                font-size: 1rem;
-            }
-        }
     }
-
-
-
-    
 }
 
-.sidebar-container{
-    font-family: 'Work Sans', sans-serif;
-    color: white;
-    background: #373737;
-    width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.65) 2px 2px 6px !important;
-    
- 
-    @media(max-width:750px){
-        display: none;
-    }
-}
-`;
-// Sidebar.js menu, desktop view
-export const StyledList = styled.div`
-  @import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
-  font-family: "Work Sans", sans-serif;
-
-  @media (max-width: 750px) {
-    display: none;
-  }
-
-  .name-title {
-    font-family: "Work Sans", sans-serif;
-    font-size: 30px;
+.trails-text{
+    color: #ffffff;
+    font-weight: 600;
     text-align: center;
-  }
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    justify-content: center;
+    width: 40%;
+    height: 80px;
+    
+
+    @media(max-width:1700px){
+        margin-left: 0;
+        margin-left: 0;
+        
+        font-size: 1.5rem;
+        width: 70%;
+        height: 50px;
+         
+    }
+
+    @media(max-width:1050px){
+        margin-left: 0;
+        margin-left: 0;
+        font-size: 1rem;
+        width: 90%;
+        height: 50px;
+       
+    }
+
+    @media(max-width:750px){
+        margin-left: 0%;
+        font-size: 1rem;
+    }
+}
+}
 
   .social-tray {
     font-size: 22px;
     position: absolute;
     bottom: 0;
     display: flex;
+    position: absolute;
+    bottom: -60px;
+    left: 30%;
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 40%;
     margin-bottom: 25px;
 
     @media (max-height: 750px) {
@@ -179,39 +93,6 @@ export const StyledList = styled.div`
       }
     }
   }
-
-  .sidebar-list {
-    font-size: 22px;
-    margin-top: 25px;
-    padding-inline-start: 0px;
-    height: 200px;
-    list-style-type: disc;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    a {
-      text-decoration: none;
-      color: white;
-      transition:  border-bottom 0.3s ease;
-
-      &:hover {
-        
-        border-bottom: 2px solid #4b67ff;
-        border-bottom-style: inset;
-      }
-    }
-  }
-`;
-// Sidebar.js component container styles
-export const StyledContent = styled.div`
-font-family: 'Work Sans', sans-serif;
-color: black;
-
-.first-child{
   .bg-img {
     width: 1980px;
     height: 1000px;
@@ -236,6 +117,8 @@ color: black;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        bottom: 25px;
         @media(max-width: 1350px){
             display:none;
         }
@@ -252,7 +135,7 @@ color: black;
 }
 .fourth-child{
     background: rgba(0, 0, 0, 0.5);
-    height: 100vh;
+    height: 1000px;
 
     @media(max-width: 1150px){
         height: 200vh;
@@ -270,15 +153,13 @@ color: black;
 }
 
 .nav-list{
-    display: none;
-    
-    @media(max-width: 750px){
         display: flex;
-        font-size: 15px;
+        font-size: 1.2rem;
         width: 100%;
-        height: 40px;
+        height: 80px;
         z-index: 1;
         align-items: center;
+        font-family: "Raleway", sans-serif;
         justify-content: space-evenly;
         background: #373737;
         margin: 0;
@@ -305,8 +186,10 @@ color: black;
 
 // Projects.js Styles
 export const StyledProjects = styled.div`
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+  font-family: "Raleway", sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
@@ -487,11 +370,12 @@ export const StyledSkills = styled.div`
 
   
   .skill-container {
+    font-family: "Raleway", sans-serif;
     height: 810px;
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     @media(max-width: 1761px){
@@ -619,7 +503,9 @@ export const StyledSkills = styled.div`
         display: inherit;
         height: auto;
         width: 100%;
+        border-bottom: none;
         justify-content: center;
+        padding: 1%;
       }
 
     .base-text {
@@ -636,8 +522,6 @@ export const StyledSkills = styled.div`
       @media (max-width: 1150px) {
         font-size: 1.1rem;
         width: 90%;
-        
-
       }
     }
   }
@@ -645,20 +529,10 @@ export const StyledSkills = styled.div`
 
 
 
-//Trees animation
-const rock = keyframes`
-0% {
-    transform: rotate(-2deg);
-  }
-  50% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(-2deg);
-  }
-`
+
 // Contact.js Styles
 export const StyledForm = styled.div`
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -672,15 +546,7 @@ export const StyledForm = styled.div`
     color: black;
     text-align: center;
   }
-  .trees {
-    padding: 15px;
-    animation: 5s ${rock} ease-in-out infinite;
-    align-self: flex-end;
-
-    @media (max-width: 1100px) {
-      display: none;
-    }
-  }
+  
 
   .footer{
     position: absolute;

@@ -32,7 +32,7 @@ function ContactForm() {
                 </button>
             </Form>
         <p className="footer">Designed and Developed by Blake Prouty</p>
-        <SVG className="trees" src={Trees} />
+        
         </StyledForm>
         </>
     )
