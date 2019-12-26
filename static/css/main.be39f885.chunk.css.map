@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KAII,QAAgB,CAChB,iBACJ,CAEA,KACI,sBACJ","file":"main.be39f885.chunk.css","sourcesContent":["body{\r\n    margin-top: 0px;\r\n    margin-right: 0px;\r\n    margin-bottom: 0px;\r\n    margin-left: 0px;\r\n    overflow-x: hidden;\r\n}\r\n\r\nhtml{\r\n    scroll-behavior: smooth;\r\n}"]}
