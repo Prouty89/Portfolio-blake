@@ -1,9 +1,6 @@
 import React from "react";
 import { StyledSkills } from '../styles';
-import JS from '../assets/JS.svg';
-import CSS from '../assets/CSS.svg';
-import HTML from '../assets/HTML.svg';
-import SVG from 'react-inlinesvg';
+
 
 
 
@@ -11,16 +8,13 @@ function Skill() {
   return (
     <StyledSkills className="skills-content">
       <div className="skill-container">
-        <h2 className="skills-head">
+        <h1 className="skills-head">
           Designing, testing, and devoloping your next progressive web
           application.
-        </h2>
+        </h1>
       <div className="availibility">
-        <h3 className="location">
-          Current Location: Sioux Falls, SD 
-        </h3>
         <h3 className="relocation">
-          Relocation: Yes, please.
+          Open to relocation
         </h3>
       </div>
         
@@ -103,33 +97,32 @@ function Skill() {
                 <p  className="react inds">ReactJS</p>
                 <p  className="redux inds">Redux</p>
                 <p  className="jest inds">Jest JavaScript Testing</p>
-                <p  className="gatsby inds">GatsbyJS PWA Generator</p>
                 <p  className="graphql inds">GraphQL Data Query</p>
-                <p  className="graphql inds">Typescript</p>
             </div>
             <div className="row-two rows">
                 <p className="node inds">NodeJS</p>
-                <p className="node inds">RESTful API protocols</p>
                 <p  className="express inds">Express.js</p>
-                <p  className="sql">Structured Query Langquage</p>
                 <p  className="sqlite inds">SQLite DBMS</p>
                 <p  className="postgres inds">PostgreSQL DMBS</p>
             </div>
             <div className="row-three rows">
                 <p  className="python inds">Python</p>
-                <p  className="vsc inds">Scrum Teamwork</p>
+                <p className="node inds">RESTful API protocols</p>
+                <p  className="graphql inds">Typescript</p>
+                <p  className="sql">Structured Query Langquage</p>
+                <p  className="figma inds">Figma Interface Design System</p>
+            </div>
+            <div className="row-four rows">
+                <p  className="gatsby inds">GatsbyJS PWA Generator</p>
+                <p  className="vsc inds">Scrum Methods</p>
                 <p  className="vsc inds">Visual Studio Code</p>
                 <p className="git inds">Best Git Practices</p>
-                <p  className="figma inds">Figma Interface Design System</p>
+            
             </div>
         </div>
       </div>
       </div>
-        <div className="base-skills">
-        <SVG className="html inds-b" src={HTML} />
-        <SVG className="css inds-b" src={CSS} />
-        <SVG className="js inds-b" src={JS} />
-        </div>
+      
     </StyledSkills>
   );
 }

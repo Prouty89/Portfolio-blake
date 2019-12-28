@@ -13,7 +13,7 @@ import { LazyImageFull, ImageState } from 'react-lazy-images';
 
 
 
-const items = ["Hello! I'm Blake, a full stack developer", 'specializing in Javascript and Python', 'Take a look at my work and lets connect!']
+const items = ["Hello! I'm Blake, a full stack developer", 'working primarily in Javascript and Python', 'Take a look at my work and lets connect!']
 const config = { mass: 140, tension: 2000, friction: 800 }
 
 
@@ -21,8 +21,8 @@ function Home(){
     const [toggle, set] = useState(true)
     const trail = useTrail(items.length, {
       config,
-      opacity: toggle ? .9 : .5,
-      y: toggle ? 0 : 90,
+      opacity: toggle ? .9 : .3,
+      y: toggle ? 0 : 30,
       height: toggle ? 30 : 0,
       from: { opacity: 0, x: 80, height: 600 },
       delay: 2000,

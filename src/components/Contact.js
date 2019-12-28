@@ -3,39 +3,61 @@ import * as Yup from 'yup';
 import {Field, Form, withFormik} from "formik"
 import axios from 'axios';
 import { StyledForm } from '../styles';
-import Trees from '../assets/Trees.svg';
-import SVG from 'react-inlinesvg';
+
 
 function ContactForm() {
-    
-    return (
-        <>
-        <StyledForm className="form-container">
-            <p className= "form-heading">Contact me directly with your opportunity.</p>
-            <Form className="form">
-                <Field name={"name"} placeholder={"Name*"} type={"text"} className="name-field field"/>
+  return (
+    <>
+      <StyledForm className="form-container">
+        <p className="form-heading">
+          Contact me directly with your opportunity.
+        </p>
+        <Form className="form">
+          <Field
+            name={"name"}
+            placeholder={"Name*"}
+            type={"text"}
+            className="name-field field"
+          />
 
-                
-                <Field name={"company"} placeholder={"Company*"} type={"text"} className="company-field field"/>
+          <Field
+            name={"company"}
+            placeholder={"Company*"}
+            type={"text"}
+            className="company-field field"
+          />
 
-                
-                <Field name={"phone"} placeholder={"Phone"} type={"phone"} className="phone-field field"/>
+          <Field
+            name={"phone"}
+            for={"phone"}
+            placeholder={"Phone"}
+            type={"phone"}
+            className="phone-field field"
+          />
 
-               
-                <Field name={"email"} placeholder={"Email*"} type={"email"} className="email-field field"/>
+          <Field
+            name={"email"}
+            placeholder={"Email*"}
+            type={"email"}
+            className="email-field field"
+          />
 
-                
-                <Field name={"message"} placeholder={"Message*"} input={"textarea"} type={"text"} className="message-field field"/>
+          <Field
+            name={"message"}
+            placeholder={"Message*"}
+            input={"textarea"}
+            type={"text"}
+            className="message-field field"
+          />
 
-                <button type={"submit"} className="submit-btn">
-                    Submit
-                </button>
-            </Form>
+          <button type={"submit"} className="submit-btn">
+            Submit
+          </button>
+        </Form>
         <p className="footer">Designed and Developed by Blake Prouty</p>
-        
-        </StyledForm>
-        </>
-    )
+      </StyledForm>
+    </>
+  );
 }
 
 const FormikContactForm = withFormik({

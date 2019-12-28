@@ -9,8 +9,11 @@ color: black;
 
 .first-child{
   
-  height: 1000px;
+  height: 700px;
 
+  @media(max-width:750px){
+      height: 475px;
+  }
   .trails-main{
 
     display: flex;
@@ -19,10 +22,7 @@ color: black;
     width: 100%;
     align-items: center;
     display: flex;
-    justify-content: flex-end;
-    @media(max-width:750px){
-        
-    }
+    justify-content: center;
 }
 
 .trails-text{
@@ -65,28 +65,37 @@ color: black;
 }
 
   .social-tray {
-    font-size: 22px;
     position: absolute;
-    bottom: 0;
     display: flex;
     position: absolute;
-    bottom: -60px;
-    left: 30%;
+    top: 55px;
+    left: 66px;
     color: white;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    width: 40%;
-    margin-bottom: 25px;
+    height: 400px;
 
-    @media (max-height: 750px) {
-      position: relative;
+    @media(max-width: 750px){
+      width: 90%;
+      height: 20%;
+      left: 7%;
+      bottom: 0;
     }
+
+    
 
     .social-icons {
       display: flex;
+      flex-direction: column;
       width: 70%;
+      height: 100%;
       justify-content: space-around;
+
+      @media(max-width: 750px){
+        flex-direction: row;
+        height: 20%;
+      }
 
       .svg {
         cursor: pointer;
@@ -94,35 +103,26 @@ color: black;
     }
   }
   .bg-img {
-    width: 1980px;
-    height: 1000px;
+    width: 100%;
+    height: 750px;
     overflow-x: hidden;
     position: fixed;
     z-index: -1;
+
+    @media(max-width: 750px){
+      width: 800px;
+    }
   }
 }
 
 .third-child{
     background: #F8F8F1;
- 
     position: relative;
-
-
-
     @media(max-width: 1150px){
-      height: 1350px;
+      height: 1250px;
     }
 
-    .base-skills{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        bottom: 25px;
-        @media(max-width: 1350px){
-            display:none;
-        }
-    }
+  
 
     .skill-title{
         padding-top: 35px;
@@ -134,8 +134,10 @@ color: black;
     }
 }
 .fourth-child{
-    background: rgba(0, 0, 0, 0.5);
-    height: 1000px;
+    background: #F8F8F1;
+    height: 935px;
+    display: flex;
+    align-items: center;
 
     @media(max-width: 1150px){
         height: 200vh;
@@ -159,25 +161,30 @@ color: black;
         height: 80px;
         z-index: 1;
         align-items: center;
+        background: #373737;
+        box-shadow: rgba(5,5,5,0.25) 0 10px 12px;
         font-family: "Raleway", sans-serif;
         justify-content: space-evenly;
-        background: #373737;
         margin: 0;
-        padding: 0;
+        padding: 0; 
         position: sticky;
         top: 0;
+       
+        @media(max-width: 1150px){
+          font-size: .8rem;
+          height: 60px;
+        }
         
         li{
             list-style: none;
         }
     }
-
-    a{
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-        cursor: pointer;
-    }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
 }
 `;
 
@@ -189,9 +196,11 @@ export const StyledProjects = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
   font-family: "Raleway", sans-serif;
   display: flex;
-  justify-content: space-evenly;
+  margin: 0 auto;
   height: 100%;
-  width: 100%;
+  margin-bottom: 1%;
+  justify-content: flex-end;
+  width: 70%;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -308,11 +317,12 @@ export const StyledSkills = styled.div`
   align-items: center;
   flex-direction: column;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 750px) {
     height: 100%;
     display: flex;
     min-height: 100 vh;
-    justify-content: center;
+    padding-top: 75px;
+    justify-content: flex-start;
   }
 
   .skills-title{
@@ -371,7 +381,7 @@ export const StyledSkills = styled.div`
   
   .skill-container {
     font-family: "Raleway", sans-serif;
-    height: 810px;
+    height: 850px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -481,11 +491,15 @@ export const StyledSkills = styled.div`
       text-align: left;
       font-size: 1.1rem;
       text-rendering: optimizeLegibility;
-      width: 95%;
+      width: 85%;
       display: flex;
       flex-direction: column;
       border-radius: 8px;
       box-shadow: rgba(0,0,0,0.15) 0 0 6px;
+
+      @media(max-width: 750px){
+        width: 95%;
+      }
   
       p{
           text-align: left;
