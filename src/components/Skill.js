@@ -9,7 +9,7 @@ function Skill() {
     <StyledSkills className="skills-content">
       <div className="skill-container">
         <h1 className="skills-head">
-          Designing, testing, and devoloping your next progressive web
+          Designing, testing, and devoloping your next web
           application.
         </h1>
       <div className="availibility">
