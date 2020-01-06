@@ -8,17 +8,17 @@ function Skill() {
   return (
     <StyledSkills className="skills-content">
       <div className="skill-container">
-        <h1 className="skills-head">
-          Designing, testing, and devoloping your next progressive web
-          application.
-        </h1>
-      <div className="availibility">
-        <h3 className="relocation">
-          Open to relocation
-        </h3>
-      </div>
-        
         <div className="skills-text">
+        <div className="skills-head">
+          <h1>
+          Designing, testing, and developing your next web
+          application.
+          </h1>
+          <h3 className="relocation">
+          Very open to relocation
+          </h3>
+        </div>
+        <div className = "side-detail">
           <div className = "character">
           <div className="good-par">
           <div className="par-title">
@@ -34,7 +34,7 @@ function Skill() {
             Communication
             </div>
             <div className="par-text">
-            Conducts self in a patient, understanding manner.
+            I conduct myself in a patient, understanding manner.
             Clear, professional oral and written communication are core tenets.
             </div>
           </div>
@@ -43,11 +43,12 @@ function Skill() {
             Organization
             </div> 
             <div className="par-text">
-            Self-managed, adheres to deadlines, delivers
-            well-structured and thoughtful products.
+            Self-managed, adheres to deadlines. Delivers
+            well-structured, thoughtful, and scalable code.
             </div>
           </div>
-         
+          </div>
+         <div className="additional-info">
           <div className="good-par">
             <div className="par-title">
             Education
@@ -65,7 +66,7 @@ function Skill() {
             </div>
             <div className="par-text">
             Human connection, teamwork, life-long learning,
-            everything outdoors!
+            everything outdoors! I am also enamored with reading, cooking, and culture. 
             </div>
           </div>
           <div className="good-par">
@@ -76,19 +77,7 @@ function Skill() {
             Frontend, Backend, or Full-Stack software engineering.
             </div>
             </div>
-          </div>
-            <div className="base-container">
-            <div className="base-text">
-                <div className="baseskill-text">
-                I have a firm grasp on the core of Javascript including ES6
-                features. Understands async code and event looping. Utilizes
-                developer tools to comfortably manipulate the DOM, and the network
-                panel to debug requests. Has built several UIs, widgets, and game
-                applications using the ReactJS framework. For backend applications I
-                use NodeJS to develop server-side and networking applications.
-                </div>
             </div>
-        </div>
         <div className="skills-title">
             Additional Development Skills
         </div>
@@ -109,15 +98,15 @@ function Skill() {
                 <p  className="python inds">Python</p>
                 <p className="node inds">RESTful API protocols</p>
                 <p  className="graphql inds">Typescript</p>
-                <p  className="sql">Structured Query Langquage</p>
-                <p  className="figma inds">Figma Interface Design System</p>
+                <p  className="sql">SQL</p>
+                <p  className="figma inds">Figma Design</p>
             </div>
             <div className="row-four rows">
-                <p  className="gatsby inds">GatsbyJS PWA Generator</p>
+                <p  className="gatsby inds">GatsbyJS</p>
                 <p  className="vsc inds">Scrum Methods</p>
-                <p  className="vsc inds">Visual Studio Code</p>
+                <p  className="vsc inds">VSCode</p>
                 <p className="git inds">Best Git Practices</p>
-            
+            </div>
             </div>
         </div>
       </div>

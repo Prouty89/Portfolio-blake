@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 import { useTrail, animated } from 'react-spring';
-import Mountains from '../assets/Mountains.jpg';
+import Palm from '../assets/Palm.jpg';
 import Github from '../assets/Github.svg';
 import Tweet from '../assets/Tweet.svg';
 import IG from '../assets/IG.svg';
 import Linkd from '../assets/Linkd.svg';
 import SVG from 'react-inlinesvg';
+import Blake from '../assets/BlakeP.jpg';
+
 
 import { LazyImageFull, ImageState } from 'react-lazy-images';
 
@@ -25,11 +27,11 @@ function Home(){
       y: toggle ? 0 : 30,
       height: toggle ? 30 : 0,
       from: { opacity: 0, x: 80, height: 600 },
-      delay: 2000,
+      delay: 1300,
     })
     return(
-    <div className="home-container">
-    <LazyImageFull className="bg-img" src={Mountains}>
+        <div className = "home-wrap">
+    <LazyImageFull className="bg-img" src={Palm} alt = "headimg">
         {({ imageProps, imageState, ref }) => (
         <img
             {...imageProps}
@@ -43,6 +45,7 @@ function Home(){
         />
         )}
     </LazyImageFull>
+    <div className="home-container">
         <div className ="social-tray">
             <div className="social-icons">
                 <SVG rel = "noopener" className="svg" src = {IG}/>
@@ -61,6 +64,8 @@ function Home(){
                     </animated.div>
                 ))}
             </div>
+            <img className ="blake-photo" src={Blake} alt = "profpho"/>
+    </div>
     </div>
     )
 }

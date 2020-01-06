@@ -7,7 +7,7 @@ function Projects(){
  
   return(
     <StyledProjects className="card-container">
-      <div className="card-one">
+      <div className="card-one card">
         <a rel = "noopener" className= "a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} 
@@ -62,7 +62,7 @@ function Projects(){
           </BackSide>
         </Flippy>
       </div>
-      <div className="card-two">
+      <div className="card-two card">
         <a className="a-link" target="_blank" rel = "noopener" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} 
@@ -100,7 +100,7 @@ function Projects(){
           </BackSide>
         </Flippy>
       </div>
-      <div className="card-three">
+      <div className="card-three card">
         <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} 
@@ -136,7 +136,7 @@ function Projects(){
           </BackSide>
         </Flippy>
       </div>
-      <div className="card-four">
+      <div className="card-four card">
         <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} 
@@ -174,7 +174,7 @@ function Projects(){
           </BackSide>
         </Flippy>
       </div>
-      <div className="card-five">
+      <div className="card-five card">
         <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} 
@@ -210,7 +210,7 @@ function Projects(){
           </BackSide>
         </Flippy>
       </div>
-      <div className="card-six">
+      <div className="card-six card">
         <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} 

@@ -1,4 +1,8 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import Ocean from './assets/Ocean.jpg';
+import First from './assets/Fruit1.jpg'
+import Second from './assets/second1.jpg';
+
 
 
 // Sidebar.js component container styles
@@ -8,33 +12,67 @@ scroll-behavior: smooth;
 color: black;
 
 .first-child{
+  .blake-photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+   
+
+    @media(max-width: 800px){
+      width: 130px;
+      height: 130px; 
+    }
+  }
   
   height: 700px;
 
   @media(max-width:750px){
       height: 475px;
   }
-  .trails-main{
 
+.home-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  @media(max-width: 800px){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+  .trails-main{
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 700px;
+    background: rgba(55, 55, 55, .6);
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
+
+    @media(max-width: 800px){
+      height: 290px;
+      justify-content: end;
+      margin-bottom: 0px;
+    }
 }
 
 .trails-text{
     color: #ffffff;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     align-items: center;
     font-family: "Raleway", sans-serif;
     font-size: 2rem;
-    font-weight: 600;
     justify-content: center;
-    width: 40%;
+    width: 100%;
     height: 80px;
     
 
@@ -43,8 +81,8 @@ color: black;
         margin-left: 0;
         
         font-size: 1.5rem;
-        width: 70%;
-        height: 50px;
+        width: 100%;
+        height: 70px;
          
     }
 
@@ -52,35 +90,32 @@ color: black;
         margin-left: 0;
         margin-left: 0;
         font-size: 1rem;
-        width: 90%;
-        height: 50px;
+        width: 100%;
+        height: 60px;
        
     }
 
-    @media(max-width:750px){
+    @media(max-width:800px){
         margin-left: 0%;
         font-size: 1rem;
+        text-align: center;
     }
-}
+  }
 }
 
   .social-tray {
-    position: absolute;
+  
     display: flex;
-    position: absolute;
-    top: 55px;
-    left: 66px;
+    background: rgba(55, 55, 55, .6);
     color: white;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 100%;
 
-    @media(max-width: 750px){
-      width: 90%;
-      height: 20%;
-      left: 7%;
-      bottom: 0;
+    @media(max-width: 800px){
+      width: 100%;
+      height: 55px;
     }
 
     
@@ -88,13 +123,13 @@ color: black;
     .social-icons {
       display: flex;
       flex-direction: column;
-      width: 70%;
-      height: 100%;
+      height: 50%;
       justify-content: space-around;
 
-      @media(max-width: 750px){
+      @media(max-width: 800px){
         flex-direction: row;
-        height: 20%;
+        height: 40%;
+        width: 100%;
       }
 
       .svg {
@@ -109,17 +144,17 @@ color: black;
     position: fixed;
     z-index: -1;
 
-    @media(max-width: 750px){
+    @media(max-width: 800px){
       width: 800px;
     }
   }
 }
 
 .third-child{
-    background: #F8F8F1;
     position: relative;
+    background-image: url(${Ocean});
     @media(max-width: 1150px){
-      height: 1250px;
+      height: 1000px;
     }
 
   
@@ -133,19 +168,59 @@ color: black;
         margin-bottom: 1%;
     }
 }
+
+.base-container{
+  height: 80px;
+    background: #f8f8f1;
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #373737;
+    border-bottom: 2px solid #373737;
+
+    @media(max-width: 750px){
+      height: 150px;
+    }
+
+    .base-text{
+      display: flex;
+      justify-content: center;
+    }
+
+    .baseskill-text{
+      width: 75%;
+      font-size: 1.3rem;
+      font-family: "Raleway", sans-serif;
+
+      @media(max-width: 1000px){
+        font-size: 1rem;
+        width: 100%;
+       
+      }
+    }
+}
+
 .fourth-child{
-    background: #F8F8F1;
+    background-image: url(${Second});
+    background-size: cover;
     height: 935px;
     display: flex;
     align-items: center;
 
-    @media(max-width: 1150px){
-        height: 200vh;
+    @media(max-width: 735px){
+        height: 170vh;
     }
+
+    @media(max-width: 535px){
+      height: 200vh;
+  }
 }
 
 .fifth-child{
-    background: #F8F8F1;
+    background-image: url(${First});
+    background-size: cover;
     height: 100vh;
     position: relative;
 
@@ -158,11 +233,11 @@ color: black;
         display: flex;
         font-size: 1.2rem;
         width: 100%;
-        height: 80px;
+        height: 60px;
         z-index: 1;
         align-items: center;
-        background: #373737;
-        box-shadow: rgba(5,5,5,0.25) 0 10px 12px;
+        background: black;
+        outline: 2px solid white;
         font-family: "Raleway", sans-serif;
         justify-content: space-evenly;
         margin: 0;
@@ -195,28 +270,20 @@ color: black;
 export const StyledProjects = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
   font-family: "Raleway", sans-serif;
-  display: flex;
-  margin: 0 auto;
-  height: 100%;
-  margin-bottom: 1%;
-  justify-content: flex-end;
-  width: 70%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  width: 100%;
+  align-self: center;
+  margin-top: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
 
-  @media (max-width: 1500px) {
-    align-items: center;
-    flex-direction: row;
+  @media(max-width: 1150px){
+    display: flex;
     flex-wrap: wrap;
   }
 
-  @media(max-width: 1100px){
-    flex-direction: column;
-    flex-wrap: nowrap;
-    min-height: 1200px;
-    justify-content: center;
-  }
 
   .dead-btn {
     transform: rotate(290deg);
@@ -260,8 +327,12 @@ export const StyledProjects = styled.div`
   p{
     margin-block-start: 0px;
     margin-block-end: 0px;
-    color: #777777;
+    
     padding: 2%;
+  }
+
+  .card{
+    margin: 0 auto;
   }
 
   .card-six{
@@ -273,14 +344,15 @@ export const StyledProjects = styled.div`
     position: absolute;
     bottom: 3%;
     display: flex;
+    
     border-top: 2px solid #777777;
     justify-content: space-between;
     width: 90%;
 
     .link {
       text-decoration: none;
-      color: #777777;
       padding: 2%;
+      color: #777777;
     }
   }
 
@@ -312,10 +384,11 @@ export const StyledProjects = styled.div`
 `;
 // Skills.js Styles
 export const StyledSkills = styled.div`
-  height: 978px;
+  height: 875px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  
 
   @media (max-width: 750px) {
     height: 100%;
@@ -353,25 +426,43 @@ export const StyledSkills = styled.div`
   }
 
   .skills-head {
-    text-align: center;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    font-size: 2rem;
-    padding: 1%;
+    font-size: 1.55em;
+    text-align: left;
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
 
-    @media(max-width: 1150px){
-      font-size: 1.3rem;
+    @media(max-width: 800px){
+      font-size: 1em;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+    @media(max-width: 500px){
+      font-size: .7em;
+    }
+
+    h1{
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+
+      @media(max-width: 800px){
+        margin-bottom: 25px;
+      }
     }
   }
 
   
 
   .accordion-skills{
-    display: flex;
-    color: #777777;
-    justify-content: space-between;
-    width: 80%;
-    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
     @media(max-width: 1150px){
       display: none;
@@ -382,10 +473,10 @@ export const StyledSkills = styled.div`
   .skill-container {
     font-family: "Raleway", sans-serif;
     height: 850px;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
     @media(max-width: 1761px){
@@ -396,7 +487,6 @@ export const StyledSkills = styled.div`
     .availibility{
       display: flex;
       flex-wrap: wrap;
-      color: #777777;
       width: 100%;
       justify-content: space-around;
       margin-top: 10px;
@@ -417,8 +507,8 @@ export const StyledSkills = styled.div`
         margin-bottom: 2%;
         font-size: 1.2rem;
         margin-top: 1%;
-        align-self: center;
-        text-align: center;
+        
+        text-align: left;
         text-decoration: underline;
         font-weight: bold;
 
@@ -430,7 +520,7 @@ export const StyledSkills = styled.div`
 
       .small{
         margin-bottom: 1%;
-        width: 375px;
+        width: 225px;
         align-self: center;
         text-align: center;
         
@@ -443,11 +533,10 @@ export const StyledSkills = styled.div`
     }
       .education{
         margin-bottom: 1%;
-        width: 375px;
-        align-self: center;
-        color: #777777;
+        width: 255px;
+        align-self: left;
         text-align: left;
-        text-align-last: auto;
+       
 
         @media(max-width: 1150px){
           text-align: center;
@@ -457,12 +546,8 @@ export const StyledSkills = styled.div`
 
       .par-text{
         margin-bottom: 1%;
-        width: 375px;
-        align-self: center;
-        text-align: justify;
-        color: #777777;
-        text-align-last: auto;
-
+        width: 255px;
+      
         @media(max-width: 1150px){
           text-align: center;
           width: 90%;
@@ -471,10 +556,29 @@ export const StyledSkills = styled.div`
     }
 
     .character{
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 2%;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 0px;
+
+      @media(max-width: 800px){
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .additional-info{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 5px;
+
+      @media(max-width: 800px){
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .character-skills{
@@ -485,57 +589,27 @@ export const StyledSkills = styled.div`
     
     
     .skills-text{
-      background: #ffffff;
+      background: #f8f8f1;
       color: black;
       padding: 2%;
       text-align: left;
       font-size: 1.1rem;
       text-rendering: optimizeLegibility;
-      width: 85%;
+      width: 90%;
       display: flex;
-      flex-direction: column;
+      
       border-radius: 8px;
       box-shadow: rgba(0,0,0,0.15) 0 0 6px;
 
-      @media(max-width: 750px){
-        width: 95%;
+      @media(max-width: 500px){
+        width: 90%;
+        flex-direction: column;
       }
   
       p{
           text-align: left;
           margin-block-start: .2em;
           margin-block-end: .2em;
-      }
-    }
-  }
-  .base-container {
-    width: 80%;
-    border-top: 1px solid #373737;
-    border-bottom: 1px solid #373737;
-    align-self: center;
-      @media (max-width: 1150px) {
-        display: inherit;
-        height: auto;
-        width: 100%;
-        border-bottom: none;
-        justify-content: center;
-        padding: 1%;
-      }
-
-    .base-text {
-      background: #ffffff;
-      color: #777777;
-      text-align: justify;
-      text-align-last: center;
-      font-size: 1.3rem;
-      color: black;
-      margin-top: 1%;
-      margin-bottom: 1%;
-      text-rendering: optimizeLegibility;
-  
-      @media (max-width: 1150px) {
-        font-size: 1.1rem;
-        width: 90%;
       }
     }
   }
@@ -565,7 +639,6 @@ export const StyledForm = styled.div`
   .footer{
     position: absolute;
     bottom: 40px;
-    color: #777777;
     font-size: 1.2rem;
     text-align: center;
     z-index: 0;
