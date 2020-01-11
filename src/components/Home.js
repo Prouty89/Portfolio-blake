@@ -31,7 +31,7 @@ function Home(){
     })
     return(
         <div className = "home-wrap">
-    <LazyImageFull className="bg-img" src={Palm} alt = "headimg">
+        <LazyImageFull className="bg-img" src={Palm} alt = "headimg">
         {({ imageProps, imageState, ref }) => (
         <img
             {...imageProps}
@@ -41,7 +41,7 @@ function Home(){
                 ? imageProps.src
                 : " "
             }
-            style={{ opacity: ImageState.LoadSuccess ? "1" : "0.8" }}
+            style={{ opacity: ImageState.LoadSuccess ? ".9" : "0" }}
         />
         )}
     </LazyImageFull>
@@ -64,7 +64,9 @@ function Home(){
                     </animated.div>
                 ))}
             </div>
+            <div className ="photo-container">
             <img className ="blake-photo" src={Blake} alt = "profpho"/>
+            </div>
     </div>
     </div>
     )

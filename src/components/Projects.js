@@ -211,7 +211,7 @@ function Projects(){
         </Flippy>
       </div>
       <div className="card-six card">
-        <a rel = "noopener" className="a-link" target="_blank" href="https://thisisadummylink.com">Demo Link</a>
+        <a rel = "noopener" className="a-link" target="_blank" href="https://cypberpunkmud.now.sh/login">Demo Link</a>
         <Flippy classname="flip-card"
           flipOnClick={true} 
           flipDirection="horizontal" 
@@ -222,17 +222,28 @@ function Projects(){
               backgroundColor: '#ffffff', borderRadius: '8px'
             }}
           >
-            <h3>Project</h3>
-            <h4>Description</h4>
+            <h3>Multi-User Dungeon</h3>
+            <h4>Cyberpunk-themed MERN stack game application</h4>
+            <div className="proj-desc">
+             Game application built using a Django/Python backend application that serves a game map that a user can explore. The frontend application renders the game world from an endpoint and tracks users movement through rooms. User authentication and room location information is saved to the database, users have the ability to see other players who are exploring the same world. 
+            </div>
             <div className="card-links">
-              <a rel = "noopener" className="link" target="_blank" href="https://www.youtube.com">Visit Application</a>
-              <a rel = "noopener" className="link" target="_blank" href="https://www.github.com">Codebase</a>
+              <a rel = "noopener" className="link" target="_blank" href="https://www.youtube.com">Visit App</a>
+              <a className="link" target="_blank" rel = "noopener" href="https://github.com/cs-24-bw-mud/cs-bw-mud">BE Codebase</a>
+              <a className="link" target="_blank" rel = "noopener" href="https://github.com/cs-24-bw-mud/front-end">FE Codebase</a>
             </div>
             <button className="dead-btn">{'\u21B7'}</button>
           </FrontSide>
           <BackSide
             style={{ backgroundColor: '#ffffff', borderRadius: '8px'}}>
-            ROCKS
+            <h3>Tech Stack</h3>
+            <h4>Framework:</h4>
+            <div className="framework-desc">React</div>
+            <h4>Design:</h4>
+            <div className="design-desc">SASS</div>
+            <div className="card-links project-type">
+              <p>School Project</p>
+            </div>
           </BackSide>
         </Flippy>
       </div>

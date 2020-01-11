@@ -46,6 +46,13 @@ color: black;
   }
 }
 
+  .photo-container{
+    background: rgba(55, 55, 55, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .trails-main{
     margin-bottom: 100px;
     display: flex;
@@ -270,10 +277,11 @@ color: black;
 export const StyledProjects = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
   font-family: "Raleway", sans-serif;
+  
   display: grid;
   width: 100%;
+ 
   align-self: center;
-  margin-top: 25px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 5px;
@@ -290,7 +298,7 @@ export const StyledProjects = styled.div`
     position: absolute;
     left: 81%;
     top: 6%;
-    height: 0px;
+    height: 55px;
     outline: none;
     font-size: 1rem;
     color: black;
@@ -333,10 +341,7 @@ export const StyledProjects = styled.div`
 
   .card{
     margin: 0 auto;
-  }
-
-  .card-six{
-    visibility: hidden;
+    
   }
 
 
@@ -364,20 +369,47 @@ export const StyledProjects = styled.div`
     text-align: center;
   }
 
+  .card-one{
+    h3{
+      background: #d5ff94;
+    }
+  }
+
+  .card-two{
+    h3{
+      background: #bfa0ff;
+    }
+  }
+
+  .card-three{
+    h3{
+      background: peachpuff;
+    }
+  }
+
   .card-four {
+    h3{
+      background: #d5ff94;
+    }
     @media (max-width: 1050px) {
       display: none;
     }
   }
 
   .card-five {
-    @media (max-width: 1450px) {
+    h3{
+      background: #bfa0ff;
+    }
+    @media (max-width: 1250px) {
       display: none;
     }
   }
 
   .card-six {
-    @media (max-width: 1450px) {
+    h3{
+      background: peachpuff;
+    }
+    @media (max-width: 1250px) {
       display: none;
     }
   }
@@ -620,6 +652,7 @@ export const StyledSkills = styled.div`
 
 // Contact.js Styles
 export const StyledForm = styled.div`
+  background: rgba(5,5,5, .4);
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
@@ -631,7 +664,7 @@ export const StyledForm = styled.div`
   .form-heading {
     font-weight: bold;
     font-size: 1.2rem;
-    color: black;
+    color: white;
     text-align: center;
   }
   
@@ -639,6 +672,7 @@ export const StyledForm = styled.div`
   .footer{
     position: absolute;
     bottom: 40px;
+    color: white;
     font-size: 1.2rem;
     text-align: center;
     z-index: 0;
