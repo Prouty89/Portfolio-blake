@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "92c682c745c175118fbc0047e126167c",
+    "revision": "6b332eec4a66704f9ef2c202dae70cfb",
     "url": "./index.html"
   },
   {
-    "revision": "db2e1a07ea50257aa8c8",
+    "revision": "b3775d5a65196dacc125",
     "url": "./static/css/4.c0851dc3.chunk.css"
   },
   {
-    "revision": "90bca9309936f1faa3bb",
+    "revision": "294dabb2935355936568",
     "url": "./static/css/main.be39f885.chunk.css"
   },
   {
-    "revision": "ae5628c5e112a1b2c457",
-    "url": "./static/js/2.cb592c34.chunk.js"
+    "revision": "a06e79c0500dc064fca4",
+    "url": "./static/js/2.7967595a.chunk.js"
   },
   {
-    "revision": "69fdfa6d48ccf0f62242",
-    "url": "./static/js/3.5a643138.chunk.js"
+    "revision": "d8e2e745ec92e46c4371",
+    "url": "./static/js/3.eb8fa07c.chunk.js"
   },
   {
-    "revision": "db2e1a07ea50257aa8c8",
-    "url": "./static/js/4.cbc6ad83.chunk.js"
+    "revision": "b3775d5a65196dacc125",
+    "url": "./static/js/4.3d023053.chunk.js"
   },
   {
-    "revision": "c4cc77347d80aeb7dd7f",
-    "url": "./static/js/5.3b6b8178.chunk.js"
+    "revision": "8ad96dfa3d0279f29c8a",
+    "url": "./static/js/5.006a9708.chunk.js"
   },
   {
-    "revision": "f1b869eb55bee096bb5f",
-    "url": "./static/js/6.ec9218ac.chunk.js"
+    "revision": "b4bfe5030567dd75a3d3",
+    "url": "./static/js/6.842163ff.chunk.js"
   },
   {
-    "revision": "90bca9309936f1faa3bb",
-    "url": "./static/js/main.63f3c168.chunk.js"
+    "revision": "294dabb2935355936568",
+    "url": "./static/js/main.81801cb0.chunk.js"
   },
   {
-    "revision": "4cc885da40a9bbd25cca",
-    "url": "./static/js/runtime-main.4afb4723.js"
+    "revision": "8f4e87b1084a6dd15fdb",
+    "url": "./static/js/runtime-main.8b3df30a.js"
   },
   {
     "revision": "0632bb05b3ccd339dc09a0db0a866ca5",
@@ -46,6 +46,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f5b5fdafaec40c09d1103b0e208a2d6f",
     "url": "./static/media/Fruit1.f5b5fdaf.jpg"
+  },
+  {
+    "revision": "851ef1744f986d75e33fd1bf8a689199",
+    "url": "./static/media/Fruit1Mobile.851ef174.jpg"
+  },
+  {
+    "revision": "46f874886d57687a438252d6b8f6a682",
+    "url": "./static/media/Fruit2Mobile.46f87488.jpg"
   },
   {
     "revision": "abff2237691a52a0b81082480e8cc137",
