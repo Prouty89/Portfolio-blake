@@ -1,51 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "962927790ab692e67925583b6afac076",
+    "revision": "e77f1b128dfb6259702274432952ea89",
     "url": "./index.html"
   },
   {
-    "revision": "779a14ac9c21ef0235b3",
+    "revision": "5af4f44afaf572fd1a4e",
     "url": "./static/css/4.c0851dc3.chunk.css"
   },
   {
-    "revision": "d64e69488ff5dd0c7c64",
+    "revision": "98c22d0d87b0db499f89",
     "url": "./static/css/main.be39f885.chunk.css"
   },
   {
-    "revision": "59e5cde990569fbb27ec",
-    "url": "./static/js/2.751461ce.chunk.js"
+    "revision": "6acf4477e55d1e6de7c7",
+    "url": "./static/js/2.51640e0c.chunk.js"
   },
   {
-    "revision": "06f089db8322f91b6552",
-    "url": "./static/js/3.de60cde2.chunk.js"
+    "revision": "d06cce5142efdeb576e8",
+    "url": "./static/js/3.5f335a5a.chunk.js"
   },
   {
-    "revision": "779a14ac9c21ef0235b3",
-    "url": "./static/js/4.34d412be.chunk.js"
+    "revision": "5af4f44afaf572fd1a4e",
+    "url": "./static/js/4.669b8500.chunk.js"
   },
   {
-    "revision": "2accd7fb431b6844228c",
-    "url": "./static/js/5.f3ef91d1.chunk.js"
+    "revision": "99dcafcf4d7234160f6b",
+    "url": "./static/js/5.a5d569e5.chunk.js"
   },
   {
-    "revision": "c89e677747272647c2d8",
-    "url": "./static/js/6.3accdbc5.chunk.js"
+    "revision": "55fcb569003fcc7303ec",
+    "url": "./static/js/6.46a21f2a.chunk.js"
   },
   {
-    "revision": "d64e69488ff5dd0c7c64",
-    "url": "./static/js/main.09d4b426.chunk.js"
+    "revision": "98c22d0d87b0db499f89",
+    "url": "./static/js/main.a7edcc80.chunk.js"
   },
   {
-    "revision": "dadffefe40cc89938d6f",
-    "url": "./static/js/runtime-main.774a50c5.js"
+    "revision": "53f4b891371745bab780",
+    "url": "./static/js/runtime-main.fca9583c.js"
   },
   {
     "revision": "0632bb05b3ccd339dc09a0db0a866ca5",
     "url": "./static/media/BlakeP.0632bb05.jpg"
-  },
-  {
-    "revision": "f5b5fdafaec40c09d1103b0e208a2d6f",
-    "url": "./static/media/Fruit1.f5b5fdaf.jpg"
   },
   {
     "revision": "851ef1744f986d75e33fd1bf8a689199",
@@ -54,6 +50,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "46f874886d57687a438252d6b8f6a682",
     "url": "./static/media/Fruit2Mobile.46f87488.jpg"
+  },
+  {
+    "revision": "26b555b47a81376622683cb2a074db44",
+    "url": "./static/media/FruitOpt1.26b555b4.jpg"
+  },
+  {
+    "revision": "ec61ec1b0b31480173eff4b38811dcf3",
+    "url": "./static/media/FruitOpt2.ec61ec1b.jpg"
   },
   {
     "revision": "abff2237691a52a0b81082480e8cc137",
@@ -72,12 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/Ocean.1c382cff.jpg"
   },
   {
-    "revision": "0deeb85db2f32ee433f57cc24ba88c2a",
-    "url": "./static/media/Palm.0deeb85d.jpg"
-  },
-  {
-    "revision": "48ee63a48aa7b54c82cee8b8385d0a9e",
-    "url": "./static/media/Palmlowres1.48ee63a4.jpg"
+    "revision": "d1ff34f73ea377f5a6f4b53268a8bed7",
+    "url": "./static/media/PalmOpt.d1ff34f7.jpg"
   },
   {
     "revision": "b1d454901698de29211bda81da8950cd",
@@ -86,9 +86,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3810b3879f4a5fb1875e27993e1cc306",
     "url": "./static/media/resume.3810b387.pdf"
-  },
-  {
-    "revision": "9e0e8f65b53c6db11227f3befa1e4b1f",
-    "url": "./static/media/second1.9e0e8f65.jpg"
   }
 ]);
