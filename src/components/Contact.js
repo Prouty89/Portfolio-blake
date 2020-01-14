@@ -4,13 +4,19 @@ import {Field, Form, withFormik} from "formik"
 import axios from 'axios';
 import { StyledForm } from '../styles';
 
+import Github from '../assets/Github.svg';
+import Tweet from '../assets/Tweet.svg';
+import IG from '../assets/IG.svg';
+import Linkd from '../assets/Linkd.svg';
+import SVG from 'react-inlinesvg';
+
 
 function ContactForm() {
   return (
     <>
       <StyledForm className="form-container">
         <p className="form-heading">
-          Contact me directly with your opportunity.
+          Let's Work Together. 
         </p>
         <Form className="form">
           <Field
@@ -54,6 +60,14 @@ function ContactForm() {
             Submit
           </button>
         </Form>
+        <div className ="social-tray">
+            <div className="social-icons">
+                <SVG rel = "noopener" className="svg" src = {IG}/>
+                <SVG rel = "noopener" className="svg" src = {Github}/>
+                <SVG rel = "noopener" className="svg" src = {Linkd}/>
+                <SVG rel = "noopener" className="svg" src = {Tweet}/>
+            </div>
+        </div>
         <p className="footer">Designed and Developed by Blake Prouty</p>
       </StyledForm>
     </>

@@ -1,118 +1,113 @@
 import React from "react";
-import { StyledSkills } from '../styles';
-
+import SVG from 'react-inlinesvg';
+import LOGO from '../assets/Logo.svg';
+import StyledSkills from '../styles';
 
 
 
 function Skill() {
   return (
-    <StyledSkills className="skills-content">
-      <div className="skill-container">
-        <div className="skills-text">
-        <div className="skills-head">
-          <h1>
-          Designing, testing, and developing your next web
-          application.
-          </h1>
-          <h3 className="relocation">
-          Very open to relocation
-          </h3>
-        </div>
-        <div className = "side-detail">
-          <div className = "character">
-          <div className="good-par">
-          <div className="par-title">
-            Problem Solving
-          </div>
-          <div className="par-text">
-             Puts forth effort into understanding a problem
-             before devising and executing a plan.
-          </div>  
-          </div>
-          <div className="good-par">
-          <div className="par-title">
-            Communication
-            </div>
-            <div className="par-text">
-            I conduct myself in a patient, understanding manner.
-            Clear, professional oral and written communication are core tenets.
-            </div>
-          </div>
-          <div className="good-par">
-            <div className="par-title">
-            Organization
-            </div> 
-            <div className="par-text">
-            Self-managed, adheres to deadlines. Delivers
-            well-structured, thoughtful, and scalable code.
-            </div>
-          </div>
-          </div>
-         <div className="additional-info">
-          <div className="good-par">
-            <div className="par-title">
-            Education
-            </div>
-            <div className="education">
-             Full Stack Web-Development, Lambda School.
-            </div>
-            <div className="education">
-            B.S. Nutrition and Food Sciences, South Dakota State University.
-            </div>
-          </div>
-          <div className="good-par">
-            <div className="par-title">
-            Interests
-            </div>
-            <div className="par-text">
-            Human connection, teamwork, life-long learning,
-            everything outdoors! I am also enamored with reading, cooking, and culture. 
-            </div>
-          </div>
-          <div className="good-par">
-            <div className="par-title">
-            Seeking
-            </div>
-            <div className="par-text">
-            Frontend, Backend, or Full-Stack software engineering.
-            </div>
-            </div>
-            </div>
-        <div className="skills-title">
-            Additional Development Skills
-        </div>
-        <div className="accordion-skills">
-            <div className="row-one rows">
-                <p  className="react inds">ReactJS</p>
-                <p  className="redux inds">Redux</p>
-                <p  className="jest inds">Jest JavaScript Testing</p>
-                <p  className="graphql inds">GraphQL Data Query</p>
-            </div>
-            <div className="row-two rows">
-                <p className="node inds">NodeJS</p>
-                <p  className="express inds">Express.js</p>
-                <p  className="sqlite inds">SQLite DBMS</p>
-                <p  className="postgres inds">PostgreSQL DMBS</p>
-            </div>
-            <div className="row-three rows">
-                <p  className="python inds">Python</p>
-                <p className="node inds">RESTful API protocols</p>
-                <p  className="graphql inds">Typescript</p>
-                <p  className="sql">SQL</p>
-                <p  className="figma inds">Figma Design</p>
-            </div>
-            <div className="row-four rows">
-                <p  className="gatsby inds">GatsbyJS</p>
-                <p  className="vsc inds">Scrum Methods</p>
-                <p  className="vsc inds">VSCode</p>
-                <p className="git inds">Best Git Practices</p>
-            </div>
+<div className="hide-show">
+  {/*Show above or equal to 1200px */}
+<div className="about-container">
+    <div className="arrow-container arrow-c1">
+        <div className="left_top_div text_div">
+            <div className="text_container">
+                 <h3>Education</h3>
+                 <h5>Full Stack Web-Development, Lambda School 19-20'</h5>
+                 <h5>B.S. Nutrition and Food Sciences, South Dakota State University 10-15'</h5>
             </div>
         </div>
-      </div>
-      </div>
-      
-    </StyledSkills>
+        <div className="center_bottom_div text_div">
+            <div className="text_container">
+                 <h3>Career Objectives</h3>
+                 <h5>Jr - Mid Frontend, Backend, or Full-Stack software engineering.</h5>
+                 
+            </div>
+        </div>
+        <div className="right_top_div text_div">
+            <div className="text_container">
+                 <h3>Character</h3>
+                 <h5>Clear, professional oral and written communication are core tenets.</h5>
+                 <h5>Patient and understanding, generally ALWAYS in a good mood.</h5>
+            </div>
+        </div>
+        <div className="left_bottom_div img_div"></div>
+        <div className="center_top_div img_div"></div>
+        <div className="right_bottom_div img_div"></div>
+        <div className="arrow_box_pointdown_left"></div>
+        <div className="arrow_box_pointup_center"></div>
+        <div className="arrow_box_pointdown_right"></div>
+    </div>
+<div className="arrow-container arrow-c2">
+<div className="left_top_div oneltd text_div">
+    <div className="text_container text-c2">
+         <h3>Ethic</h3>
+         <h5>Self-managed, adheres to deadlines. Delivers well-structured, thoughtful, and scalable code.</h5>
+         <h5>Strives to understand a problem before devising and executing a plan.</h5>
+    </div>
+</div>
+<div className="center_bottom_div text_div">
+    <div className="text_container text-c2">
+         <h3>Primary Skills</h3>
+         <h5>JavaScript, Python</h5>
+         <h5>React, Node</h5>
+         <h5>PostgreSQL, Express</h5>
+    </div>
+</div>
+<div className="right_top_div text_div">
+    <div className="text_container text-c2">
+         <h3>Interests</h3>
+         <h5>Human connection, teamwork, life-long learning, everything outdoors! I am enamored with reading, cooking, and culture. </h5>
+    </div>
+</div>
+<div className="left_bottom_div img_div"></div>
+<div className="center_top_div img_div"></div>
+<div className="right_bottom_div img_div"></div>
+<div className="arrow_box_pointdown_left"></div>
+<div className="arrow_box_pointup_center"></div>
+<div className="arrow_box_pointdown_right"></div>
+</div>
+</div>
+    {/*Show below 1200px */}
+    <div className="skills-content">
+    <div className="arrow-container arrow-c1 ac-small">
+        <div className="left_top_div text_div">
+            <div className="text_container">
+                 <h3>Education</h3>
+                 <h5>Full Stack Web-Development, Lambda School 19-20'</h5>
+                 <h5>B.S. Nutrition and Food Sciences, South Dakota State University 10-15'</h5>
+            </div>
+        </div>
+        <div className="right_top_div text_div">
+            <div className="text_container">
+                 <h3>Character</h3>
+                 <h5>Clear, professional oral and written communication are core tenets.</h5>
+                 <h5>Patient and understanding, generally ALWAYS in a good mood.</h5>
+            </div>
+        </div>
+        <div className="arrow_box_pointdown_left abpdl-small"></div>
+        <div className="arrow_box_pointdown_right abpdr-small"></div>
+    </div>
+<div className="arrow-container arrow-c2 ac-small">
+<div className="left_top_div oneltd text_div">
+    <div className="text_container text-c2">
+         <h3>Ethic</h3>
+         <h5>Self-managed, adheres to deadlines. Delivers well-structured, thoughtful, and scalable code.</h5>
+         <h5>Strives to understand a problem before devising and executing a plan.</h5>
+    </div>
+</div>
+<div className="right_top_div text_div">
+    <div className="text_container text-c2">
+         <h3>Interests</h3>
+         <h5>Human connection, teamwork, life-long learning, everything outdoors! I am enamored with reading, cooking, and culture. </h5>
+    </div>
+</div>
+<div className="arrow_box_pointdown_left abpdl-small"></div>
+<div className="arrow_box_pointdown_right abpdr-small"></div>
+</div>
+    </div>
+</div>
   );
 }
 
