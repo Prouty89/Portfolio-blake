@@ -28,7 +28,9 @@ function Projects() {
               borderRadius: "8px"
             }}
           >
-            <h3>Riders for Life</h3>
+            <div className="title-br">
+              <h3>Riders for Life</h3>
+            </div>
             <h4>User Interface, Backend Application, SMS Messaging Utility</h4>
             <div className="proj-desc">
               8 week project. Prototype application built for the non-profit
@@ -64,8 +66,7 @@ function Projects() {
                 FE Codebase
               </a>
             </div>
-            <div className="dead-btn">{"\u21B7"}</div>
-            <div className="dead-btn2">{"\u21B7"}</div>
+            
           </FrontSide>
           <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
             <div className="back-container">
@@ -91,8 +92,7 @@ function Projects() {
                 <p>School Project</p>
               </div>
             </div>
-            <div className="dead-btn3">{"\u21B7"}</div>
-            <div className="dead-btn4"> </div>
+           
           </BackSide>
         </Flippy>
       </div>
@@ -145,8 +145,7 @@ function Projects() {
                 Play it!
               </a>
             </div>
-            <div className="dead-btn">{"\u21B7"}</div>
-            <div className="dead-btn2">{"\u21B7"}</div>
+     
           </FrontSide>
           <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
             <div className="back-container">
@@ -159,8 +158,7 @@ function Projects() {
             <div className="card-links project-type">
               <p>Personal Project</p>
             </div>
-            <div className="dead-btn3">{"\u21B7"}</div>
-            <div className="dead-btn4"> </div>
+       
           </BackSide>
         </Flippy>
       </div>
@@ -222,8 +220,7 @@ function Projects() {
                 FE Codebase
               </a>
             </div>
-            <div className="dead-btn">{"\u21B7"}</div>
-            <div className="dead-btn2">{"\u21B7"}</div>
+  
           </FrontSide>
           <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
             <h3>Tech Stack</h3>
@@ -237,8 +234,7 @@ function Projects() {
             <div className="card-links project-type">
               <p>School Project</p>
             </div>
-            <div className="dead-btn3">{"\u21B7"}</div>
-            <div className="dead-btn4"> </div>
+
           </BackSide>
         </Flippy>
       </div>
@@ -291,8 +287,7 @@ function Projects() {
                 Play it!
               </a>
             </div>
-            <div className="dead-btn">{"\u21B7"}</div>
-            <div className="dead-btn2"> </div>
+       
           </FrontSide>
           <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
             <div className="framework-desc">
@@ -305,8 +300,7 @@ function Projects() {
             <div className="card-links project-type">
               <p>Personal Project</p>
             </div>
-            <div className="dead-btn3">{"\u21B7"}</div>
-            <div className="dead-btn4"> </div>
+       
           </BackSide>
         </Flippy>
       </div>
@@ -336,8 +330,7 @@ function Projects() {
             <h4>Using Custom Hooks to implement Dark Mode functionality</h4>
             <div className="proj-desc">
               Implementing "dark-mode" on your modern web application allows for
-              easier viewing of the information your users enjoy, it's a feature
-              people have come to expect. This application uses custom hooks to
+              easier viewing of the information your users enjoy. This application uses custom hooks to
               pass a key into local storage and a callback to access whether it
               exists in local storage in order to toggle styles on and off. The
               mock application is a Crypto tracker that fetches data from an
@@ -361,8 +354,7 @@ function Projects() {
                 Visit Application
               </a>
             </div>
-            <div className="dead-btn">{"\u21B7"}</div>
-            <div className="dead-btn2">{"\u21B7"}</div>
+      
           </FrontSide>
           <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
             <h3>Tech Stack</h3>
@@ -373,8 +365,7 @@ function Projects() {
             <div className="card-links project-type">
               <p>School Project</p>
             </div>
-            <div className="dead-btn3">{"\u21B7"}</div>
-            <div className="dead-btn4"> </div>
+        
           </BackSide>
         </Flippy>
       </div>
@@ -428,8 +419,7 @@ function Projects() {
                 Visit Application
               </a>
             </div>
-            <div className="dead-btn">{"\u21B7"}</div>
-            <div className="dead-btn2">{"\u21B7"}</div>
+           
           </FrontSide>
           <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
             <h3>Tech Stack</h3>
@@ -440,8 +430,7 @@ function Projects() {
             <div className="card-links project-type">
               <p>School Project</p>
             </div>
-            <div className="dead-btn3">{"\u21B7"}</div>
-            <div className="dead-btn4"> </div>
+  
           </BackSide>
         </Flippy>
       </div>

@@ -16,10 +16,12 @@ function ContactForm() {
     <>
       <StyledForm className="form-container">
         <p className="form-heading">
-          Let's Work Together. 
+          Let's Work Together 
         </p>
         <Form className="form">
           <Field
+            label for={"name"}
+            id = {"name"}
             name={"name"}
             placeholder={"Name*"}
             type={"text"}
@@ -27,6 +29,8 @@ function ContactForm() {
           />
 
           <Field
+            label for={"company"}
+            id = {"company"}
             name={"company"}
             placeholder={"Company*"}
             type={"text"}
@@ -34,6 +38,8 @@ function ContactForm() {
           />
 
           <Field
+            label for={"phone"}
+            id = {"phone"}
             name={"phone"}
             for={"phone"}
             placeholder={"Phone"}
@@ -42,6 +48,8 @@ function ContactForm() {
           />
 
           <Field
+            label for={"email"}
+            id = {"email"}
             name={"email"}
             placeholder={"Email*"}
             type={"email"}
@@ -49,6 +57,8 @@ function ContactForm() {
           />
 
           <Field
+            label for={"message"}
+            id = {"message"}
             name={"message"}
             placeholder={"Message*"}
             input={"textarea"}

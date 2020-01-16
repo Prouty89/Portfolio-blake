@@ -9,7 +9,7 @@ import SVG from 'react-inlinesvg';
 import Home from './Home';
 
 
-const Skill = React.lazy(()=> import('./Skill'))
+
 const Projects = React.lazy(() => import('./Projects'))
 const Contact = React.lazy(()=> import('./Contact'))
 
@@ -17,33 +17,29 @@ function Side(){
     return(
         <>
             <StyledContent>
+                <nav className="nav-container">
+                    <ul className= "nav-list">
+                        <li>
+                            <a href ="#home"  data-nav-section="home">Home</a>
+                        </li>
+                        <li>
+                            <a href ="#projects" data-nav-section="projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href ="#contact" data-nav-section="contact">Contact</a>
+                        </li>
+                        <li className="cv-res">
+                            <a href={Pdf} target = "_blank" className ="cvres-btn">Resume</a>
+                        </li>
+                    </ul>
+                </nav>
                 
                     <section className="first-child" id="home" data-section="home">
                         <Home />
                     </section>
-                    <ul className= "nav-list">
-                    <li>
-                        <a href ="#home"  data-nav-section="home">Home</a>
-                        
-                    </li>
-                    <li>
-                        <a href ="#skills" data-nav-section="skills">About</a>
-                    </li>
-                    <li>
-                        <a href ="#projects" data-nav-section="projects">My Work</a>
-                    </li>
-                    <li>
-                        <a href ="#contact" data-nav-section="contact">Contact Me</a>
-                    </li>
-                    <li className="cv-res">
-                        <a href={Pdf} target = "_blank" className ="cvres-btn">Resume</a>
-                    </li>
-                </ul>
+                   
+           
                     <Suspense fallback = {<h1> Loading... </h1>}>
-                    <div className="third-child" id="skills" data-section="skills">
-                            <Skill />
-                            <SVG className="svg-logo" src = {LOGO}/>
-                    </div>
                     <div className="base-shell">
                     <div className="base-container">
                         <div className="base-text">
