@@ -375,7 +375,8 @@ color: black;
     width: 1200px;
 
     @media(max-width: 600px){
-      
+      height: 427px;
+      justify-content: flex-end;
     }
 
     h4{
@@ -458,8 +459,8 @@ color: black;
     height: 800px;
     
 
-    @media(max-width: 1100px){
-      min-height: 500px;
+    @media(max-width: 600px){
+      height: 650px;
     }
 
   
@@ -641,6 +642,13 @@ color: black;
 
               .rtd{
                 right: 175px !important;
+              }
+
+              .text-c2{
+
+                @media(max-width: 400px){
+                  width: 185px;
+                }
               }
 
               .text-c21{
@@ -871,6 +879,10 @@ color: black;
 
         @media (max-width: 700px){
           width: 100%;
+        }
+
+        @media (max-width: 400px){
+          margin-left: 15px;
         }
     
         .rows{

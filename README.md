@@ -1,4 +1,4 @@
 # Todo
 
-- Contact VH
+- Opening Blurb/ with name
 - CSS clean-up
