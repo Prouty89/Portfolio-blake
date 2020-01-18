@@ -78,7 +78,7 @@ function ContactForm() {
                 <SVG rel = "noopener" className="svg" src = {Tweet}/>
             </div>
         </div>
-        <p className="footer">Designed and Developed by Blake Prouty</p>
+        <p className="footer">Designed {`&`} Developed by Blake Prouty 2020</p>
       </StyledForm>
     </>
   );

@@ -87,11 +87,10 @@ function Side(){
                     <div className="base-container2">
                         <div className="base-text">
                         <div className="skills-title">
-            <h4>Roadmap</h4>
-                </div>
+                            <h4></h4>
+                        </div>
                             <div className="baseskill-text">
-                               I am always interested in introducing new skills. At present, I am dedicated to furthering my
-                               JavaScript, Computer Science, and Python skills but am interested in learning C# and Kotlin in the near future. 
+                            <a href="https://wakatime.com"><img className="waka-chart" src="https://wakatime.com/share/@bprouty0821/7ba80296-8165-438a-8e74-303db6c2e97b.png" alt="waka"/></a>
                             </div>
                         </div>
                     </div>

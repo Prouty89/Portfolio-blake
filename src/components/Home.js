@@ -7,18 +7,25 @@ function Home() {
   return (
     <div className="home-wrap">
       <div className="home-container">
+        {/*Show below 1250px */}
+        <div className="photo-container-sm">
+            <div className="photo-square-sm">
+              <img className="blake-photo-sm" src={Blake} alt="profpho" />
+            </div>
+        </div>
         <div className="hide-show">
-          {/*Show above or equal to 1200px */}
+          {/*Show above or equal to 1250px */}
           <div className="about-container">
             <div className="hcard-contain">
               <div className="left_top">
                 <div className="card_text">
                   <h3>Education</h3>
-                  <h5>Full Stack Web-Development, Lambda School 19-20'</h5>
+                  <h5>Full Stack Web-Development</h5>
+                  <h5 className="no-space">Lambda School 19-20'</h5>
                   <h5>
-                    B.S. Nutrition and Food Sciences, South Dakota State
-                    University 10-15'
+                    B.S. Nutrition and Food Sciences
                   </h5>
+                  <h5 className="no-space">South Dakota State University 10-15'</h5>
                 </div>
               </div>
               <div className="center_top">
@@ -62,6 +69,8 @@ function Home() {
                   <h5>I am enamored with reading, cooking, and culture. </h5>
                 </div>
               </div>
+              <div className="arrow_box_pointdown_left abpdl-small"></div>
+              <div className="arrow_box_pointdown_right abpdr-small"></div>
             </div>
           </div>
           {/*Show below 1200px */}
@@ -106,7 +115,7 @@ function Home() {
                   </h5>
                 </div>
               </div>
-              <div className="right_top_div text_div_small">
+              <div className="right_top_div onertd text_div_small">
                 <div className="text_container_small text-c2">
                   <h3>Interests</h3>
                   <h5>
@@ -115,17 +124,14 @@ function Home() {
                   </h5>
                 </div>
               </div>
-              <div className="arrow_box_pointdown_left abpdl-small"></div>
-              <div className="arrow_box_pointdown_right abpdr-small"></div>
             </div>
           </div>
         </div>
-        <div className="trails-main">
-          <div className="photo-container">
-            <div className="photo-square">
-              <img className="blake-photo" src={Blake} alt="profpho" />
-            </div>
-          </div>
+         {/*Show above or equal to 1250px */}
+         <div className="photo-container">
+              <div className="photo-square">
+                <img className="blake-photo" src={Blake} alt="profpho" />
+              </div>
         </div>
       </div>
     </div>
