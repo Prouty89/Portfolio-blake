@@ -11,9 +11,15 @@ font-family: 'Red Hat Display', sans-serif;
 scroll-behavior: smooth;
 color: black;
 
+.suspense-load{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
 
 .first-child{
-  height: 475px;
+  height: 365px;
   display: flex;
   justify-content: center;
   
@@ -50,29 +56,22 @@ color: black;
   }
 
   .photo-square{
-    height: 212px;
-    width: 212px;
+    height: 150px;
+    width: 122px;
     display: flex;
-    background: #A8C5FF;
-    border-radius: 50%;
-    border: 2px solid #F19B38;
+
 
     @media(max-width: 1250px){
       display: none;
-    }
-
-    @media(max-width: 800px){
-      width: 140px;
-      height: 140px; 
     }
   }
 
   .photo-container{
     
     display: flex;
-    padding-top: 12px;
+   
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 300px;
 
     @media(max-width: 1250px){
@@ -81,9 +80,8 @@ color: black;
 
 
     .blake-photo{
-      width: 205px;
-      height: 205px;
-      border-radius: 50%;
+      width: 122px;
+      height: 145px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -106,7 +104,7 @@ color: black;
 
 .home-container{
   width: 1200px;
-  padding-top: 50px;
+  padding-top: 80px;
   display: flex;
 
   @media(max-width: 1250px){
@@ -334,7 +332,7 @@ color: black;
     }
 
     .baseskill-text{
-      width: 100%;
+      width: 1200px;
       font-size: 1rem;
       display: flex;
       flex-direction: column;
@@ -520,33 +518,89 @@ color: black;
         }
 
         .about-container{
-          justify-content: center;
           display: flex;
           height: 350px;
-          width: 800px;
+          width: 1250px;
         
           @media(max-width: 1250px){
             display: none;
           }
 
+
+
+          .right-side{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 80px;
+
+            .rows{
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+              
+            }
+          }
+
+          .accordion-skills{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            height: 400px;
+            height: 300px;
+
+            p{
+              margin-block-start: .2em;
+              margin-block-end: .2em;
+            }
+          }
+
+          
+
+          .intro-heading{
+            background: #ffbb6d;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            width: 460px;
+            color: white;
+            margin-block-start: 0;
+            font-size: 2em;
+            text-align: center;
+            height: 51px;
+          }
           .hcard-contain{
-            width: 400px;
+            width: 362px;
+
+            left_top{
+              height: 151px;
+            }
 
             .card_text{
               width: 365px;
+            }
+
+            ul{
+              margin-block-start: 0em;
+          
             }
           }
 
           .hcard-contain2{
             position: relative;
+            height: 270px;
+            width: 460px;
+            outline: 2px solid #febb6d;
+            
             .card_text{
-              padding-right: 25px;
+              
             }
           }
 
           h3{
             margin-block-start: .5em;
-            margin-block-end: .2em;
+            margin-block-end: 0em;
             font-weight: 500;
             text-decoration: underline;
             font-size: 1.3em;
@@ -556,12 +610,13 @@ color: black;
             margin-block-start: 0em;
             margin-block-end: .2em;
             font-weight: 500;
+            padding-left: 5px;
             font-size: 1em;
           }
           
           .abpdr-small{
-            top: 161px;
-            left: 3px;
+            top: 110px;
+            left: 6px;
             position: absolute;
           }
 
@@ -597,14 +652,14 @@ color: black;
   
         .abpdl-small, .abpdl-small:before {
           border-style:solid;
-          border-color: #ffffff transparent transparent transparent;
+          border-color: transparent transparent transparent;
           content:" ";
           height: 0;
           width: 0;
           position: absolute;
           pointer-events: none;
-          top: 255px;
-          left: 73px;
+          top: 204px;
+          left: 72px;
       }
       
       .abpdl-small:before {
@@ -864,15 +919,17 @@ color: black;
           background-size:200px 200px;
       }
 
-      .accordion-skills{
-        display: grid;
-        width: 1200px;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+      .accordion-skills-sm{
+        display: none;
 
         @media(max-width: 1250px){
+          display: grid;
+          width: 600px;
+          padding-left: 5px;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: 1fr;
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
           width: 600px;
           font-size: .9em;
         }

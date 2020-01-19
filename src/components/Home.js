@@ -1,6 +1,7 @@
 import React from "react";
 
 import Blake from '../assets/BlakeRsz.jpg';
+import Blake2 from '../assets/BpCrop.jpg';
 
 
 function Home() {
@@ -18,19 +19,15 @@ function Home() {
           <div className="about-container">
             <div className="hcard-contain">
               <div className="left_top">
-                <div className="card_text">
-                  <h3>Education</h3>
-                  <h5>Full Stack Web-Development</h5>
-                  <h5 className="no-space">Lambda School 19-20'</h5>
-                  <h5>
-                    B.S. Nutrition and Food Sciences
-                  </h5>
-                  <h5 className="no-space">South Dakota State University 10-15'</h5>
+                <div className="photo-container">
+                  <div className="photo-square">
+                    <img className="blake-photo" src={Blake2} alt="profpho" />
+                  </div>
                 </div>
               </div>
               <div className="center_top">
                 <div className="card_text">
-                  <h3>Career Goal</h3>
+                  <h3>Career Objectives</h3>
                   <h5>Jr - Mid Developer</h5>
                   <ul>
                     <li>Frontend</li>
@@ -38,13 +35,22 @@ function Home() {
                     <li>Full Stack</li>
                   </ul>
                 </div>
+                <div className="card_text">
+                  <h3 classname="no-space-top">Education</h3>
+                  <h5 className="no-space-bott"> Full Stack Web-Development</h5>
+                  <h5>Lambda School 19-20'</h5>
+                  <h5 className="no-space">
+                    B.S. Nutrition {`&`} Food Sciences
+                  </h5>
+                  <h5>South Dakota State University 10-15'</h5>
+                </div>
               </div>
          
             </div>
             <div className="hcard-contain2">
               <div className="left_top2">
                 <div className="card_text">
-                  <h3>Ethic</h3>
+                  <h3 className="intro-heading">Welcome! I'm Blake</h3>
                   <h5>Self-managed</h5>
                   <h5>Delivers well-structured and scalable code.</h5>
                   <h5>
@@ -55,17 +61,45 @@ function Home() {
               </div>
               <div className="right_top2">
                 <div className="card_text">
-                  <h3>Interests</h3>
-                  <h5>
-                    Human connection, teamwork, life-long learning, everything
-                    outdoors!
-                  </h5>
-                  <h5>I am enamored with reading, cooking, and culture. </h5>
+                
                 </div>
               </div>
               <div className="arrow_box_pointdown_left abpdl-small"></div>
               <div className="arrow_box_pointdown_right abpdr-small"></div>
             </div>
+            <div className="right-side">
+              <h3 className="experience-heading">Development Experience</h3>
+            <div className="accordion-skills">
+             <div className="row-one rows">
+                 <p  className="react inds">ReactJS</p>
+                 <p  className="redux inds">Redux</p>
+                 <p  className="graphql inds">GraphQL</p>
+                 <p  className="gatsby inds">GatsbyJS</p>
+             </div>
+             <div className="row-two rows">
+                 <p className="node inds">NodeJS</p>
+                 <p  className="express inds">Express.js</p>
+                 <p  className="sqlite inds">SQLite</p>
+                 <p  className="postgres inds">PostgreSQL</p>
+             </div>
+             <div className="row-three rows">
+                 <p  className="python inds">Python</p>
+                 <p className="node inds">REST API</p>
+                 <p  className="graphql inds">Typescript</p>
+                 <p  className="sql">SQL</p>
+             </div>
+             <div className="row-four rows">
+                 <p  className="vsc inds">Kanban board</p>
+                 <p  className="vsc inds">Scrum Methods</p>
+                 <p className="git inds">Git</p>
+             </div>
+             <div className="row-five rows">
+                 <p  className="vsc inds">VSCode</p>
+                 <p  className="figma inds">Figma</p>
+                 <p  className="jest inds">Jest</p>
+             </div>
+             </div>
+             </div>
           </div>
           {/*Show below 1200px */}
           <div className="skills-content">
@@ -114,12 +148,6 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
-         {/*Show above or equal to 1250px */}
-         <div className="photo-container">
-              <div className="photo-square">
-                <img className="blake-photo" src={Blake} alt="profpho" />
-              </div>
         </div>
       </div>
     </div>

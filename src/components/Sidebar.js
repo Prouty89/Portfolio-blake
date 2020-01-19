@@ -39,15 +39,15 @@ function Side(){
                     </section>
                    
            
-                    <Suspense fallback = {<h1> Loading... </h1>}>
+                    <Suspense fallback = {<h1 className="suspense-load"> Loading... </h1>}>
                     <div className="base-shell">
                     <div className="base-container">
                         <div className="base-text">
                             <div className="baseskill-text">
                             <div className="skills-title">
-            <h4>Development Experience</h4>
+            {/* <h4>Development Experience</h4> */}
                 </div>
-         <div className="accordion-skills">
+         <div className="accordion-skills-sm">
              <div className="row-one rows">
                  <p  className="react inds">ReactJS</p>
                  <p  className="redux inds">Redux</p>
@@ -56,19 +56,19 @@ function Side(){
              <div className="row-two rows">
                  <p className="node inds">NodeJS</p>
                  <p  className="express inds">Express.js</p>
-                 <p  className="sqlite inds">SQLite DBMS</p>
-                 <p  className="postgres inds">PostgreSQL DMBS</p>
+                 <p  className="sqlite inds">SQLite</p>
+                 <p  className="postgres inds">PostgreSQL</p>
              </div>
              <div className="row-three rows">
                  <p  className="python inds">Python</p>
-                 <p className="node inds">RESTful API protocols</p>
+                 <p className="node inds">REST API</p>
                  <p  className="graphql inds">Typescript</p>
                  <p  className="sql">SQL</p>
              </div>
              <div className="row-four rows">
                  <p  className="gatsby inds">GatsbyJS</p>
                  <p  className="vsc inds">Scrum Methods</p>
-                 <p className="git inds">Best Git Practices</p>
+                 <p className="git inds">Git</p>
              </div>
              <div className="row-five rows">
                  <p  className="vsc inds">VSCode</p>

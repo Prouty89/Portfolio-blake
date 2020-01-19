@@ -31,7 +31,7 @@ function Projects() {
             <div className="title-br">
               <h3>Riders for Life</h3>
             </div>
-            <h4>User Interface, Backend Application, SMS Messaging Utility</h4>
+          <h4>Full Stack {`&`} SMS Messaging Utility</h4>
             <div className="proj-desc">
               8 week project. Prototype application built for the non-profit
               organization Safe Mothers, Safe Babies. My primary focus included
@@ -119,7 +119,7 @@ function Projects() {
             }}
           >
             <h3>Tetris</h3>
-            <h4>Game design, React Single Page Application</h4>
+            <h4>Game</h4>
             <div className="proj-desc">
               All the game mechanics you know from classic tetris brought to you
               by React. My first real independent deep dive into the power of
@@ -185,10 +185,10 @@ function Projects() {
             }}
           >
             <h3>Multi-User Dungeon</h3>
-            <h4>Cyberpunk-themed MERN stack game application</h4>
+            <h4>MERN Stack Game Application</h4>
             <div className="proj-desc">
-              Game application built using a Django/Python backend application
-              that serves a game map that a user can explore. The frontend
+              Game application built using a Django framework to serve
+              a game map that a user can explore. The frontend
               application renders the game world from an endpoint and tracks
               users movement through rooms. User authentication and room
               location information is saved to the database, users have the
@@ -261,13 +261,13 @@ function Projects() {
             }}
           >
             <h3>Movie Trivia</h3>
-            <h4>Open Database, React Single Page Application</h4>
+            <h4>Axios {`&`} Component Classes</h4>
             <div className="proj-desc">
               Open API's are a great way to push forth your next hobby
               application. I'd like to re-build and refactor this application to
               use my own database, a more modern approach to state management.
               This was meant to be quick, fun, and expand my comfort level with
-              AJAX fetching.
+              data fetching.
             </div>
             <div className="card-links">
               <a
@@ -327,7 +327,7 @@ function Projects() {
             }}
           >
             <h3>Dark Mode</h3>
-            <h4>Using Custom Hooks to implement Dark Mode functionality</h4>
+            <h4>Custom Hooks {`&`} Local Storage</h4>
             <div className="proj-desc">
               Implementing "dark-mode" on your modern web application allows for
               easier viewing of the information your users enjoy. This application uses custom hooks to
@@ -392,7 +392,7 @@ function Projects() {
             }}
           >
             <h3>Expat Journal</h3>
-            <h4>Social Media Application Concept, User Interface</h4>
+          <h4>Social Media Concept {`&`} UI</h4>
             <div className="proj-desc">
               5 day sprint incorporating CRUD operations for Users and Social
               Media Posts. I had a very pleasurable experience being in the
