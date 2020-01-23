@@ -15,13 +15,12 @@ function ContactForm() {
   return (
     <>
       <StyledForm className="form-container">
-        <p className="form-heading">
-          Let's Work Together 
-        </p>
+        <p className="form-heading">Let's Work Together</p>
         <Form className="form">
           <Field
-            label for={"name"}
-            id = {"name"}
+            label
+            for={"name"}
+            id={"name"}
             name={"name"}
             placeholder={"Name*"}
             type={"text"}
@@ -29,8 +28,9 @@ function ContactForm() {
           />
 
           <Field
-            label for={"company"}
-            id = {"company"}
+            label
+            for={"company"}
+            id={"company"}
             name={"company"}
             placeholder={"Company*"}
             type={"text"}
@@ -38,8 +38,9 @@ function ContactForm() {
           />
 
           <Field
-            label for={"phone"}
-            id = {"phone"}
+            label
+            for={"phone"}
+            id={"phone"}
             name={"phone"}
             for={"phone"}
             placeholder={"Phone"}
@@ -48,8 +49,9 @@ function ContactForm() {
           />
 
           <Field
-            label for={"email"}
-            id = {"email"}
+            label
+            for={"email"}
+            id={"email"}
             name={"email"}
             placeholder={"Email*"}
             type={"email"}
@@ -57,8 +59,9 @@ function ContactForm() {
           />
 
           <Field
-            label for={"message"}
-            id = {"message"}
+            label
+            for={"message"}
+            id={"message"}
             name={"message"}
             placeholder={"Message*"}
             input={"textarea"}
@@ -70,13 +73,13 @@ function ContactForm() {
             Submit
           </button>
         </Form>
-        <div className ="social-tray">
-            <div className="social-icons">
-                <SVG rel = "noopener" className="svg" src = {IG}/>
-                <SVG rel = "noopener" className="svg" src = {Github}/>
-                <SVG rel = "noopener" className="svg" src = {Linkd}/>
-                <SVG rel = "noopener" className="svg" src = {Tweet}/>
-            </div>
+        <div className="social-tray">
+          <div className="social-icons">
+            <SVG rel="noopener" className="svg" src={IG} />
+            <SVG rel="noopener" className="svg" src={Github} />
+            <SVG rel="noopener" className="svg" src={Linkd} />
+            <SVG rel="noopener" className="svg" src={Tweet} />
+          </div>
         </div>
         <p className="footer">Designed {`&`} Developed by Blake Prouty 2020</p>
       </StyledForm>

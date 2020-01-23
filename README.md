@@ -1,4 +1,5 @@
 # Todo
 
-- Opening Blurb/ with name
-- CSS clean-up
+- Refine opening blurb.
+- CSS/ file clean-up
+- Handle validation/ success on form

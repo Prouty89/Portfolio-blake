@@ -127,6 +127,8 @@ function Projects() {
               Components throughout this build and thoroughly enjoyed sharing it
               with family and friends.
             </div>
+            <a className="click-here"> &#9758;</a>
+            <a className="click-here-text">Click a card for more details...</a>
             <div className="card-links">
               <a
                 className="link"
@@ -199,7 +201,7 @@ function Projects() {
                 rel="noopener"
                 className="link"
                 target="_blank"
-                href="https://www.youtube.com"
+                href="https://cypberpunkmud.now.sh/"
               >
                 Visit App
               </a>

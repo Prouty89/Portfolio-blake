@@ -24,7 +24,7 @@ color: black;
   justify-content: center;
   
   @media(max-width:1250px){
-      height: 680px;
+      height: 650px;
   }
 
   .photo-container-sm{
@@ -34,12 +34,12 @@ color: black;
 
   .photo-square-sm{
     
-    width: 135px;
-    height: 135px;
+    width: 137px;
+    height: 137px;
     display: flex;
-    background: #F19B38;
+    background: #A8C5FF;
     border-radius: 50%;
-    border: 4px solid #A8C5FF;
+    border: 2px solid #F19B38 ;
 
     @media(min-width: 1250px){
       display: none;
@@ -119,7 +119,7 @@ color: black;
   justify-content: center;
   
   @media(max-width: 1250px){
-    height:430px;
+    height:400px;
   }
 }
 
@@ -291,13 +291,13 @@ color: black;
     border-bottom: 20px solid #ffbb6d;
     border-bottom-left-radius: 300px;
     text-align: center;
-    padding-bottom: 75px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media(max-width: 750px){
-      height: 150px;
+      height: 80px;
     }
 
     .base-text{
@@ -313,7 +313,11 @@ color: black;
         width: 1200px;
 
         @media(max-width: 1250px){
-          width: 600px;
+          width: 390px;
+        }
+
+        @media(max-width: 500px){
+          padding-left: 65px;
         }
       }
 
@@ -325,9 +329,7 @@ color: black;
         margin-block-start: 0em;
         margin-block-end: .83em;
 
-        @media(max-width: 700px){
-          text-align: center; 
-        }
+        
       }
     }
 
@@ -531,8 +533,8 @@ color: black;
           .right-side{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin-left: 80px;
+            align-items: flex-end;
+            width: 383px;
 
             .rows{
               display: flex;
@@ -550,6 +552,7 @@ color: black;
             grid-row-gap: 0px;
             height: 400px;
             height: 300px;
+            margin-left: 5px;
 
             p{
               margin-block-start: .2em;
@@ -589,12 +592,14 @@ color: black;
 
           .hcard-contain2{
             position: relative;
-            height: 270px;
+            height: 325px;
             width: 460px;
             outline: 2px solid #febb6d;
             
-            .card_text{
-              
+            .left_top2{
+              p{
+                margin-left: 10px;
+              }
             }
           }
 
@@ -615,7 +620,7 @@ color: black;
           }
           
           .abpdr-small{
-            top: 110px;
+            top: 165px;
             left: 6px;
             position: absolute;
           }
@@ -658,7 +663,7 @@ color: black;
           width: 0;
           position: absolute;
           pointer-events: none;
-          top: 204px;
+          top: 259px;
           left: 72px;
       }
       
@@ -829,6 +834,10 @@ color: black;
             text-align: left;
             font-weight: 500;
             padding-left: 3px;
+
+            @media(max-width: 600px){
+              font-size: .7em;
+            }
           }
       }
 
@@ -919,6 +928,13 @@ color: black;
           background-size:200px 200px;
       }
 
+      .accordion-headingsm{
+        display: none;
+        @media(max-width: 1250px){
+          display: inherit;
+        }
+      }
+
       .accordion-skills-sm{
         display: none;
 
@@ -926,20 +942,20 @@ color: black;
           display: grid;
           width: 600px;
           padding-left: 5px;
-          grid-template-columns: repeat(5, 1fr);
+          grid-template-columns: repeat( 3, 1fr);
           grid-template-rows: 1fr;
           grid-column-gap: 0px;
           grid-row-gap: 0px;
-          width: 600px;
+          width: 380px;
           font-size: .9em;
         }
 
         @media (max-width: 700px){
-          width: 100%;
+          width: 380px;
         }
 
-        @media (max-width: 400px){
-          margin-left: 15px;
+        @media (max-width: 500px){
+          padding-left: 80px;
         }
     
         .rows{
@@ -968,7 +984,7 @@ color: black;
         @media(max-width: 1250px){
           display: inherit;
           bottom: 185px;
-          height: 472px;
+          height: 450px;
         }
 
         .ac-small{
@@ -1005,14 +1021,14 @@ color: black;
           width: 0;
           position: absolute;
           pointer-events: none;
-          top:198px;
+          top: 198px;
       }
       
       .abpdr-small:before {
           border-top-color: #a8c5fe;
           border-width: 76px 116px 0 116px;
           left: 166px;
-          top: 162px;
+          top: 138px;
       }
       .abpdr-small:after {
         border-style: solid;
@@ -1023,7 +1039,7 @@ color: black;
         width: 0;
         position: absolute;
         pointer-events: none;
-        top: 162px;
+        top: 138px;
         left: -6px;
     }
 
@@ -1035,7 +1051,7 @@ color: black;
         width: 0;
         position: absolute;
         pointer-events: none;
-        top: 99px;
+        top: 75px;;
     }
     
     .abpdl-small:before {
@@ -1180,9 +1196,44 @@ export const StyledProjects = styled.div`
   }
 
   .card {
+    position: relative;
 
     @media(max-width: 1100px){
       margin: 0 auto;
+    }
+
+    .click-here-text{
+      position: absolute;
+      bottom: 54px;
+      font-size: 1.2em;
+      cursor: default;
+
+      &:hover{
+        font-weight: 500;
+      }
+
+      @media(max-width: 600px){
+        font-size: 1em;
+      }
+    }
+
+    .click-here{
+      position: absolute;
+      bottom: 10px;
+      right: 14px;
+      text-transform: uppercase;
+      font-size: 6em;
+      color: #ffbb6d;
+
+      @media(max-width: 600px){
+        font-size: 3em;
+        bottom: 40px;
+      }
+
+      &:hover{
+        color: #A8C5FF;
+        font-weight: 100;
+      }
     }
 
     h3{
@@ -1204,7 +1255,13 @@ export const StyledProjects = styled.div`
       text-decoration: none;
       padding: 2%;
       color: #777777;
+
+      &:hover{
+        color: #A8C5FF;
+        font-weight: 500;
+      }
     }
+
   }
 
   h3 {
@@ -1296,8 +1353,8 @@ export const StyledForm = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 6px;
+
+    box-shadow: rgba(0, 0, 0, 0.22) 0 0 16px;
 
     @media (max-width: 700px) {
       height: 300px;

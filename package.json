@@ -4,12 +4,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react": "^16.9.17",
     "axios": "^0.19.0",
     "formik": "^2.0.6",
     "gh-pages": "^2.1.1",
     "react": "^16.8",
     "react-dom": "^16.8",
     "react-flippy": "^0.1.5",
+    "react-hook-form": "^4.5.6",
     "react-inlinesvg": "^1.2.0",
     "react-is": "^16.8",
     "react-lazy-images": "^1.1.0",
@@ -21,6 +23,7 @@
     "react-simple-img": "^2.3.7",
     "react-spring": "^8.0.27",
     "styled-components": "^5.0.0",
+    "typescript": "^3.7.5",
     "yup": "^0.27.0"
   },
   "scripts": {

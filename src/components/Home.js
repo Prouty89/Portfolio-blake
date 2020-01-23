@@ -51,12 +51,13 @@ function Home() {
               <div className="left_top2">
                 <div className="card_text">
                   <h3 className="intro-heading">Welcome! I'm Blake</h3>
-                  <h5>Self-managed</h5>
-                  <h5>Delivers well-structured and scalable code.</h5>
-                  <h5>
-                    Strives to understand a problem before devising and
-                    executing a plan
-                  </h5>
+                  <p>A spirited JavaScript Developer who believes in writing clean, scalable code.</p>
+                  <p>
+                    I have developed several UI, Game, and Widget applications in React, NodeJS.
+                    I have a firm grasp on the core of the language including ES6 features. I understand
+                    Asynchronous concepts, use developer tools to comfortably debug networks and manipulate the DOM. 
+                  </p>
+                  <p>My interests outside of tech include reading, cooking, human connection, and everything outdoors!</p>
                 </div>
               </div>
               <div className="right_top2">
@@ -87,16 +88,19 @@ function Home() {
                  <p className="node inds">REST API</p>
                  <p  className="graphql inds">Typescript</p>
                  <p  className="sql">SQL</p>
+                 <p  className="sql">Django</p>
+                 <p  className="vsc inds">VSCode</p>
              </div>
              <div className="row-four rows">
                  <p  className="vsc inds">Kanban board</p>
                  <p  className="vsc inds">Scrum Methods</p>
                  <p className="git inds">Git</p>
+                 <p className="git inds">CSS</p>
+                 <p className="git inds">HTML</p>
+                 <p  className="jest inds">Jest</p>
              </div>
              <div className="row-five rows">
-                 <p  className="vsc inds">VSCode</p>
                  <p  className="figma inds">Figma</p>
-                 <p  className="jest inds">Jest</p>
              </div>
              </div>
              </div>
@@ -132,7 +136,7 @@ function Home() {
                   <h5>Self-managed</h5>
                   <h5>Delivers well-structured and scalable code.</h5>
                   <h5>
-                    Strives to understand a problem before devising and
+                    Strives to understand a problem first before devising and
                     executing a plan
                   </h5>
                 </div>
