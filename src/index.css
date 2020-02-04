@@ -1,15 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=KoHo:400,500&display=swap');
 body{
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
+    height: 100%;
     overflow-x: hidden;
+    background-color:#001920;
 }
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
+
+#root{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
 
 .App{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+
+.navigation-bar{
+  
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.navigation-bar .nav-tab {
+    display:inline-block;
+    padding-left: 10px;
+    min-width: 80px;
+	height: 40px;
+    margin-left: 5px;
+    padding:10px 5px 0px 5px;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+    text-align:center;
+    z-index: 2;
+	
+}
+.navigation-bar .nav-text {
+    display:inline-block;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    transform: skew(-20deg);
+    -webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+
+ }
+
+.navigation-bar .nav-tab:hover {
+    background:#c6e8f2;
+    color:black;
+    transition: .3s ease-in-out;
+}
+
+.navigation-bar a{
+    color: white;
+    text-decoration: none;
+}
+

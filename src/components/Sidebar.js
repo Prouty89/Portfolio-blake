@@ -98,13 +98,13 @@ function Side(){
                     <h4></h4>
                   </div>
                   <div className="baseskill-text">
-                    <a href="https://wakatime.com">
+                    {/* <a href="https://wakatime.com">
                       <img
                         className="waka-chart"
                         src="https://wakatime.com/share/@bprouty0821/7ba80296-8165-438a-8e74-303db6c2e97b.png"
                         alt="waka"
                       />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

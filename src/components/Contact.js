@@ -3,19 +3,19 @@ import * as Yup from 'yup';
 import {Field, Form, withFormik} from "formik"
 import axios from 'axios';
 import { StyledForm } from '../styles';
+import Blake2 from '../assets/bcut.png';
 
-import Github from '../assets/Github.svg';
-import Tweet from '../assets/Tweet.svg';
-import IG from '../assets/IG.svg';
-import Linkd from '../assets/Linkd.svg';
-import SVG from 'react-inlinesvg';
+
 
 
 function ContactForm() {
   return (
     <>
       <StyledForm className="form-container">
-        <p className="form-heading">Let's Work Together</p>
+      {/* <div className="img-container">
+          <img className="blake-photo" src={Blake2} alt="profpho" />
+          <p className="form-heading">Let's Work Together</p>
+      </div> */}
         <Form className="form">
           <Field
             label
@@ -73,15 +73,6 @@ function ContactForm() {
             Submit
           </button>
         </Form>
-        <div className="social-tray">
-          <div className="social-icons">
-            <SVG rel="noopener" className="svg" src={IG} />
-            <SVG rel="noopener" className="svg" src={Github} />
-            <SVG rel="noopener" className="svg" src={Linkd} />
-            <SVG rel="noopener" className="svg" src={Tweet} />
-          </div>
-        </div>
-        <p className="footer">Designed {`&`} Developed by Blake Prouty 2020</p>
       </StyledForm>
     </>
   );
