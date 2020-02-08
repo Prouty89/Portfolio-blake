@@ -93,11 +93,11 @@ export const StyledHome = styled.div`
     .animated-text{
       font-family: 'KoHo', sans-serif;
       font-size: 2rem;
-      color: #c6e8f2;
+      color: #0a2b32;
       margin-block-start: 0em;
       margin-block-end: 0em;
       @media(max-width: 750px){
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
     }
   }
@@ -124,14 +124,55 @@ export const StyledHome = styled.div`
 export const StyledProjects = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
   font-family: 'Red Hat Display', sans-serif;
-  padding-left: 50px;
+  margin: 0 auto;
+  margin-top: 125px;
+  width: 1250px;
 
-  @media(max-width:500px){
+  @media(max-width: 600px){
+    width: 100%;
+    
+  }
+
+  @media(max-width: 499px){
     padding-left: 25px;
   }
   
   .react-multi-carousel-list{
-    height: 750px;
+    height: 550px;
+    @media(max-width: 500px){
+      height: 500px;
+    }
+  }
+
+  .custom-button-group{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    display: flex;
+    cursor: pointer;
+    width: 350px;
+    color: white;
+
+  }
+  .arrow{
+    margin-right: 10px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+
+  .title-br{
+  width: 360px;
+  color: white;
+  }
+
+  .project-image{
+    position: fixed;
+    width: 360px;
+    height: 360px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    top: 0;
+    left: 0;
   }
 
   ul {
@@ -148,6 +189,9 @@ export const StyledProjects = styled.div`
   .flippy-container {
     border-radius: 8px;
     height: 360px !important;
+    overflow: hidden;
+    background-image: #001920;
+    box-shadow: 0px 0px 7px #001920;
   }
 
   .design-desc {
@@ -207,27 +251,28 @@ export const StyledProjects = styled.div`
     }
 
     h3{
-      background: #c6e8f2;
-      color: black;
-      font-weight: 500;
+      font-weight: 700;
     }
   }
 
   .card-links {
-    position: absolute;
-    bottom: 3%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: black;
+    background: white;
     display: flex;
-    border-top: 2px solid #777777;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
 
     .link {
       text-decoration: none;
       padding: 2%;
-      color: #777777;
+      color: black;
+      font-weight: 700;
 
       &:hover{
-        color: #A8C5FF;
+        color: #001920;
         font-weight: 500;
       }
     }
@@ -281,11 +326,11 @@ export const StyledForm = styled.div`
   }
 
   .form {
-    height: 550px;
+    height: 470px;
     justify-content: center;
     display: flex;
-    background: #336075;
-    width: 650px;
+    background: #ffffff;
+    width: 625px;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
@@ -389,7 +434,7 @@ export const StyledFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  z-index: 1;
+  z-index: -1;
 
   .footer-contents{
     display: flex;

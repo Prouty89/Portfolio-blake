@@ -16,7 +16,7 @@ function Home() {
         <Stack />
       <div className="home-contents">
         <div className="welcome-container">
-          <p className="welcome-text">Hi there, I'm Blake</p>
+          <p className="welcome-text">Hi There, I'm Blake</p>
           <Animated />
         </div>
       </div>

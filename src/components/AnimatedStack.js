@@ -5,7 +5,7 @@ import { Spring  } from 'react-spring/renderprops';
 
 const Stack = () => {
     return (
-      <Spring delay='2000' from={{ opacity: 0, marginTop: -1000 }} to={{ opacity: 1, marginTop: 0 }}>
+      <Spring delay='1700' from={{ opacity: 0, marginBottom: +2000 }} to={{ opacity: 1, marginBottom: 0 }}>
         { props => (
           <div  className="Stack" style={ props }>
             <div >
