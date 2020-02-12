@@ -3,7 +3,7 @@ import * as Yup from 'yup';
 import {Field, Form, withFormik} from "formik"
 import axios from 'axios';
 import { StyledForm } from '../styles';
-import Blake2 from '../assets/bcut.png';
+
 
 
 
@@ -11,11 +11,8 @@ import Blake2 from '../assets/bcut.png';
 function ContactForm() {
   return (
     <>
+    <h3>Reach out!</h3>
       <StyledForm className="form-container">
-      {/* <div className="img-container">
-          <img className="blake-photo" src={Blake2} alt="profpho" />
-          <p className="form-heading">Let's Work Together</p>
-      </div> */}
         <Form className="form">
           <Field
             label
@@ -79,36 +76,34 @@ function ContactForm() {
 }
 
 const FormikContactForm = withFormik({
-    mapPropsToValues({name, company, phone, email, message}) {
-        return {
-            name: name || '',
-            company: company || '',
-            phone: phone || '',
-            email: email || '',
-            message: message || ''
-        }
-    },
+  mapPropsToValues({ name, company, phone, email, message }) {
+    return {
+      name: name || "",
+      company: company || "",
+      phone: phone || "",
+      email: email || "",
+      message: message || ""
+    };
+  },
 
-    validationSchema: Yup.object().shape({
-        name: Yup.string().max(50).required("Who do I owe the pleasure?"),
-        company: Yup.string().max(70),
-        phone: Yup.string().max(11),
-        email: Yup.string().max(30).required('Please provide an email'),
-        message: Yup.string().max(300).required('Please include a message')
-    }),
+  validationSchema: Yup.object().shape({
+    name: Yup.string().max(35).required("Who do I owe the pleasure?"),
+    company: Yup.string().max(50),
+    phone: Yup.string().max(15),
+    email: Yup.string().max(40).required("Please provide an email"),
+    message: Yup.string().max(300).required("Please include a message")
+  }),
 
-    handleSubmit(values) {
-        
-        axios.post('https://formspree.io/mqkapboa', {message: values})
-            .then(res => {
-                res.status="success"
-            })
-            .catch(err => {
-                err.message="fail"
-            });
-       
-    }
-
+  handleSubmit(values) {
+    axios
+      .post("https://formspree.io/mqkapboa", { message: values })
+      .then(res => {
+        res.status = "success";
+      })
+      .catch(err => {
+        err.message = "fail";
+      });
+  }
 })(ContactForm);
 
 export default FormikContactForm;

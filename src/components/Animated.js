@@ -17,12 +17,12 @@ function Animated() {
     const second = useSpring({
         opacity: 1,
         from: { opacity: 0 },
-        delay: '4000'
+        delay: '3500'
     })
     const third = useSpring({
         opacity: 1,
         from: { opacity: 0 },
-        delay: '6000'
+        delay: '5000'
     })
     return (
     <>

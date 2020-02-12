@@ -83,6 +83,7 @@ export const StyledHome = styled.div`
     .welcome-text{
       font-family: 'KoHo', sans-serif;
       font-size: 3rem;
+      color: #ffffff;
       font-weight: 700;
       margin-block-start: 0em;
       margin-block-end: 0em;
@@ -93,7 +94,7 @@ export const StyledHome = styled.div`
     .animated-text{
       font-family: 'KoHo', sans-serif;
       font-size: 2rem;
-      color: #0a2b32;
+      color: #ffffff;
       margin-block-start: 0em;
       margin-block-end: 0em;
       @media(max-width: 750px){
@@ -125,11 +126,13 @@ export const StyledProjects = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
   font-family: 'Red Hat Display', sans-serif;
   margin: 0 auto;
-  margin-top: 125px;
+  
   width: 1250px;
+  
 
   @media(max-width: 600px){
     width: 100%;
+    margin-top: 0px;
     
   }
 
@@ -152,12 +155,31 @@ export const StyledProjects = styled.div`
     cursor: pointer;
     width: 350px;
     color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
+    ::selection{
+      background-color: red;
+    }
+
+    @media(max-width: 600px){
+      left: 30%;
+    }
   }
   .arrow{
     margin-right: 10px;
     font-size: 1.2rem;
     text-decoration: underline;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .title-br{
@@ -252,24 +274,27 @@ export const StyledProjects = styled.div`
 
     h3{
       font-weight: 700;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
     }
   }
 
   .card-links {
     position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: -31px;
+    left: 31px;
     color: black;
-    background: white;
+    width: 360px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    
 
     .link {
       text-decoration: none;
       padding: 2%;
-      color: black;
-      font-weight: 700;
+      color: white;
+      font-weight: 500;
+      
 
       &:hover{
         color: #001920;
@@ -288,12 +313,22 @@ export const StyledProjects = styled.div`
   h4 {
     text-align: center;
     font-weight: 500;
-    margin-block-start: .33em;
-    margin-block-end: .33em;
+    margin-block-start: .1em;
+    margin-block-end: .1em;
+    
+  }
+
+  .proj-desc{
+    margin-top: 10px;
   }
 
   .react-multi-carousel-item--active{
-    width: 440px !important;
+    width: 390px !important;
+    padding-left: 30px;
+
+    @media(max-width: 499px){
+      padding-left: 0px;
+    }
   }
 
 `;
@@ -434,7 +469,7 @@ export const StyledFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  z-index: -1;
+  z-index: 1;
 
   .footer-contents{
     display: flex;

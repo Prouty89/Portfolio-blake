@@ -28,12 +28,19 @@ html{
 
 
 .navigation-bar{
-  
     height: 50px;
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
 }
+
+@media screen and (max-width: 499px) {
+    .navigation-bar{
+    justify-content: center;
+    }
+}
+
+
 
 .navigation-bar .nav-tab {
     display:inline-block;
@@ -48,22 +55,41 @@ html{
 	     -o-transform: skew(-20deg);
     text-align:center;
     z-index: 2;
-	
 }
+
+/* .active{
+    background:#c6e8f2;
+    font-size: 1.2em;
+    font-weight: 800;
+    color:black;
+} */
+
+.navigation-bar .nav-tab.active{
+    background:#c6e8f2;
+    font-size: 1.2em;
+    font-weight: 800;
+    color:black;
+}
+
+
+
+
 .navigation-bar .nav-text {
     display:inline-block;
     font-family: 'KoHo', sans-serif;
-    font-weight: 700;
-    font-size: 1.3em;
+    font-weight: 500;
+    font-size: 1.1em;
     transform: skew(-20deg);
     -webkit-transform: skew(20deg);
 	   -moz-transform: skew(20deg);
 	     -o-transform: skew(20deg);
-
  }
+
 
 .navigation-bar .nav-tab:hover {
     background:#c6e8f2;
+    font-size: 1.2em;
+    font-weight: 800;
     color:black;
     transition: .3s ease-in-out;
 }
@@ -72,4 +98,34 @@ html{
     color: white;
     text-decoration: none;
 }
+
+.navigation-bar a:hover{
+    color: black;
+}
+
+.not-found{
+    width: 100%;
+    height: 100%;
+    background: #001920;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'KoHo', sans-serif;
+}
+
+.bigfoot{
+    width: 500px;
+}
+
+.projects-header{
+    color: white;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 500;
+    text-align: center;
+
+  }
+
+
 

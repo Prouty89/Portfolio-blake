@@ -40,10 +40,10 @@ const CustomButtonGroup = ({ next, previous }) => {
   return (
     <>
     
-    <div className="custom-button-group">
+    <span className="custom-button-group">
       <div className="arrow" onClick={() => previous()}>{"<"}Prev</div>
       <div className="arrow" onClick={() => next()}>Next ></div>
-    </div>
+    </span>
     </>
   );
 };
@@ -52,6 +52,8 @@ const CustomButtonGroup = ({ next, previous }) => {
 
 const Projects = () => {
     return (
+      <>
+      <h3 className="projects-header">Click on a card to reveal more details</h3>
       <Spring
         from={{ opacity: 0, marginTop: -1000 }}
         to={{ opacity: 1, marginTop: 0 }}
@@ -108,32 +110,7 @@ const Projects = () => {
                           configured to our database, allowed for
                           request/response messaging correspondence.
                         </div> */}
-                        <div className="card-links">
-                          <a
-                            className="link"
-                            target="_blank"
-                            rel="noopener"
-                            href="https://youtu.be/KM4jNYUOg7Y"
-                          >
-                            Demo
-                          </a>
-                          <a
-                            className="link"
-                            target="_blank"
-                            rel="noopener"
-                            href="https://github.com/Lambda-School-Labs/safe-mothers-be"
-                          >
-                            BE Codebase
-                          </a>
-                          <a
-                            className="link"
-                            target="_blank"
-                            rel="noopener"
-                            href="https://github.com/Lambda-School-Labs/safe-mothers-fe"
-                          >
-                            FE Codebase
-                          </a>
-                        </div>
+                        
                       </FrontSide>
                       <BackSide
                         style={{
@@ -166,6 +143,32 @@ const Projects = () => {
                         </div>
                       </BackSide>
                     </Flippy>
+                    <div className="card-links">
+                          <a
+                            className="link"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://youtu.be/KM4jNYUOg7Y"
+                          >
+                            Demo
+                          </a>
+                          <a
+                            className="link"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://github.com/Lambda-School-Labs/safe-mothers-be"
+                          >
+                            BE Codebase
+                          </a>
+                          <a
+                            className="link"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://github.com/Lambda-School-Labs/safe-mothers-fe"
+                          >
+                            FE Codebase
+                          </a>
+                        </div>
                   </div>
                 </div>
                 <div>
@@ -205,7 +208,22 @@ const Projects = () => {
             </div>
             {/* <a className="click-here"> &#9758;</a>
             <a className="click-here-text">Click a card for more details...</a> */}
-            <div className="card-links">
+          </FrontSide>
+          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
+            <div className="back-container">
+              <h3>Tech Stack</h3>
+              <h4>Framework:</h4>
+              <div className="framework-desc">React</div>
+              <h4>Design:</h4>
+              <div className="design-desc">Styled Components</div>
+            </div>
+            <div className="card-links project-type">
+              <p>Personal Project</p>
+            </div>
+       
+          </BackSide>
+        </Flippy>
+        <div className="card-links">
               <a
                 className="link"
                 target="_blank"
@@ -223,22 +241,6 @@ const Projects = () => {
                 Play it!
               </a>
             </div>
-     
-          </FrontSide>
-          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
-            <div className="back-container">
-              <h3>Tech Stack</h3>
-              <h4>Framework:</h4>
-              <div className="framework-desc">React</div>
-              <h4>Design:</h4>
-              <div className="design-desc">Styled Components</div>
-            </div>
-            <div className="card-links project-type">
-              <p>Personal Project</p>
-            </div>
-       
-          </BackSide>
-        </Flippy>
       </div>
                 </div>
                 <div>
@@ -277,7 +279,24 @@ const Projects = () => {
               location information is saved to the database, users have the
               ability to see other players who are exploring the same world.
             </div>
-            <div className="card-links">
+            
+  
+          </FrontSide>
+          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
+            <h3>Tech Stack</h3>
+            <h4>Built Using:</h4>
+            <div className="framework-desc">React-Redux</div>
+            <div className="framework-desc">Django</div>
+            <div className="framework-desc">Python</div>
+            <h4>Design:</h4>
+            <div className="design-desc">SASS</div>
+            <div className="design-desc">React Vis</div>
+            <div className="card-links project-type">
+              <p>School Project</p>
+            </div>
+          </BackSide>
+        </Flippy>
+        <div className="card-links">
               <a
                 rel="noopener"
                 className="link"
@@ -303,23 +322,6 @@ const Projects = () => {
                 FE Codebase
               </a>
             </div>
-  
-          </FrontSide>
-          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
-            <h3>Tech Stack</h3>
-            <h4>Built Using:</h4>
-            <div className="framework-desc">React-Redux</div>
-            <div className="framework-desc">Django</div>
-            <div className="framework-desc">Python</div>
-            <h4>Design:</h4>
-            <div className="design-desc">SASS</div>
-            <div className="design-desc">React Vis</div>
-            <div className="card-links project-type">
-              <p>School Project</p>
-            </div>
-
-          </BackSide>
-        </Flippy>
       </div>
     </div>
       <div>
@@ -357,7 +359,22 @@ const Projects = () => {
               This was meant to be quick, fun, and expand my comfort level with
               data fetching.
             </div>
-            <div className="card-links">
+          </FrontSide>
+          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
+            <div className="framework-desc">
+              <h3>Tech Stack</h3>
+              <h4>Framework:</h4>
+              <div className="design-desc">React</div>
+              <h4>Design:</h4>
+              Emotion
+            </div>
+            <div className="card-links project-type">
+              <p>Personal Project</p>
+            </div>
+       
+          </BackSide>
+        </Flippy>
+        <div className="card-links">
               <a
                 rel="noopener"
                 className="link"
@@ -375,22 +392,6 @@ const Projects = () => {
                 Play it!
               </a>
             </div>
-       
-          </FrontSide>
-          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
-            <div className="framework-desc">
-              <h3>Tech Stack</h3>
-              <h4>Framework:</h4>
-              <div className="design-desc">React</div>
-              <h4>Design:</h4>
-              Emotion
-            </div>
-            <div className="card-links project-type">
-              <p>Personal Project</p>
-            </div>
-       
-          </BackSide>
-        </Flippy>
       </div>
                 </div>
                 <div>
@@ -429,7 +430,20 @@ const Projects = () => {
               mock application is a Crypto tracker that fetches data from an
               open API.
             </div>
-            <div className="card-links">
+          </FrontSide>
+          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
+            <h3>Tech Stack</h3>
+            <h4>Framework:</h4>
+            <div className="framework-desc">React</div>
+            <h4>Design:</h4>
+            <div className="design-desc">SASS</div>
+            <div className="card-links project-type">
+              <p>School Project</p>
+            </div>
+        
+          </BackSide>
+        </Flippy>
+        <div className="card-links">
               <a
                 rel="noopener"
                 className="link"
@@ -447,19 +461,6 @@ const Projects = () => {
                 Visit Application
               </a>
             </div>
-          </FrontSide>
-          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px" }}>
-            <h3>Tech Stack</h3>
-            <h4>Framework:</h4>
-            <div className="framework-desc">React</div>
-            <h4>Design:</h4>
-            <div className="design-desc">SASS</div>
-            <div className="card-links project-type">
-              <p>School Project</p>
-            </div>
-        
-          </BackSide>
-        </Flippy>
       </div>
                 </div>
                 <div>
@@ -490,15 +491,8 @@ const Projects = () => {
             }}
           >
             <img className ="project-image" src={Expat} alt="expat-photo" />
-            <div className="proj-desc">
-              5 day sprint incorporating CRUD operations for Users and Social
-              Media Posts. I had a very pleasurable experience being in the
-              center of a marketing team and a backend developer which led to
-              fluid develoment of our end-product. Solid communication and a
-              desire to pair program increase your chances of success in limited
-              duration sprints.
-            </div>
-            <div className="card-links">
+          </FrontSide>
+          <div className="card-links">
               <a
                 rel="noopener"
                 className="link"
@@ -516,9 +510,7 @@ const Projects = () => {
                 Visit Application
               </a>
             </div>
-           
-          </FrontSide>
-          <BackSide style={{ backgroundColor: "#336075", borderRadius: "8px", color: "white" }}>
+          <BackSide style={{ backgroundColor: "#ffffff", borderRadius: "8px", color: "black" }}>
             <h3>Tech Stack</h3>
             <h4>Framework:</h4>
             <div className="framework-desc">React</div>
@@ -527,9 +519,33 @@ const Projects = () => {
             <div className="card-links project-type">
               <p>School Project</p>
             </div>
-  
+            <h3>Description {'&'} Role</h3>
+            <div className="proj-desc">
+              5 day sprint incorporating CRUD operations handling user registration and posts. 
+              I had a very pleasurable experience being in the
+              center of a marketing team and a backend developer which led to
+              fluid develoment of our front end application.
+            </div>
           </BackSide>
         </Flippy>
+        <div className="card-links">
+              <a
+                rel="noopener"
+                className="link"
+                target="_blank"
+                href="https://github.com/bw-expat-journal/Front-End"
+              >
+                Codebase
+              </a>
+              <a
+                rel="noopener"
+                className="link"
+                target="_blank"
+                href="https://expat-journal-ui.netlify.com/"
+              >
+                Visit Application
+              </a>
+            </div>
       </div>
                 </div>
               </Carousel>
@@ -538,6 +554,7 @@ const Projects = () => {
           </div>
         )}
       </Spring>
+      </>
     );
   }
 

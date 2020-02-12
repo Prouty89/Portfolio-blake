@@ -10,9 +10,6 @@ function Home() {
   return (
     <>
     <StyledHome>
-    <div className="sasq-container">
-      <img className="sasq" src={Sasquatch} alt="sasq"/>
-    </div>
         <Stack />
       <div className="home-contents">
         <div className="welcome-container">
