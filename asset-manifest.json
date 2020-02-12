@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "./static/css/main.8f3e2ccd.chunk.css",
-    "main.js": "./static/js/main.5bdae675.chunk.js",
-    "main.js.map": "./static/js/main.5bdae675.chunk.js.map",
+    "main.js": "./static/js/main.1c7e396f.chunk.js",
+    "main.js.map": "./static/js/main.1c7e396f.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.1ee1805b.js",
     "runtime-main.js.map": "./static/js/runtime-main.1ee1805b.js.map",
     "static/css/2.542133cf.chunk.css": "./static/css/2.542133cf.chunk.css",
-    "static/js/2.75d13110.chunk.js": "./static/js/2.75d13110.chunk.js",
-    "static/js/2.75d13110.chunk.js.map": "./static/js/2.75d13110.chunk.js.map",
+    "static/js/2.abf4098b.chunk.js": "./static/js/2.abf4098b.chunk.js",
+    "static/js/2.abf4098b.chunk.js.map": "./static/js/2.abf4098b.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.150465ce1a0207f705cce80e21dc3abb.js": "./precache-manifest.150465ce1a0207f705cce80e21dc3abb.js",
+    "precache-manifest.503664af2c3ff5ad5cdbcde5ed4c9695.js": "./precache-manifest.503664af2c3ff5ad5cdbcde5ed4c9695.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.542133cf.chunk.css.map": "./static/css/2.542133cf.chunk.css.map",
     "static/css/main.8f3e2ccd.chunk.css.map": "./static/css/main.8f3e2ccd.chunk.css.map",
-    "static/js/2.75d13110.chunk.js.LICENSE.txt": "./static/js/2.75d13110.chunk.js.LICENSE.txt",
+    "static/js/2.abf4098b.chunk.js.LICENSE.txt": "./static/js/2.abf4098b.chunk.js.LICENSE.txt",
     "static/media/Crypto.jpg": "./static/media/Crypto.609c70ec.jpg",
     "static/media/Cyber.jpg": "./static/media/Cyber.bb41e25c.jpg",
     "static/media/Expat.jpg": "./static/media/Expat.532a2da6.jpg",
@@ -25,18 +25,14 @@
     "static/media/Tetris.jpg": "./static/media/Tetris.16c30529.jpg",
     "static/media/Touch.jpg": "./static/media/Touch.8335cdb5.jpg",
     "static/media/bcut.png": "./static/media/bcut.7751dfe6.png",
-    "static/media/gh.svg": "./static/media/gh.26f47685.svg",
-    "static/media/ig.svg": "./static/media/ig.ee92e409.svg",
-    "static/media/li.svg": "./static/media/li.d3419c3e.svg",
     "static/media/styles.css": "./static/media/revicons.2feb69cc.eot",
-    "static/media/sasquatch.jpg": "./static/media/sasquatch.ecc3f445.jpg",
-    "static/media/twit.svg": "./static/media/twit.0f4023e2.svg"
+    "static/media/sasquatch.jpg": "./static/media/sasquatch.ecc3f445.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1ee1805b.js",
     "static/css/2.542133cf.chunk.css",
-    "static/js/2.75d13110.chunk.js",
+    "static/js/2.abf4098b.chunk.js",
     "static/css/main.8f3e2ccd.chunk.css",
-    "static/js/main.5bdae675.chunk.js"
+    "static/js/main.1c7e396f.chunk.js"
   ]
 }
