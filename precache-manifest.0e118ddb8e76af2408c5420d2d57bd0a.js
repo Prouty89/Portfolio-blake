@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e6418a3a9b00a14e0379c0a95c2e8fc",
+    "revision": "460ef3ef9337702e0f0a7199ea8b0395",
     "url": "./index.html"
   },
   {
-    "revision": "ea0abfe0a0cefc570a24",
+    "revision": "4f8ecfb1e2f87ed873bd",
     "url": "./static/css/2.542133cf.chunk.css"
   },
   {
-    "revision": "217b60cf0a335ae87acd",
+    "revision": "9b2fd854dc764caa37ed",
     "url": "./static/css/main.e719b6b1.chunk.css"
   },
   {
-    "revision": "ea0abfe0a0cefc570a24",
-    "url": "./static/js/2.abf4098b.chunk.js"
+    "revision": "4f8ecfb1e2f87ed873bd",
+    "url": "./static/js/2.556975db.chunk.js"
   },
   {
     "revision": "27df78d2822439c2fc110c0a385025d0",
-    "url": "./static/js/2.abf4098b.chunk.js.LICENSE.txt"
+    "url": "./static/js/2.556975db.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "217b60cf0a335ae87acd",
-    "url": "./static/js/main.3a6ef83c.chunk.js"
+    "revision": "9b2fd854dc764caa37ed",
+    "url": "./static/js/main.5b1343e1.chunk.js"
   },
   {
     "revision": "a05d07e54ae0eb1f2cda",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "532a2da6fd9c1d307aabd698df0bbbdd",
     "url": "./static/media/Expat.532a2da6.jpg"
+  },
+  {
+    "revision": "b85b8e40b4bac9244efd5f45acfc2770",
+    "url": "./static/media/Handsss.b85b8e40.png"
   },
   {
     "revision": "7c2bcc761c3900db145cfe4b268b8be9",
@@ -64,14 +68,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/Tetris.16c30529.jpg"
   },
   {
-    "revision": "8335cdb5cfb8e6392a25e116fda31e7a",
-    "url": "./static/media/Touch.8335cdb5.jpg"
-  },
-  {
-    "revision": "7751dfe67478a682af605817010bf40b",
-    "url": "./static/media/bcut.7751dfe6.png"
-  },
-  {
     "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
     "url": "./static/media/revicons.04eb8fc5.woff"
   },
@@ -82,9 +78,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2feb69ccb596730c72920c6ba3e37ef8",
     "url": "./static/media/revicons.2feb69cc.eot"
-  },
-  {
-    "revision": "ecc3f445fe7631133eb0f591399603f3",
-    "url": "./static/media/sasquatch.ecc3f445.jpg"
   }
 ]);

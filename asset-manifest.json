@@ -1,38 +1,36 @@
 {
   "files": {
     "main.css": "./static/css/main.e719b6b1.chunk.css",
-    "main.js": "./static/js/main.3a6ef83c.chunk.js",
-    "main.js.map": "./static/js/main.3a6ef83c.chunk.js.map",
+    "main.js": "./static/js/main.5b1343e1.chunk.js",
+    "main.js.map": "./static/js/main.5b1343e1.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.1ee1805b.js",
     "runtime-main.js.map": "./static/js/runtime-main.1ee1805b.js.map",
     "static/css/2.542133cf.chunk.css": "./static/css/2.542133cf.chunk.css",
-    "static/js/2.abf4098b.chunk.js": "./static/js/2.abf4098b.chunk.js",
-    "static/js/2.abf4098b.chunk.js.map": "./static/js/2.abf4098b.chunk.js.map",
+    "static/js/2.556975db.chunk.js": "./static/js/2.556975db.chunk.js",
+    "static/js/2.556975db.chunk.js.map": "./static/js/2.556975db.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.c1c666996de341ba3c16fc42d685c770.js": "./precache-manifest.c1c666996de341ba3c16fc42d685c770.js",
+    "precache-manifest.0e118ddb8e76af2408c5420d2d57bd0a.js": "./precache-manifest.0e118ddb8e76af2408c5420d2d57bd0a.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.542133cf.chunk.css.map": "./static/css/2.542133cf.chunk.css.map",
     "static/css/main.e719b6b1.chunk.css.map": "./static/css/main.e719b6b1.chunk.css.map",
-    "static/js/2.abf4098b.chunk.js.LICENSE.txt": "./static/js/2.abf4098b.chunk.js.LICENSE.txt",
+    "static/js/2.556975db.chunk.js.LICENSE.txt": "./static/js/2.556975db.chunk.js.LICENSE.txt",
     "static/media/Crypto.jpg": "./static/media/Crypto.609c70ec.jpg",
     "static/media/Cyber.jpg": "./static/media/Cyber.bb41e25c.jpg",
     "static/media/Expat.jpg": "./static/media/Expat.532a2da6.jpg",
+    "static/media/Handsss.png": "./static/media/Handsss.b85b8e40.png",
     "static/media/Movie.jpg": "./static/media/Movie.7c2bcc76.jpg",
     "static/media/NF.jpg": "./static/media/NF.9586bb12.jpg",
     "static/media/Node.svg": "./static/media/Node.a355d02e.svg",
     "static/media/Resume1.pdf": "./static/media/Resume1.4449a160.pdf",
     "static/media/SafeMothers.jpg": "./static/media/SafeMothers.dca1ab94.jpg",
     "static/media/Tetris.jpg": "./static/media/Tetris.16c30529.jpg",
-    "static/media/Touch.jpg": "./static/media/Touch.8335cdb5.jpg",
-    "static/media/bcut.png": "./static/media/bcut.7751dfe6.png",
-    "static/media/styles.css": "./static/media/revicons.2feb69cc.eot",
-    "static/media/sasquatch.jpg": "./static/media/sasquatch.ecc3f445.jpg"
+    "static/media/styles.css": "./static/media/revicons.2feb69cc.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.1ee1805b.js",
     "static/css/2.542133cf.chunk.css",
-    "static/js/2.abf4098b.chunk.js",
+    "static/js/2.556975db.chunk.js",
     "static/css/main.e719b6b1.chunk.css",
-    "static/js/main.3a6ef83c.chunk.js"
+    "static/js/main.5b1343e1.chunk.js"
   ]
 }
