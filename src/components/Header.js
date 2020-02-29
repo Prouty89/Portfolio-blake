@@ -3,10 +3,8 @@ import { useRoutes } from 'react-router-dom';
 
 import NotFound from './NotFound';
 import Projects from './Projects';
-import Contact from './Contact';
+
 import Home from './Home';
-
-
 
 
 function Header() {
@@ -14,7 +12,7 @@ function Header() {
     // These are the same as the props you provide to <Route>
     { path: "/", element: <Home /> },
     { path: "projects", element: <Projects /> },
-    { path: "contact", element: <Contact /> },
+    
     // Redirects use a redirectTo property to
     { path: "home", redirectTo: "/" },
     // Not found routes work as you'd expect

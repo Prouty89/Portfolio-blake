@@ -6,7 +6,7 @@ body{
     margin-left: 0px;
     height: 100%;
     overflow-x: hidden;
-    background-color:#336075;
+    background-color:#080808;
 }
 
 html{
@@ -16,116 +16,173 @@ html{
 
 #root{
     height: 100%;
-    overflow-y: hidden;
+   
+    overflow-x: hidden;
 }
 
 
 
 .App{
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-x: hidden;  
 }
 
 
 .navigation-bar{
     height: 50px;
     display: flex;
+    width: 1200px;
+    margin: 0 auto;
     justify-content: flex-end;
-    padding-right: 10px;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 1200px) {
+    .navigation-bar{
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
     .navigation-bar{
     justify-content: center;
     }
 }
 
 
-
-.navigation-bar .nav-tab {
-    display:inline-block;
-    padding-left: 10px;
-    min-width: 80px;
-	height: 40px;
-    margin-left: 5px;
-    padding:10px 5px 0px 5px;
-    transform: skew(-20deg);
-    -webkit-transform: skew(-20deg);
-	   -moz-transform: skew(-20deg);
-	     -o-transform: skew(-20deg);
-    text-align:center;
-    z-index: 2;
+.projects-container{
+  
+    margin: 0 auto;
 }
 
-/* .active{
-    background:#c6e8f2;
-    font-size: 1.2em;
-    font-weight: 800;
-    color:black;
-} */
-
-.navigation-bar .nav-tab.active{
-    background:#c6e8f2;
-    font-size: 1.2em;
-    font-weight: 800;
-    color:black;
-}
-
-
-
-
-.navigation-bar .nav-text {
-    display:inline-block;
-    font-family: 'KoHo', sans-serif;
-    font-weight: 500;
-    font-size: 1.1em;
-    transform: skew(-20deg);
-    -webkit-transform: skew(20deg);
-	   -moz-transform: skew(20deg);
-	     -o-transform: skew(20deg);
- }
-
-
-.navigation-bar .nav-tab:hover {
-    background:#c6e8f2;
-    font-size: 1.2em;
-    font-weight: 800;
-    color:black;
-    transition: .3s ease-in-out;
-}
-
-.navigation-bar a{
-    color: white;
-    text-decoration: none;
-}
-
-.navigation-bar a:hover{
-    color: black;
-}
-
-.not-found{
+@media screen and (max-width: 950px) {
+    .projects-container{
     width: 100%;
-    height: 100%;
-    background: #001920;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.header-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'KoHo', sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: left;
 }
 
-.bigfoot{
-    width: 500px;
+@media screen and (max-width: 1250px) {
+    .header-container{
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header-container{
+    align-items: center;
+    }
+}
+
+.alert{
+    color: white;
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 650px) {
+    .alert{
+    font-size: 1.2em;
+    }
 }
 
 .projects-header{
+    color: #45A29E;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+@media screen and (max-width: 650px) {
+    .projects-header{
+    font-size: 1.7em;
+    }
+}
+
+.inds{
+    font-weight: 400;
+    font-size: 1.8em;
+
+    margin-block-start: .2em;
+    margin-block-end: 0em;
+}
+
+
+
+
+.accordion-skills-sm{
+    padding-top: 40px;
     color: white;
     font-family: 'KoHo', sans-serif;
-    font-weight: 500;
-    text-align: center;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
+@media screen and (max-width: 1250px) {
+    .accordion-skills-sm{
+    margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .accordion-skills-sm{
+    font-size: .8em;
+    }
+}
+
+.rows{
+    width: 150px;
+}
+
+.flex{
+    display: flex;
+    width: 1200px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1250px) {
+    .flex{
+    width: 100%;
+  
+    padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .flex{
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+
+.footer-icon-container_top{
+    margin-top: 5px; 
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.png{
+    height: 45px;
+    width: 45px;
+    border-radius: 18px;
+}
 
 
 
