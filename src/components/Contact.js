@@ -1,10 +1,10 @@
 import React from "react";
 import { animated } from "react-spring";
 
-const Contact = ({ style, closeModal }) => (
+const Contact = ({ style }) => (
   <animated.div style={style} className="modal">
-    <h3 className="modal-title">Contact Information</h3>
-    <p className="modal-content">
+  
+    <div className="modal-content_contact">
     <ul>
         <li>
         Phone: 605-521-7234
@@ -17,10 +17,7 @@ const Contact = ({ style, closeModal }) => (
         Willing to relocate: Yes!
         </li>
     </ul>
-    </p>
-    <button className="modal-close-button" onClick={closeModal}>
-      X
-    </button>
+    </div>
   </animated.div>
 );
 

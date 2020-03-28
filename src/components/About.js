@@ -1,18 +1,14 @@
 import React from "react";
 import { animated } from "react-spring";
 
-const Modal = ({ style, closeModal }) => (
+const Modal = ({ style }) => (
   <animated.div style={style} className="modal">
-    <h3 className="modal-title">Blake Prouty is a...</h3>
     <p className="modal-content">
-    Impassioned developer who thrives in a team environment. Comfortable developing in React, Node.js, and Python but always open to learning new tech. Driven and patient under challenging circumstances. 
+    Passionate full stack developer with experience along the entire software development lifecycle. I've built several web applications both independently and in cross-functional teams.
     </p>
     <p className="modal-content">
-   I seek to understand a problem prior to devising and executing a plan. Demonstrated eye for clean design and thoughtful user experience. My ideal role includes front end, back end, or full stack software development.
+   I'm driven by curiousity, human collaboration, and joy. I'm seeking my first FT SWE role, I hope you'll take a look at my work and be in touch!
     </p>
-    <button className="modal-close-button" onClick={closeModal}>
-      X
-    </button>
   </animated.div>
 );
 

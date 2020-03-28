@@ -12,11 +12,11 @@ function Home() {
         <Stack />
       <div className="home-contents">
         <div className="welcome-container">
-          <div className="hand-container">
+          {/* <div className="hand-container">
             <div className="hand-sizer">
           <img className="hands-img" src={Touch} alt="hands" />
           </div>
-          </div>
+          </div> */}
           <Animated />
         </div>
       </div>

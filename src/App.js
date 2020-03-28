@@ -2,15 +2,12 @@ import React from 'react';
 
 
 import Projects from './components/Projects';
+import { Carousel } from './components/Carousel';
+
+import { StyledContent } from './styles';
 
 import Home from './components/Home';
 import Footer from './components/Footer';
-
-
-
-import Twitter from './assets/TwitterB.png';
-import Github from './assets/GithubB.png';
-import Linked from './assets/LinkedB.png';
 
 
   function App() {
@@ -18,17 +15,17 @@ import Linked from './assets/LinkedB.png';
       <>
         <nav className="navigation-bar">
         <div className="footer-container_top">
-                <div className="footer-contents_top">
+                <div style={{paddingTop: '15px'}} className="footer-contents_top">
                 </div>
                     <div className="footer-icon-container_top">
                     <a  href = "https://www.github.com/Prouty89" target="_blank" rel = "noopener">
-                    <img className="png" src={Github} alt="github" />
+                    <img src="https://img.icons8.com/doodle/48/000000/github--v1.png"/>
                     </a>
                     <a href = "https://www.linkedin.com/in/blakenp/" target="_blank" rel = "noopener">
-                    <img className="png" src={Linked} alt="linkedin" />
+                    <img src="https://img.icons8.com/doodle/46/000000/linkedin--v2.png"/>
                     </a>
                     <a href = "https://twitter.com/BlakeNthaniel" target="_blank" rel = "noopener">
-                    <img className="png" src={Twitter} alt="twitter" />
+                    <img src="https://img.icons8.com/doodle/48/000000/twitter.png"/>
                     </a>
                     </div>
             </div>
@@ -46,9 +43,11 @@ import Linked from './assets/LinkedB.png';
           </div>
           </div> */}
         </nav>
-     
+     <StyledContent>
         <Home/>
-        <Projects />
+        {/* <Projects /> */}
+        <Carousel />
+        </StyledContent>
         <Footer />
       </>
     );

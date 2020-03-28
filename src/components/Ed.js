@@ -1,10 +1,10 @@
 import React from "react";
 import { animated } from "react-spring";
 
-const Ed = ({ style, closeModal }) => (
+const Ed = ({ style }) => (
   <animated.div style={style} className="modal">
-    <h3 className="modal-title">Education</h3>
-    <p className="modal-content_ed">
+  
+    <div className="modal-content_ed">
     <ul>
         Lambda School '19 -'20
         <li>
@@ -17,10 +17,7 @@ const Ed = ({ style, closeModal }) => (
         B.A. Nutrition and Food Sciences 
         </li>
     </ul>
-    </p>
-    <button className="modal-close-button" onClick={closeModal}>
-      X
-    </button>
+    </div>
   </animated.div>
 );
 

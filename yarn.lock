@@ -8496,6 +8496,11 @@ react-simple-img@^2.3.7:
   dependencies:
     intersection-observer "^0.5.1"
 
+react-snaplist-carousel@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-snaplist-carousel/-/react-snaplist-carousel-2.2.0.tgz#183e2486c8336e6e726062972c38bee965878ece"
+  integrity sha512-QqoVRIUQNUtveDv8w4Q2zwH62VbEfE1puaR8Xyrmsemk1xJ9o+CHgTZJEAxVKZi/ibM+aGfD1xQxdxumRhgj/A==
+
 react-spring@^8.0.27:
   version "8.0.27"
   resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-8.0.27.tgz#97d4dee677f41e0b2adcb696f3839680a3aa356a"

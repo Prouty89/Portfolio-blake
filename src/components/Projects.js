@@ -51,7 +51,7 @@ const Projects = () => {
     return (
       <>
       <div className="header-container">
-        <h3 className="projects-header">Projects {`&`} Development Tools</h3>
+        <h3 className="projects-header">Projects {`&`} Technical Skills</h3>
         <h5 className="alert">* Click on a project to reveal more info</h5>
       </div>
       <div className="flex">
