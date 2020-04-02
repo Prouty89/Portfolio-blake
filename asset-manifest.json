@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.dbbb2f0b.chunk.css",
-    "main.js": "./static/js/main.52edd498.chunk.js",
-    "main.js.map": "./static/js/main.52edd498.chunk.js.map",
+    "main.css": "./static/css/main.3ce457ed.chunk.css",
+    "main.js": "./static/js/main.89a97255.chunk.js",
+    "main.js.map": "./static/js/main.89a97255.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.1ee1805b.js",
     "runtime-main.js.map": "./static/js/runtime-main.1ee1805b.js.map",
-    "static/js/2.8024b0b2.chunk.js": "./static/js/2.8024b0b2.chunk.js",
-    "static/js/2.8024b0b2.chunk.js.map": "./static/js/2.8024b0b2.chunk.js.map",
+    "static/js/2.e94f5d93.chunk.js": "./static/js/2.e94f5d93.chunk.js",
+    "static/js/2.e94f5d93.chunk.js.map": "./static/js/2.e94f5d93.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.f59533a7bfa541da90eeab256cca8115.js": "./precache-manifest.f59533a7bfa541da90eeab256cca8115.js",
+    "precache-manifest.5a90b0eabeb642826511afd0cdad5bdf.js": "./precache-manifest.5a90b0eabeb642826511afd0cdad5bdf.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.dbbb2f0b.chunk.css.map": "./static/css/main.dbbb2f0b.chunk.css.map",
-    "static/js/2.8024b0b2.chunk.js.LICENSE.txt": "./static/js/2.8024b0b2.chunk.js.LICENSE.txt",
+    "static/css/main.3ce457ed.chunk.css.map": "./static/css/main.3ce457ed.chunk.css.map",
+    "static/js/2.e94f5d93.chunk.js.LICENSE.txt": "./static/js/2.e94f5d93.chunk.js.LICENSE.txt",
     "static/media/CSE.png": "./static/media/CSE.ac85c9bb.png",
     "static/media/Crypto.png": "./static/media/Crypto.5df73d77.png",
     "static/media/Cyber.png": "./static/media/Cyber.69b40e05.png",
@@ -20,12 +20,13 @@
     "static/media/SafeMothers.png": "./static/media/SafeMothers.ba57faec.png",
     "static/media/Tetris.png": "./static/media/Tetris.5b0dcede.png",
     "static/media/bcut.png": "./static/media/bcut.7751dfe6.png",
-    "static/media/coof.gif": "./static/media/coof.fd7a2d26.gif"
+    "static/media/coof.gif": "./static/media/coof.fd7a2d26.gif",
+    "static/media/typing.gif": "./static/media/typing.a8e757b8.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.1ee1805b.js",
-    "static/js/2.8024b0b2.chunk.js",
-    "static/css/main.dbbb2f0b.chunk.css",
-    "static/js/main.52edd498.chunk.js"
+    "static/js/2.e94f5d93.chunk.js",
+    "static/css/main.3ce457ed.chunk.css",
+    "static/js/main.89a97255.chunk.js"
   ]
 }
