@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body{
     margin-top: 0px;
     margin-right: 0px;
@@ -6,7 +7,7 @@ body{
     margin-left: 0px;
     height: 100%;
     overflow-x: hidden;
-    background-color: #f5f2d0;
+    background-color: #F8F8F1;
 }
 
 html{
@@ -30,9 +31,13 @@ html{
 .navigation-bar{
     height: 50px;
     display: flex;
-    width: 1200px;
+    flex-direction: column;
+    position: absolute;
+    padding: 60px;
+    padding-top: 80px;
+    width: 100%;
     margin: 0 auto;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 1200px) {
@@ -48,10 +53,7 @@ html{
 }
 
 
-.projects-container{
-  
-    margin: 0 auto;
-}
+
 
 @media screen and (max-width: 950px) {
     .projects-container{
@@ -81,22 +83,9 @@ html{
     }
 }
 
-.alert{
-    color: white;
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
-    text-align: left;
-    padding-bottom: 25px;
-}
-
-@media screen and (max-width: 650px) {
-    .alert{
-    font-size: 1.2em;
-    }
-}
 
 .projects-header{
-    font-family: 'Quattrocento', serif;
+    font-family: 'Quicksand', sans-serif;
     color: #36475d;
     font-weight: 500;
     font-size: 3em;
@@ -105,9 +94,9 @@ html{
     margin-block-end: 0em;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .projects-header{
-    font-size: 1.7em;
+    font-size: 1.8em;
     }
 }
 
@@ -176,6 +165,7 @@ html{
     opacity: .8; 
     width: 200px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 

@@ -14,33 +14,25 @@ function Animated() {
     //about
     const [modalVisible, setModalVisible] = useState(true);
     const transitions = useTransition(modalVisible, null, {
-        from: { opacity: 0, transform: "translateY(-40px)" },
-        enter: { opacity: 1, transform: "translateY(0px)" },
-        leave: { opacity: 0, transform: "translateY(40px)" }
+          from: { display: "none", transform: "translateX(120px)" },
+          enter: { display: "inherit", transform: "translateX(0px)" },
+          leave: { display: "none", transform: "translateX(20px)" }
         });
     //ed
     const [eduModalVisible, setEduModalVisible] = useState(false);
     const edutransitions = useTransition(eduModalVisible, null, {
-        from: { opacity: 0, transform: "translateY(-40px)" },
-        enter: { opacity: 1, transform: "translateY(0px)" },
-        leave: { opacity: 0, transform: "translateY(40px)" }
+          from: { display: "none", transform: "translateX(120px)" },
+          enter: { display: "inherit", transform: "translateX(0px)" },
+          leave: { display: "none", transform: "translateX(20px)" }
         });
     //Contact
     const [contactModalVisible, setContactModalVisible] = useState(false);
     const contacttransitions = useTransition(contactModalVisible, null, {
-        from: { opacity: 0, transform: "translateY(-40px)" },
-        enter: { opacity: 1, transform: "translateY(0px)" },
-        leave: { opacity: 0, transform: "translateY(40px)" }
+          from: { display: "none", transform: "translateX(120px)" },
+          enter: { display: "inherit", transform: "translateX(0px)" },
+          leave: { display: "none", transform: "translateX(20px)" }
         });
 
-
-    const second = useSpring({
-        config: { duration: 1200 },
-        opacity: 1,
-        from: { opacity: 0, color: '#d6e5e5' },
-        to: { opacity: 1, color: '#36475d'},
-        delay: '2000'
-    });
 
    
 
@@ -68,11 +60,11 @@ function Animated() {
 
     const StyledButton = Styled.div `
         .modal-active{
-          font-family: 'Quattrocento', serif;
-          color: #080808;
+          font-family: 'Quicksand', sans-serif;
+          font-weight: bold;
+          color: #5885b6;
           background: transparent;
           font-size: 2.1em;
-          font-weight: bold;
           display: flex;
           align-items: center;
           border: none;
@@ -83,15 +75,19 @@ function Animated() {
           height: 50px;
           padding: 1px 6px;
           text-decoration: none;
+
+          @media(max-width: 1000px){
+            font-size: 1.8rem;
+          }
         }
 
         .modal-inactive{
-          font-family: 'Quattrocento', serif;
-          color: #080808;
+          font-family: 'Quicksand', sans-serif;
+          font-size: 2.1em;
+          color: #36475d;
           outline: none;
           user-select: none;
           background: transparent;
-          font-size: 1.7em;
           display: flex;
           align-items: center;
           border: none;
@@ -100,14 +96,18 @@ function Animated() {
           height: 50px;
           padding: 1px 6px;
           text-decoration: none;
+
+          @media(max-width: 1000px){
+            font-size: 1.4rem;
+          }
         }
 
 
           a{
-          font-family: 'Quattrocento', serif;
-          color: #080808;
+          font-family: 'Quicksand', sans-serif;
+          color: #36475d;
           background: transparent;
-          font-size: 1.7em;
+          font-size: 2.1em;
           display: flex;
           align-items: center;
           border: none;
@@ -116,26 +116,18 @@ function Animated() {
           height: 50px;
           padding: 1px 6px;
           text-decoration: none;
+          @media(max-width: 650px){
+            font-size: 1.4rem;
+            
           }
+          }
+
         }
     `
 
     return (
     <>
     <div className="home-text-container">
-    <div className="welcome-text-container">
-    <p className="welcome-text">Blake Prouty</p>
-    <div className="logos_big">
-            {/* <img className ="logo" title="React.js" src={ReactLogo} alt="react-logo" />
-            <img className ="logo" title="Redux" src={Redux} alt="redux-logo" />
-            
-            <SVG className="logo" title="Node.js" src={Node} /> */}
-            <img title="react.js" src="https://img.icons8.com/5885b6/70/5885b6/react-native.png" alt="react"/>
-            <img title="redux" src="https://img.icons8.com/5885b6/70/5885b6/redux.png" alt="redux"/>
-            <img title="node.js" src="https://img.icons8.com/windows/70/5885b6/node-js.png" alt="node"/>
-    </div>
-    </div>
-        <animated.div className = "second-animation animated-text" style={second}>Full Stack Developer</animated.div>
     </div>
     <div className="modal-container">
     <StyledButton>

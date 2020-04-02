@@ -1,112 +1,157 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const rotate = keyframes `
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`
 
 //App.js Styles
 
 export const StyledContent = styled.div`
-width: 1250px;
-margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+display: flex;
+justify-content: center;
+margin: auto;
+
+
+@media(max-width: 1100px){
+  width: 100%;
+  padding: 20px;
+}
 `
 
 
 //Home.js Styles
 export const StyledHome = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Sigmar+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans&family=Sigmar+One&display=swap');
-height: 590px;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+padding-top: 100px;
 
-@media(max-width: 650px){
-  height: 400px;
+.bg-wtc{
+  background: #36475d;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
-.home-contents{
+.welcome-text-container{
+  display: flex;
+  background: #f8f8f1;
+  justify-content:center;
+  align-content: center;
+  width: 80%;
+  height: 265spx;
+  background-size: 266% 5.084em;
+  background-position: 0 45.5%;
+}
+
+.animated-text{
+  font-family: 'Quicksand', sans-serif;
+  padding-left: 5px;
+  font-size: 3rem;
+  display: flex;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+
+  @media(max-width: 1000px){
+    font-size: 1.8rem;
+  }
+}
+
+.social-container{
+  display: flex;
+  justify-content: space-around;
+  width: 135px;
+  padding-top: 5px;
+  margin-left: 15px;
+}
+
+.pic-container{
+  background: #5885b6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 30px;
+  height: 130px;
+  width: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 15px;
+  
+  .profile-pic{
+    height: 165px;
+    border-radius: 50%;
+  }
+}
+
+.welcome-text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 7rem;
+  color: #36475d;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-size: 80% 0.084em;
+  background-position: 0 97.5%;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+
+  @media(max-width: 1100px){
+    background-size: 100% 0.1em;
+    background-position: 0 91%;
+    font-size: 4rem;
+  }
+
+  @media(max-width: 650px){
+    background-size: 100% 0.1em;
+    background-position: 0 91%;
+    font-size: 2.6rem;
+  }
+}
+
+.logos_big{
+    display: flex;
+    padding-bottom: 85px;
+    align-items: center;
+    margin-right: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+  .logo{
+    height: 30px;
+    width: 30px;
+    margin-top: 2px;
+  }
+
+  .logo-react{
+    height: 30px;
+    width: 30px;
+    animation: ${rotate} 4s linear infinite;
+  }
+
+.home-contents{
+  flex-direction: column;
   color: #080808;
-  height: 100%;
+  height: 850px;
+  display: flex;
+  justify-content: space-around;
   position: relative;
   z-index: 1;
-  width: 1200px;
-  margin: 0 auto;
-
-  @media(max-width: 1250px){
-    width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .home-text-container{
-    height: 260px;
-    @media(max-width: 650px){
-      height: 185px;
-    }
-  }
-
-  
-
-
-  .hand-container{
-    position: absolute;
-    transform: rotate(270deg);
-    left: 773px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    z-index: 0;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-      .hands-img{
-        height: 435px;
-      }
-    }
-  }
   
   .welcome-container{
-    display: flex;
-    align-items: baseline;
-    height: 80%;
-    flex-direction: column;
-    width: 1200px;
-    margin: 0 auto;
+
     justify-content: space-between;
     @media(max-width: 1200px){
-      width: 100%;
+  
     }
-    @media(max-width: 650px){
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-    }
+    @media(max-width: 1100px){
+     
 
-    .welcome-text{
-      font-family: 'Quattrocento', serif;
-      font-size: 8rem;
-      color: #36475d;
-      background-image: linear-gradient(120deg, #d6e5e5 0%, #5885b6 100%);
-      background-repeat: no-repeat;
-      background-size: 100% 0.2em;
-      background-position: 0 91%;
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-      @media(max-width: 650px){
-        font-size: 2.5rem;
-      }
-    }
-    .animated-text{
-      font-family: 'Quattrocento Sans', serif;
-      font-size: 2.5rem;
-    
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-
-      @media(max-width: 650px){
-        font-size: 1.3rem;
-      }
     }
   }
 
@@ -114,86 +159,49 @@ height: 590px;
     color: #66FCF1;
   }
 
-  .welcome-text-container{
-    display: flex;
-  }
 
-  .logos{
-    display: none;
-    @media(max-width:650px){
-      margin-left: 20px;
-    }
-    .logo{
-      height: 35px;
-      margin-right: 40px;
-      margin-top: 20px;
-    }
-  }
 
-  .logos_big{
-    padding-left: 27px;
-    height: 127px;
-    opacity: .5;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    
 
-    @media(max-width: 650px){
-      height: 50px;
-    }
-
-    .logo{
-
-      height: 35px;
-      margin-right: 15px;
-      margin-top: 20px;
-    }
   }
 
   .modal-container{
     display: flex;
     flex-direction: column;
-    border-right: 5px solid #36475d;
+   
     width: 220px;
-    height: 220px;
+    height: 300px;
     position: relative;
     justify-content: space-evenly;
 
-    @media(max-width: 650px){
-      flex-direction: row;
-      margin-right: 15px;
-      width: 300px;
-      height: 80px;
+    @media(max-width: 1000px){
+      width: 150px;
     }
   }
 
-  
-
-
   @media(max-width: 650px){
-    color: #c6e8f2;
-    font-size: 1.2em;
+ 
+   
   }
 }
 
   .modal {
-    width: 550px;
+    
+    width: 700px;
     height: 200px;
     color: #080808;
     padding: 15px;
     user-select: none;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     z-index: 90;
-    right: -675px;
-    top: -7px;
+    right: -705px;
+    top: 10px;
     display: flex;
     flex-direction: column;
 
-    @media(max-width: 650px){
-      right: -43px;
-      top: -208px;
+    @media(max-width: 1000px){
+     width: 300px;
+     right: -370px;
     }
 
     .modal-title{
@@ -202,11 +210,16 @@ height: 590px;
     }
 
     .modal-content{
+      font-family: 'Open Sans', sans-serif;
       margin-block-start: .3em;
       list-style: none;
-      font-size: 1.4em;
+      font-size: 1.2em;
       text-align: justify;
       margin-block-end: .2em;
+
+      @media(max-width: 1000px){
+        font-size: 1em;
+      }
 
       ul{
         padding-inline-start: 5px;
@@ -232,6 +245,10 @@ height: 590px;
     text-align: left;
     margin-block-end: .2em;
 
+    @media(max-width: 1000px){
+      font-size: 1em;
+    }
+
     ul{
       padding-inline-start: 5px;
     }
@@ -251,10 +268,16 @@ height: 590px;
 }
 
 .modal-content_contact{
+  font-family: 'Quattrocento Sans',sans-serif;
+  font-size: 1.4em;
   margin-block-start: .6em;
   list-style: none;
   text-align: left;
   margin-block-end: .2em;
+
+  @media(max-width: 1000px){
+    font-size: 1em;
+  }
 
   ul{
     padding-inline-start: 5px;
@@ -303,16 +326,32 @@ font-family: 'Quattrocento', serif;
 
 .inactive{
   font-size: 1.4em;
-  color: #5885b6;
+  color: #080808;
+}
+
+.front-flex{
+  @media(max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+
+.description-headers{
+  margin-block-start: 0em;
+  font-weight: 500;
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+
+  @media(max-width: 1000px){
+    
+  }
 }
 
 .project-selector{
- 
   ul{
     display: flex;
     list-style: none;
   }
-
   li{
     cursor: pointer;
     padding: 10px;
@@ -320,15 +359,60 @@ font-family: 'Quattrocento', serif;
 }
 
 .framework-description{
-  padding-left: 35px;
+  font-family: 'Open Sans', serif;
+  padding-left: 25px;
+  width: 416px;
+  font-size: 1em;
+  text-align: justify;
 }
+
+.tech-contain{
+  .flex-list{
+    display: flex;
+  }
+}
+
+
 
 .card-ul{
   list-style: none;
+  margin-block-start: 0em;
+  padding-inline-start: 5px;
+  width: 150px;
+
+  li{
+    font-family: 'Quattrocento', sans-serif;
+    font-size: 1em;
+  }
+}
+
+.card-links{
+  margin-bottom: 10px;
+  .link{
+  text-decoration: none;
+  color: #5885b6;
+  padding: 7px;
+  }
+}
+
+.img-contain{
+  width: 450px;
+  height: 375px;
+
+  @media(max-width: 1000px){
+    height: 360px;
+    width: 370px;
+  }
 }
 
 .project-image{
-  width: 510px;
+  height: 300px;
+  border: 1px solid black;
+
+
+  @media(max-width: 1000px){
+    width: 370px;
+  }
 }
   
  
@@ -336,15 +420,16 @@ font-family: 'Quattrocento', serif;
 
 //Footer.js Styles
 export const StyledFooter = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+padding-top: 135px;
+bottom: 0;
 color: #080808;
 height: 50px;
-width: 1200px;
+width: 100%;
 justify-content: center;
 margin: 0 auto;
 display: flex; 
 align-content: center;
-font-family: 'Quattrocento', serif;
+font-family: 'Open Sans', sans-serif;
 
 @media(max-width: 1250px){
   width: 100%;
