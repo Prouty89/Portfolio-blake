@@ -8,13 +8,13 @@ const Ed = ({ style }) => (
     <ul>
         Lambda School '19 -'20
         <li>
-        <a href="https://lambdaschool.com/courses/full-stack-web-development" target="_blank" rel="noopener">Endorsement-Full Stack Web Development</a>
+        <a href="https://lambdaschool.com/courses/full-stack-web-development" target="_blank" rel="noopener noreferrer">Endorsement-Full Stack Web Development</a>
         </li>
     </ul>
     <ul>
         South Dakota State University '10 - '15
         <li>
-        B.A. Nutrition and Food Sciences 
+        B.S. Nutrition and Food Sciences 
         </li>
     </ul>
     </div>

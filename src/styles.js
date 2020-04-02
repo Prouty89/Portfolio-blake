@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
+
 const rotate = keyframes `
   from {
     transform: rotate(0deg);
@@ -29,12 +30,24 @@ margin: auto;
 //Home.js Styles
 export const StyledHome = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-padding-top: 100px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+.coffee{
+  position: absolute;
+  left: 40px;
+  top: -70px;
+  height: 150px;
+  border-radius: 50%;
+}
 
 .bg-wtc{
-  background: #36475d;
-  width: 1200px;
+  width: 100%;
   display: flex;
+  padding-bottom: 50px;
   justify-content: center;
 }
 
@@ -43,7 +56,7 @@ padding-top: 100px;
   background: #f8f8f1;
   justify-content:center;
   align-content: center;
-  width: 80%;
+  width: 950px;
   height: 265spx;
   background-size: 266% 5.084em;
   background-position: 0 45.5%;
@@ -86,6 +99,14 @@ padding-top: 100px;
     height: 165px;
     border-radius: 50%;
   }
+}
+
+.home-text-container{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .welcome-text{
@@ -136,16 +157,17 @@ padding-top: 100px;
 
 .home-contents{
   flex-direction: column;
-  color: #080808;
-  height: 850px;
+
+  height: 950px;
   display: flex;
+  width: 100%;
   justify-content: space-around;
   position: relative;
   z-index: 1;
   
   .welcome-container{
-
-    justify-content: space-between;
+    padding-left: 30px;
+    display: flex;
     @media(max-width: 1200px){
   
     }
@@ -164,12 +186,22 @@ padding-top: 100px;
 
   }
 
+  .modal-container_projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 430px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .modal-container{
     display: flex;
     flex-direction: column;
-   
-    width: 220px;
+    width: calc(100% + 136px);
+    padding-right: 160px;
     height: 300px;
+    align-items: end;
     position: relative;
     justify-content: space-evenly;
 
@@ -184,17 +216,19 @@ padding-top: 100px;
   }
 }
 
+
+
   .modal {
     
-    width: 700px;
-    height: 200px;
+    width: 100%;
+    align-items: center;
+    height: 350px;a
     color: #080808;
-    padding: 15px;
     user-select: none;
     font-family: 'Open Sans', sans-serif;
-    position: absolute;
+  
     z-index: 90;
-    right: -705px;
+ 
     top: 10px;
     display: flex;
     flex-direction: column;
@@ -210,9 +244,10 @@ padding-top: 100px;
     }
 
     .modal-content{
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Raleway', sans-serif;
       margin-block-start: .3em;
       list-style: none;
+      width: 800px;
       font-size: 1.2em;
       text-align: justify;
       margin-block-end: .2em;
@@ -241,7 +276,7 @@ padding-top: 100px;
     margin-block-start: .6em;
     list-style: none;
     font-size: 1.4em;
-    font-family: 'Quattrocento Sans',sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: left;
     margin-block-end: .2em;
 
@@ -268,7 +303,7 @@ padding-top: 100px;
 }
 
 .modal-content_contact{
-  font-family: 'Quattrocento Sans',sans-serif;
+  
   font-size: 1.4em;
   margin-block-start: .6em;
   list-style: none;
@@ -287,6 +322,13 @@ padding-top: 100px;
     list-style: none;
     margin-block-end: 1.2em;
   }
+}
+.typing{
+  position: absolute;
+  left: 40px;
+  top: 350px;
+  height: 150px;
+  border-radius: 50%;
 }
   
   .modal-close-button {
@@ -315,8 +357,34 @@ padding-top: 100px;
 
 // // Projects.js Styles
 export const StyledProjects = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
-font-family: 'Quattrocento', serif;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+
+display: flex;
+
+.project-btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_project {
+  width: 1000px;
+  user-select: none;
+  font-family: 'Open Sans',sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+
+  @media(max-width: 1000px){
+   width: 300px;
+   right: -370px;
+  }
+
 
 .active{
   font-size: 1.7em;
@@ -330,6 +398,7 @@ font-family: 'Quattrocento', serif;
 }
 
 .front-flex{
+  width: 785px;
   @media(max-width: 1000px) {
     flex-direction: column;
   }
@@ -358,12 +427,17 @@ font-family: 'Quattrocento', serif;
   }
 }
 
+
+
 .framework-description{
-  font-family: 'Open Sans', serif;
-  padding-left: 25px;
-  width: 416px;
+  font-family: 'Raleway', sans-serif;
+  width: 425px;
   font-size: 1em;
   text-align: justify;
+
+  .description-text{
+    width: 425px;
+  }
 }
 
 .tech-contain{
@@ -376,17 +450,26 @@ font-family: 'Quattrocento', serif;
 
 .card-ul{
   list-style: none;
-  margin-block-start: 0em;
-  padding-inline-start: 5px;
-  width: 150px;
+    margin-block-start: 0em;
+    padding-inline-start: 9px;
+    text-align: center;
+    display: flex;
+    width: 290px;
+    flex-wrap: wrap;
 
   li{
-    font-family: 'Quattrocento', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    padding: 3px;
+    margin-right: 35px;
+    list-style: circle;
+    color: #36475d;
   }
 }
 
 .card-links{
+  width: 290px;
+  text-align: center;
   margin-bottom: 10px;
   .link{
   text-decoration: none;
@@ -406,8 +489,10 @@ font-family: 'Quattrocento', serif;
 }
 
 .project-image{
-  height: 300px;
-  border: 1px solid black;
+  height: 235px;
+  width: 290px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px -1px black;
 
 
   @media(max-width: 1000px){
@@ -429,7 +514,7 @@ justify-content: center;
 margin: 0 auto;
 display: flex; 
 align-content: center;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
 
 @media(max-width: 1250px){
   width: 100%;

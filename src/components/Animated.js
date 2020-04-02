@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSpring, animated, useTransition } from 'react-spring';
+import { useTransition } from 'react-spring';
 import Styled from 'styled-components';
 
 
@@ -62,9 +62,9 @@ function Animated() {
         .modal-active{
           font-family: 'Quicksand', sans-serif;
           font-weight: bold;
-          color: #5885b6;
+          color: #36475d;
           background: transparent;
-          font-size: 2.1em;
+          font-size: 1.7em;
           display: flex;
           align-items: center;
           border: none;
@@ -83,7 +83,7 @@ function Animated() {
 
         .modal-inactive{
           font-family: 'Quicksand', sans-serif;
-          font-size: 2.1em;
+          font-size: 1.7em;
           color: #36475d;
           outline: none;
           user-select: none;
@@ -107,7 +107,7 @@ function Animated() {
           font-family: 'Quicksand', sans-serif;
           color: #36475d;
           background: transparent;
-          font-size: 2.1em;
+          font-size: 1.7em;
           display: flex;
           align-items: center;
           border: none;
@@ -128,8 +128,6 @@ function Animated() {
     return (
     <>
     <div className="home-text-container">
-    </div>
-    <div className="modal-container">
     <StyledButton>
     <button 
     className={modalVisible === true ? "modal-active" : "modal-inactive"}
@@ -137,6 +135,24 @@ function Animated() {
         About
     </button>
     </StyledButton>
+<StyledButton>
+      <button className={eduModalVisible === true ? "modal-active" : "modal-inactive"} onClick={() => closeOthersEd()} >
+        Education
+    </button>
+    </StyledButton>
+<StyledButton>
+      <button className={contactModalVisible === true ? "modal-active" : "modal-inactive"} onClick={() => closeOthersContact()}>
+        Contact
+    </button>
+    </StyledButton>
+<StyledButton>
+      <a className="modal-button" href={Pdf} target="_blank">
+              Resume
+      </a>
+      </StyledButton>
+    </div>
+    <div className="modal-container">
+    
     {transitions.map(
         ({ item, key, props: style }) =>
           item && (
@@ -146,11 +162,7 @@ function Animated() {
             />
           )
       )}
-          <StyledButton>
-      <button className={eduModalVisible === true ? "modal-active" : "modal-inactive"} onClick={() => closeOthersEd()} >
-        Education
-    </button>
-    </StyledButton>
+          
     {edutransitions.map(
         ({ item, key, props: style }) =>
           item && (
@@ -160,11 +172,7 @@ function Animated() {
             />
           )
       )}
-      <StyledButton>
-      <button className={contactModalVisible === true ? "modal-active" : "modal-inactive"} onClick={() => closeOthersContact()}>
-        Contact
-    </button>
-    </StyledButton>
+      
     {contacttransitions.map(
         ({ item, key, props: style }) =>
           item && (
@@ -174,11 +182,7 @@ function Animated() {
             />
           )
       )}
-      <StyledButton>
-      <a className="modal-button" href={Pdf} target="_blank">
-              Resume
-      </a>
-      </StyledButton>
+      
       </div>
     </>
     )

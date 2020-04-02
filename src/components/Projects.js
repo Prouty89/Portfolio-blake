@@ -11,21 +11,33 @@ import Styled from 'styled-components';
 import { 
   One,
   Two,
-  Three
+  Three,
+  Four,
+  Five,
+  Six
 } from './ProjectData';
 
 const StyledButton = Styled.div `
+display: flex;
+align-items: center;
+width: 240px;
+
+.empty{
+  width: 30px;
+}
+
 .modal-active{
-  font-family: 'Open Sans', serif;
-  color: #5885b6;
+  font-family: 'Quicksand', sans-serif;
   border: none;
+  color: #36475d;
   background: transparent;
-  font-size: 2em;
+  font-size: 1.7em;
   list-style: disc;
   display: flex;
+  width: 210px;
   align-items: center;
   cursor: pointer;
-  text-align: left;
+  justify-content: center;
   outline: none;
   user-select: none;
   height: 50px;
@@ -38,8 +50,9 @@ const StyledButton = Styled.div `
 }
 
 .modal-inactive{
-  font-family: 'Open Sans', serif;
-  color: #080808;
+  width: 210px;
+  font-family: 'Quicksand', sans-serif;
+  color: #36475d;
   outline: none;
   user-select: none;
   background: transparent;
@@ -48,7 +61,7 @@ const StyledButton = Styled.div `
   align-items: center;
   border: none;
   cursor: pointer;
-  text-align: left;
+  justify-content: center;
   height: 50px;
   padding: 1px 6px;
   text-decoration: none;
@@ -90,13 +103,13 @@ function Projects() {
   const transitions = useTransition(oneVisible, null, {
       from: { display: "none", transform: "translateX(120px)" },
       enter: { display: "inherit", transform: "translateX(0px)" },
-      leave: { display: "none", transform: "translateX(20px)" }
+      leave: { display: "none", transform: "translateX(-120px)" }
       });
   const [twoVisible, setTwoVisible] = useState(false);
   const twotransitions = useTransition(twoVisible, null, {
-    from: { display: "none", transform: "translateX(120px)" },
+    from: { display: "none", transform: "translateX(-100px)" },
     enter: { display: "inherit", transform: "translateX(0px)" },
-    leave: { display: "none", transform: "translateX(20px)" }
+    leave: { display: "none", transform: "translateX(-100px)" }
     });
 
   const [threeVisible, setThreeVisible] = useState(false);
@@ -105,24 +118,24 @@ function Projects() {
     enter: { display: "inherit", transform: "translateX(0px)" },
     leave: { display: "none", transform: "translateX(20px)" }
     });
-    const [fourVisible, setFourVisible] = useState(true);
+    const [fourVisible, setFourVisible] = useState(false);
     const fourtransitions = useTransition(fourVisible, null, {
-        from: { display: "none", transform: "translateY(120px)" },
-        enter: { display: "inherit", transform: "translateY(0px)" },
-        leave: { display: "none", transform: "translateY(20px)" }
+        from: { display: "none", transform: "translateX(-100px)" },
+        enter: { display: "inherit", transform: "translateX(0px)" },
+        leave: { display: "none", transform: "translateX(-100px)" }
         });
     const [fiveVisible, setFiveVisible] = useState(false);
     const fivetransitions = useTransition(fiveVisible, null, {
-      from: { display: "none", transform: "translateY(120px)" },
-      enter: { display: "inherit", transform: "translateY(0px)" },
-      leave: { display: "none", transform: "translateY(20px)" }
+      from: { display: "none", transform: "translateX(120px)" },
+      enter: { display: "inherit", transform: "translateX(0px)" },
+      leave: { display: "none", transform: "translateX(20px)" }
       });
   
     const [sixVisible, setSixVisible] = useState(false);
     const sixtransitions = useTransition(sixVisible, null, {
-      from: { display: "none", transform: "translateX(120px)" },
+      from: { display: "none", transform: "translateX(-100px)" },
       enter: { display: "inherit", transform: "translateX(0px)" },
-      leave: { display: "none", transform: "translateX(20px)" }
+      leave: { display: "none", transform: "translateX(-100px)" }
       });
 
 
@@ -188,14 +201,133 @@ function Projects() {
     return(
       <>
       <StyledProjects>
-      <div className="modal-container">
-      <StyledButton>
+        <div className="project-btns">
+      <StyledButton>   
     <button 
     className={oneVisible === true ? "modal-active" : "modal-inactive"}
     onClick={() => closeOthersOne()}>
-        Riders4Life
+        Riders 4 Life
     </button>
+    { oneVisible === true ? ( 
+      <img
+      className="logo-react"
+      title="react.js"
+      src="https://img.icons8.com/36475d/70/36475d/react-native.png"
+      alt="react"
+      />
+      ) : (
+        <div className="empty">
+          
+        </div>
+        )
+      } 
     </StyledButton>
+<StyledButton> 
+    <button 
+    className={twoVisible === true ? "modal-active" : "modal-inactive"}
+    onClick={() => closeOthersTwo()}>
+        Charity Shop
+    </button>
+    { twoVisible === true ? ( 
+      <img
+      className="logo-react"
+      title="react.js"
+      src="https://img.icons8.com/36475d/70/36475d/react-native.png"
+      alt="react"
+      />
+      ) : (
+        <div className="empty">
+          
+        </div>
+        )
+      }
+    </StyledButton>
+<StyledButton>
+        <div>
+      </div>
+
+    <button 
+    className={threeVisible === true ? "modal-active" : "modal-inactive"}
+    onClick={() => closeOthersThree()}>
+        React Tetris
+    </button>
+    { threeVisible === true ? ( 
+      <img
+      className="logo-react"
+      title="react.js"
+      src="https://img.icons8.com/36475d/70/36475d/react-native.png"
+      alt="react"
+      />
+      ) : (
+        <div className="empty">
+          
+        </div>
+        )
+      }
+    </StyledButton>
+<StyledButton>
+    <button 
+    className={fourVisible === true ? "modal-active" : "modal-inactive"}
+    onClick={() => closeOthersFour()}>
+        Cyber MUD
+    </button>
+    { fourVisible === true ? ( 
+      <img
+      className="logo-react"
+      title="react.js"
+      src="https://img.icons8.com/36475d/70/36475d/react-native.png"
+      alt="react"
+      />
+      ) : (
+        <div className="empty">
+          
+        </div>
+        )
+      } 
+    </StyledButton>
+<StyledButton>
+    <button 
+    className={fiveVisible === true ? "modal-active" : "modal-inactive"}
+    onClick={() => closeOthersFive()}>
+        Dark Mode
+    </button>
+    { fiveVisible === true ? ( 
+      <img
+      className="logo-react"
+      title="react.js"
+      src="https://img.icons8.com/36475d/70/36475d/react-native.png"
+      alt="react"
+      />
+      ) : (
+        <div className="empty">
+          
+        </div>
+        )
+      } 
+    </StyledButton>
+<StyledButton>
+    <button 
+    className={sixVisible === true ? "modal-active" : "modal-inactive"}
+    onClick={() => closeOthersSix()}>
+        Github Finder
+    </button>
+    { sixVisible === true ? ( 
+      <img
+      className="logo-react"
+      title="react.js"
+      src="https://img.icons8.com/36475d/70/36475d/react-native.png"
+      alt="react"
+      />
+      ) : (
+        <div className="empty">
+          
+        </div>
+        )
+      } 
+    </StyledButton>
+    </div>
+      <div className="modal-container_projects">
+      
     {transitions.map(
         ({ item, key, props: style }) =>
           item && (
@@ -205,13 +337,7 @@ function Projects() {
             />
           )
       )}
-      <StyledButton>
-    <button 
-    className={twoVisible === true ? "modal-active" : "modal-inactive"}
-    onClick={() => closeOthersTwo()}>
-        Charity Shop
-    </button>
-    </StyledButton>
+      
     {twotransitions.map(
         ({ item, key, props: style }) =>
           item && (
@@ -221,13 +347,7 @@ function Projects() {
             />
           )
       )}
-      <StyledButton>
-    <button 
-    className={threeVisible === true ? "modal-active" : "modal-inactive"}
-    onClick={() => closeOthersThree()}>
-        Cyber MUD
-    </button>
-    </StyledButton>
+      
     {threetransitions.map(
         ({ item, key, props: style }) =>
           item && (
@@ -237,49 +357,31 @@ function Projects() {
             />
           )
       )}
-      <StyledButton>
-    <button 
-    className={fourVisible === true ? "modal-active" : "modal-inactive"}
-    onClick={() => closeOthersFour()}>
-        Tetris
-    </button>
-    </StyledButton>
+      
     {fourtransitions.map(
         ({ item, key, props: style }) =>
           item && (
-            <Three
+            <Four
               style={style}
               key={key}
             />
           )
       )}
-      <StyledButton>
-    <button 
-    className={fiveVisible === true ? "modal-active" : "modal-inactive"}
-    onClick={() => closeOthersFive()}>
-        Cyber MUD
-    </button>
-    </StyledButton>
+      
     {fivetransitions.map(
         ({ item, key, props: style }) =>
           item && (
-            <Three
+            <Five
               style={style}
               key={key}
             />
           )
       )}
-      <StyledButton>
-    <button 
-    className={sixVisible === true ? "modal-active" : "modal-inactive"}
-    onClick={() => closeOthersSix()}>
-        Dark-Mode
-    </button>
-    </StyledButton>
+      
     {sixtransitions.map(
         ({ item, key, props: style }) =>
           item && (
-            <Three
+            <Six
               style={style}
               key={key}
             />

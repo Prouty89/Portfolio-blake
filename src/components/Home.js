@@ -2,6 +2,8 @@ import React from "react";
 import { useSpring, animated, useTransition } from 'react-spring';
 
 import  Blake  from '../assets/bcut.png';
+import Coffee from '../assets/coof.gif';
+import Typing from '../assets/typing.gif';
 import { StyledHome } from '../styles';
 import Animated from './Animated';
 import Stack from './AnimatedStack';
@@ -23,27 +25,8 @@ function Home() {
       <StyledHome>
         <Stack />
         <div className="bg-wtc">
+        
         <div className="welcome-text-container">
-          {/* <div className="logos_big">
-            <img
-              className="logo-react"
-              title="react.js"
-              src="https://img.icons8.com/36475d/70/36475d/react-native.png"
-              alt="react"
-            />
-            <img
-              className="logo"
-              title="redux"
-              src="https://img.icons8.com/36475d/70/36475d/redux.png"
-              alt="redux"
-            />
-            <img
-              className="logo"
-              title="node.js"
-              src="https://img.icons8.com/windows/70/36475d/node-js.png"
-              alt="node"
-            />
-          </div> */}
           <div className="welcome-text">
           <p className="welcome-text">Blake Prouty</p>
             <animated.div className = "second-animation animated-text" style={spring}>
@@ -70,9 +53,11 @@ function Home() {
         </div>
         <div className="home-contents">
           <div className="welcome-container">
+            <img className="coffee" src = {Coffee} alt="coffee"/>
             <Animated />
           </div>
           <div className="projects-container">
+          <img className="typing" src = {Typing} alt="typing"/>
             <Projects />
           </div>
         </div>

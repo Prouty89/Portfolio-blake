@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body{
     margin-top: 0px;
@@ -52,16 +52,10 @@ html{
     }
 }
 
-
-
-
-@media screen and (max-width: 950px) {
-    .projects-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    }
+.projects-container{
+    padding-left: 20px;
 }
+
 
 .header-container{
     display: flex;
