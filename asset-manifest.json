@@ -1,29 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.2ddf6ad5.chunk.css",
-    "main.js": "./static/js/main.d549905e.chunk.js",
-    "main.js.map": "./static/js/main.d549905e.chunk.js.map",
+    "main.css": "./static/css/main.87fc36f2.chunk.css",
+    "main.js": "./static/js/main.635c6325.chunk.js",
+    "main.js.map": "./static/js/main.635c6325.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.1ee1805b.js",
     "runtime-main.js.map": "./static/js/runtime-main.1ee1805b.js.map",
-    "static/js/2.eb66e0af.chunk.js": "./static/js/2.eb66e0af.chunk.js",
-    "static/js/2.eb66e0af.chunk.js.map": "./static/js/2.eb66e0af.chunk.js.map",
+    "static/js/2.12f5ed04.chunk.js": "./static/js/2.12f5ed04.chunk.js",
+    "static/js/2.12f5ed04.chunk.js.map": "./static/js/2.12f5ed04.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.5a9c3870606279b1cf7614fc95343782.js": "./precache-manifest.5a9c3870606279b1cf7614fc95343782.js",
+    "precache-manifest.3b383f57f66272d3391f114eed6f62b1.js": "./precache-manifest.3b383f57f66272d3391f114eed6f62b1.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.2ddf6ad5.chunk.css.map": "./static/css/main.2ddf6ad5.chunk.css.map",
-    "static/js/2.eb66e0af.chunk.js.LICENSE.txt": "./static/js/2.eb66e0af.chunk.js.LICENSE.txt",
-    "static/media/CSE.jpg": "./static/media/CSE.cadc3ee5.jpg",
-    "static/media/Crypto.jpg": "./static/media/Crypto.609c70ec.jpg",
-    "static/media/Cyber.jpg": "./static/media/Cyber.bb41e25c.jpg",
+    "static/css/main.87fc36f2.chunk.css.map": "./static/css/main.87fc36f2.chunk.css.map",
+    "static/js/2.12f5ed04.chunk.js.LICENSE.txt": "./static/js/2.12f5ed04.chunk.js.LICENSE.txt",
     "static/media/Resume_Blake_Prouty.pdf": "./static/media/Resume_Blake_Prouty.ac40dc44.pdf",
     "static/media/SafeMothers.jpg": "./static/media/SafeMothers.dca1ab94.jpg",
-    "static/media/Tetris.jpg": "./static/media/Tetris.16c30529.jpg",
-    "static/media/ghf.jpg": "./static/media/ghf.66ad80da.jpg"
+    "static/media/bcut.png": "./static/media/bcut.7751dfe6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1ee1805b.js",
-    "static/js/2.eb66e0af.chunk.js",
-    "static/css/main.2ddf6ad5.chunk.css",
-    "static/js/main.d549905e.chunk.js"
+    "static/js/2.12f5ed04.chunk.js",
+    "static/css/main.87fc36f2.chunk.css",
+    "static/js/main.635c6325.chunk.js"
   ]
 }
