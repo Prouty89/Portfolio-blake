@@ -16,42 +16,45 @@ export const One = ({style}) => {
         className="front-flex"
       >
         <div className="img-contain">
-          <img className="project-image" src={Safe} alt="safe-photo" />
+          <div className="img-withlinks">
+          <img className="project-image" src={Safe} alt="safe" />
           <div className="card-links">
             <a
               className="link"
               target="_blank"
-              rel="noopener"
               href="https://safe-mothers-fe-80rvmaf9e.now.sh/login"
+              rel="noopener noreferrer"
             >
               Website
             </a>
             <a
               className="link"
               target="_blank"
-              rel="noopener"
               href="https://youtu.be/KM4jNYUOg7Y"
+              rel="noopener noreferrer"
             >
               Demo
             </a>
             <a
               className="link"
               target="_blank"
-              rel="noopener"
               href="https://github.com/Lambda-School-Labs/safe-mothers-be"
+              rel="noopener noreferrer"
             >
               BE Code
             </a>
             <a
               className="link"
               target="_blank"
-              rel="noopener"
               href="https://github.com/Lambda-School-Labs/safe-mothers-fe"
+              rel="noopener noreferrer"
             >
               FE Code
             </a>
           </div>
-          <div className="tech-contain">
+          </div>
+          
+        <div className="tech-contain">
             <div className="flex-list">
               <ul className="card-ul">
                 <li>React-Redux</li>
@@ -66,6 +69,7 @@ export const One = ({style}) => {
             </div>
           </div>
         </div>
+        <div className="side">
         <div className="framework-description">
           <p className="description-text">
             Prototype, production ready SPA that handles user
@@ -76,6 +80,7 @@ export const One = ({style}) => {
             messaging service. I was responsible for creating the Front
             End application.
           </p>
+        </div>
         </div>
       </div>
       </animated.div>
@@ -90,24 +95,26 @@ export const Two = ({style}) => {
               className="front-flex"
             >
               <div className="img-contain">
-              <img className="project-image" src={CSE} alt="safe-photo" />
+              <div className="img-withlinks">
+              <img className="project-image" src={CSE} alt="charity" />
               <div className="card-links">
                   <a
                     className="link"
                     target="_blank"
-                    rel="noopener"
                     href="https://charityshopexchange.com/"
+                    rel="noopener noreferrer"
                   >
                     Website
                   </a>
                   <a
                     className="link"
                     target="_blank"
-                    rel="noopener"
                     href="https://github.com/Charity-Shop-Exchange/Charity-Shop-Exchange"
+                    rel="noopener noreferrer"
                   >
                     Codebase
                   </a>
+                </div>
                 </div>
                 <div className="tech-contain">
                   <div className="flex-list">
@@ -123,13 +130,13 @@ export const Two = ({style}) => {
                 </div>
               <div className="framework-description">
                 <p className="description-text">
-                  Hackathon project (WIP) developed during the Coronavirus
-                  Pandemic. A team of 6 developers from around the globe
-                  converged to deliver an application that sought to address
-                  some of the challenges we faced during isolation. Charity Shop
+                  Hackathon: Codevid-19 week 3 winning project!  developed during the Coronavirus
+                  Pandemic. A team of 3 developers from around the globe
+                  converged to deliver an application addressing
+                  some of the challenges we face during isolation. Charity Shop
                   Exchange aims to provide a subscription service that people
                   can purchase and have books, music, movies delivered to their
-                  door based on their preferences.
+                  door based on their preferences. I was tasked with building the Front End application alongside one other person.
                 </p>
               </div>
             </div>
@@ -142,30 +149,31 @@ export const Three = ({style}) => {
         <animated.div style={style} className="modal_project">
         <div style={{ display: "flex" }} className="front-flex">
               <div className="img-contain">
-              <img className="project-image" src={Tetris} alt="tetris-photo" />
+                <div className="img-withlinks">
+              <img className="project-image" src={Tetris} alt="tetris" />
               <div className="card-links">
                   <a
                     className="link"
                     target="_blank"
-                    rel="noopener"
                     href="https://github.com/Prouty89/TetrisReact"
+                    rel="noopener noreferrer"
                   >
                     Codebase
                   </a>
                   <a
                     className="link"
                     target="_blank"
-                    rel="noopener"
                     href="https://tetrisreact-54w8sfs49.now.sh/"
+                    rel="noopener noreferrer"
                   >
                     Play It
                   </a>
                 </div>
+                </div>
                 <div className="tech-contain">
                   <div className="flex-list">
                     <ul className="card-ul">
-                      <li>React</li>
-                      <li>React Hooks</li>
+                      <li>React (Hooks)</li>
                       <li>Zeit (Deployed)</li>
                       <li>Styled Components</li>
                     </ul>
@@ -190,37 +198,40 @@ export const Three = ({style}) => {
           <animated.div style={style} className="modal_project">
           <div style={{ display: "flex" }} className="front-flex">
           <div className="img-contain">
-              <img className="project-image" src={Cyber} alt="cyber-photo" />
+          <div className="img-withlinks">
+              <img className="project-image" src={Cyber} alt="cyber" />
               <div className="card-links">
                   <a
-                    rel="noopener"
                     className="link"
                     target="_blank"
                     href="https://cypberpunkmud.now.sh/"
+                    rel="noopener noreferrer"
                   >
                     Website
                   </a>
                   <a
                     className="link"
                     target="_blank"
-                    rel="noopener"
                     href="https://github.com/cs-24-bw-mud/cs-bw-mud"
+                    rel="noopener noreferrer"
                   >
                     BE Code
                   </a>
                   <a
                     className="link"
                     target="_blank"
-                    rel="noopener"
                     href="https://github.com/cs-24-bw-mud/front-end"
+                    rel="noopener noreferrer"
                   >
                     FE Code
                   </a>
                 </div>
+                </div>
                 <div className="tech-contain">
                 <div className="flex-list">
                     <ul className="card-ul">
-                      <li>React-Redux</li>
+                      <li>React</li>
+                      <li>Redux</li>
                       <li>Django</li>
                       <li>Python</li>
                       <li>SASS</li>
@@ -231,8 +242,7 @@ export const Three = ({style}) => {
               </div>
               <div className="framework-description">
                 <p className="description-text">
-                  Game application built using a Django framework to serve a
-                  game map that a user can explore.
+                  This application was built with a Python/Django back-end that features a room generation algorithm that creates plottable x, y coordinates in a spiral pattern. Players can move around the map and see other players in each room. This application was built by a team of five developers in under four days and I was responsible for creating UI, implementing the design.
                 </p>
               </div>
             </div>
@@ -244,29 +254,32 @@ export const Five = ({style}) => {
       <animated.div style={style} className="modal_project">
       <div style={{ display: "flex" }} className="front-flex">
       <div className="img-contain">
-            <img className ="project-image" src={Crypto} alt="crypto-photo" />
+      <div className="img-withlinks">
+            <img className ="project-image" src={Crypto} alt="crypto" />
             <div className="card-links">
                   <a
-                    rel="noopener"
                     className="link"
                     target="_blank"
                     href="https://dark-mode-kappa-peach.now.sh/"
+                    rel="noopener noreferrer"
                   >
                     Website
                   </a>
                   <a
                     className="link"
                     target="_blank"
-                    rel="noopener"
                     href="https://github.com/Prouty89/dark-mode"
+                    rel="noopener noreferrer"
                   >
                     Codebase
                   </a>
+                </div>
                 </div>
                 <div className="tech-contain">
                 <div className="flex-list">
                     <ul className="card-ul">
                       <li>React</li>
+                      <li>Axios</li>
                       <li>SASS</li>
                     </ul>
                   </div>
@@ -291,30 +304,31 @@ export const Six = ({style}) => {
       <animated.div style={style} className="modal_project">
       <div style={{ display: "flex" }} className="front-flex">
       <div className="img-contain">
-            <img className ="project-image" src={GHF} alt="github-photo" />
+      <div className="img-withlinks">
+            <img className ="project-image" src={GHF} alt="github" />
             <div className="card-links">
                   <a
-                    rel="noopener"
                     className="link"
                     target="_blank"
                     href="https://dark-mode-kappa-peach.now.sh/"
+                    rel="noopener noreferrer"
                   >
                     Website
                   </a>
                   <a
                     className="link"
                     target="_blank"
-                    rel="noopener"
                     href="https://github.com/Prouty89/dark-mode"
+                    rel="noopener noreferrer"
                   >
                     BE Codebase
                   </a>
+                </div>
                 </div>
                 <div className="tech-contain">
                 <div className="flex-list">
                     <ul className="card-ul">
                       <li>React</li>
-                      <li>Context API</li>
                       <li>Context API</li>
                       <li>Netlify</li>
                       <li>Bootstrap</li>
@@ -324,12 +338,7 @@ export const Six = ({style}) => {
             </div>
               <div className="framework-description">
                 <p className="description-text"> 
-                  Implementing "dark-mode" on your modern web application allows for
-                  easier viewing of the information your users enjoy. This application uses custom hooks to
-                  pass a key into local storage and a callback to access whether it
-                  exists in local storage in order to toggle styles on and off. The
-                  mock application is a Crypto tracker that fetches data from an
-                  open API.
+                  Github finder allows you to lookup github users and view their repos, interested in a project shown? Its link will take you directly to the user's repository. This project was built initially using class components to manage component and application state, later refactored using hooks and the context API. 
               </p>
               </div>
             </div>

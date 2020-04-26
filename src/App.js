@@ -14,7 +14,7 @@ import Footer from './components/Footer';
       <>
      <StyledContent>
         <Home/>
-      </StyledContent>
+        </StyledContent>
         <Footer />
       </>
     );

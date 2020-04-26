@@ -1,9 +1,9 @@
 import React from "react";
-import { useSpring, animated, useTransition } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
 import  Blake  from '../assets/bcut.png';
-import Coffee from '../assets/coof.gif';
-import Typing from '../assets/typing.gif';
+import Coffee from '../assets/coof.mp4';
+import Type from '../assets/type.mp4';
 import { StyledHome } from '../styles';
 import Animated from './Animated';
 import Stack from './AnimatedStack';
@@ -13,11 +13,11 @@ import Projects from './Projects';
 function Home() {
 
   const spring = useSpring({
-    config: { duration: 1200 },
+    config: { duration: 1000 },
     opacity: 1,
-    from: { opacity: 0, color: '#928077' },
-    to: { opacity: 1, color: '#36475d'},
-    delay: '2000'
+    from: { marginLeft: 2000, color: '#928077' },
+    to: { marginLeft: 1, color: '#36475d'},
+    delay: '1000'
     });
 
   return (
@@ -25,39 +25,67 @@ function Home() {
       <StyledHome>
         <Stack />
         <div className="bg-wtc">
-        
+        <div className="col-1">
+        <div className="welcome-text">
+            <span>B</span>
+            <span>L</span>
+            <span>A</span>
+            <span>K</span>
+            <span>E</span><br/>
+            <span>P</span>
+            <span>R</span>
+            <span>O</span>
+            <span>U</span>	
+            <span>T</span>
+            <span>Y</span>		
+            </div>
+
+        </div>
         <div className="welcome-text-container">
           <div className="welcome-text">
-          <p className="welcome-text">Blake Prouty</p>
+          <div className="with-name">
+            <div className="blake">
+          </div>
+          </div>
+          
             <animated.div className = "second-animation animated-text" style={spring}>
+              <p>
               Full Stack Developer
-              <div className="social-container">
-                <a  href = "https://www.github.com/Prouty89" target="_blank" rel = "noopener">
-                <img src="https://img.icons8.com/ios/40/36475d/github.png"/>
-                </a>
-                <a href = "https://www.linkedin.com/in/blakenp/" target="_blank" rel = "noopener">
-                <img src="https://img.icons8.com/40/36475d/linkedin-circled.png"/>
-                </a>
-                <a href = "https://twitter.com/BlakeNthaniel" target="_blank" rel = "noopener">
-                <img src="https://img.icons8.com/ios/40/36475d/twitter.png"/>
-                </a>
-              </div>
+              </p>
+          <div className="gifs">
+          <video className="coffee gif" id="coffee" loop autoPlay muted>
+            <source  src={Coffee} type="video/mp4" />
+            </video>
+            <div className="profile gif">
+            <div className="pic-container">
+            <img className="profile-pic" src={Blake} alt="profile" />
+            </div>
+            </div>
+            <video className="typing gif" id="typing" loop autoPlay muted>
+            <source  src={Type} type="video/mp4" />
+            </video>
+          </div>
           </animated.div>
           </div>
-          <div className="profile">
-            <div className="pic-container">
-          <img className="profile-pic" src={Blake} alt="profile" />
-          </div> 
-          </div>
         </div>
+          <div className="col-3">
+            </div>
         </div>
         <div className="home-contents">
           <div className="welcome-container">
-            <img className="coffee" src = {Coffee} alt="coffee"/>
             <Animated />
           </div>
+          <div className="heading">
+          <div className="one">
+          <p className="projects-header">My Work</p>
+          </div>
+          <div className="two">
+          </div>
+          <div className="three">
+
+          </div>
+          </div>
           <div className="projects-container">
-          <img className="typing" src = {Typing} alt="typing"/>
             <Projects />
           </div>
         </div>
