@@ -15,9 +15,9 @@ function Home() {
   const spring = useSpring({
     config: { duration: 1000 },
     opacity: 1,
-    from: { marginLeft: 2000, color: '#928077' },
-    to: { marginLeft: 1, color: '#36475d'},
-    delay: '1000'
+    from: { marginLeft: 2000, opacity: 0, color: '#36475d' },
+    to: { marginLeft: 1, opacity: 1, color: '#36475d'},
+    delay: '1100'
     });
 
   return (
@@ -42,11 +42,7 @@ function Home() {
 
         </div>
         <div className="welcome-text-container">
-          <div className="welcome-text">
-          <div className="with-name">
-            <div className="blake">
-          </div>
-          </div>
+          <div className="full-stack">
           
             <animated.div className = "second-animation animated-text" style={spring}>
               <p>

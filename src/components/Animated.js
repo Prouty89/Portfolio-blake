@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTransition } from 'react-spring';
-import Styled from 'styled-components';
+import Styled, { keyframes } from 'styled-components';
 
 
 
@@ -13,16 +13,16 @@ function Animated() {
     //about
     const [modalVisible, setModalVisible] = useState(true);
     const transitions = useTransition(modalVisible, null, {
-          from: { display: "none", transform: "translateX(120px)" },
-          enter: { display: "flex", transform: "translateX(0px)" },
-          leave: { display: "none", transform: "translateX(20px)" }
+          from: { display: "none", transform: "translateY(80px)" },
+          enter: { display: "flex", transform: "translateY(0px)" },
+          leave: { display: "none", transform: "translateY(20px)" }
         });
     //ed
     const [eduModalVisible, setEduModalVisible] = useState(false);
     const edutransitions = useTransition(eduModalVisible, null, {
-          from: { display: "none", transform: "translateX(120px)" },
-          enter: { display: "flex", transform: "translateX(0px)" },
-          leave: { display: "none", transform: "translateX(20px)" }
+          from: { display: "none", transform: "translateY(80px)" },
+          enter: { display: "flex", transform: "translateY(0px)" },
+          leave: { display: "none", transform: "translateY(20px)" }
         });
 
     function closeOthersEd(){
@@ -35,13 +35,46 @@ function Animated() {
       setModalVisible(true);
     }
 
+    const fill = keyframes`
+    0% {
+        background-image: linear-gradient(120deg, #3d4839 0%, #3d4839 100%);
+        background-repeat: no-repeat;
+        background-size: 10% 0.05em;
+        background-position: 0 100%;
+        transition: background-size 0.25s ease-in; 
+    }
+    100%{
+        background-image: linear-gradient(120deg, #3d4839 0%, #3d4839 100%);
+        background-repeat: no-repeat;
+        background-size: 78% 0.05em;
+        background-position: 50% 100%;
+        transition: background-size 0.25s ease-in;
+    }
+`
+
+const fillMob = keyframes`
+    0% {
+        background-image: linear-gradient(120deg, #3d4839 0%, #3d4839 100%);
+        background-repeat: no-repeat;
+        background-size: 10% 0.05em;
+        background-position: 0 75%;
+        transition: background-size 0.25s ease-in; 
+    }
+    100%{
+        background-image: linear-gradient(120deg, #3d4839 0%, #3d4839 100%);
+        background-repeat: no-repeat;
+        background-size: 78% 0.05em;
+        background-position: 50% 75%;
+        transition: background-size 0.25s ease-in;
+    }
+`
+
     const StyledButton = Styled.div `
         .modal-active{
-          font-family: 'Josefin Slab', serif;
-          font-weight: bold;
+          font-family: 'Roboto', sans-serif;
           color: #36475c;
           background: transparent;
-          font-size: 2.3em;
+          font-size: 2em;
           display: flex;
           align-items: center;
           border: none;
@@ -53,6 +86,10 @@ function Animated() {
           margin-right: 15px;
           padding: 1px 6px;
           text-decoration: none;
+          background-image: linear-gradient(120deg, #36475c 0%, #36475c 100%);
+          background-repeat: no-repeat;
+          background-size: 78% 0.05em;
+          background-position: 50% 100%;
 
           @media(max-width: 1000px){
             font-size: 1.6rem;
@@ -61,14 +98,15 @@ function Animated() {
             font-size: 1rem;
           }
           @media(max-width: 600px){
-            font-size: .8rem;
+            font-size: .9rem;
             margin-right: 1px;
+            background-position: 50% 75%;
           }
         }
 
         .modal-inactive{
-          font-family: 'Josefin Slab', serif;
-          font-size: 1.7em;
+          font-family: 'Roboto', sans-serif;
+          font-size: 2em;
           color: #36475c;
           outline: none;
           user-select: none;
@@ -83,6 +121,14 @@ function Animated() {
           padding: 1px 6px;
           text-decoration: none;
 
+          &:hover{
+            animation-name: ${fill};
+            animation-timing-function: ease;
+            animation-duration: 400ms;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+        }
+
           @media(max-width: 1000px){
             font-size: 1.6rem;
           }
@@ -92,17 +138,24 @@ function Animated() {
           }
 
           @media(max-width: 600px){
-            font-size: .8rem;
+            font-size: .9rem;
             margin-right: 1px;
+            &:hover{
+              animation-name: ${fillMob};
+              animation-timing-function: ease;
+              animation-duration: 400ms;
+              animation-delay: 0s;
+              animation-fill-mode: forwards;
+          }
           }
         }
 
 
           a{
-            font-family: 'Josefin Slab', serif;
+            font-family: 'Roboto', sans-serif;
           color: #36475c;
           background: transparent;
-          font-size: 1.7em;
+          font-size: 2em;
           display: flex;
           align-items: center;
           border: none;
@@ -112,6 +165,15 @@ function Animated() {
           height: 50px;
           padding: 1px 6px;
           text-decoration: none;
+
+          &:hover{
+            animation-name: ${fill};
+            animation-timing-function: ease;
+            animation-duration: 400ms;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+        }
+
           @media(max-width: 1000px){
             font-size: 1.6rem;
           }
@@ -120,7 +182,7 @@ function Animated() {
             font-size: 1rem;
           }
           @media(max-width: 600px){
-            font-size: .8rem;
+            font-size: .9rem;
             margin-right: 1px;
           }
           }
